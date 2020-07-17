@@ -1,14 +1,16 @@
-import React from "react"
-import { Container } from "react-bootstrap"
-import Header from "./Header"
-import Footer from "./Footer"
+import React from 'react'
+import Header from './Header'
+import Container from './Container/Container'
+import Footer from './Footer/Footer'
+import TopImage from './TopImage'
+import BottomImage from './BottomImage'
 
 export default ({ children }) => (
-  <Container fluid className="px-0 theme-light app-container">
+  <>
+    <TopImage />
     <Header />
-    <Container fluid className="pt-5 mt-5 text-center min-vh-100">
-      {children}
-    </Container>
+    <Container>{children}</Container>
     <Footer />
-  </Container>
+    <BottomImage />
+  </>
 )

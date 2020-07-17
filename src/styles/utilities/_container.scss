@@ -1,0 +1,35 @@
+// CONTAINER
+
+.u-container {
+  margin-top: 7rem;
+  padding: $global-spacing-md $global-spacing-md $global-spacing-xlg;
+  background: transparent;
+
+  @include screen-mobile-plus {
+    padding: $global-spacing-xlg 10%;
+  }
+
+  @include screen-tablet-portrait {
+    padding: $global-spacing-xlg 15%;
+  }
+
+  @include screen-tablet-landscape {
+    padding: $global-spacing-xlg 15%;
+  }
+
+  @include screen-laptop {
+    padding: $global-spacing-xlg 20%;
+  }
+
+  @include screen-desktop {
+    padding: $global-spacing-xlg 20%;
+  }
+}
+
+.u-content {
+  @include screen-tablet-portrait-and-bigger {
+    padding: $global-spacing-lg;
+    min-height: 70vh;
+    background: rgba($color-white, 0.8);
+  }
+}

@@ -1,0 +1,30 @@
+@import '../../styles/settings/spacing';
+
+.social-media {
+  width: 100%;
+  height: $global-spacing-md;
+  display: flex;
+
+  &--left {
+    justify-content: left;
+  }
+
+  &--center {
+    justify-content: center;
+  }
+}
+
+.social-media img {
+  height: 2.5rem;
+  width: 2.5rem;
+  margin: 0 $global-spacing-xs;
+  transform: none;
+  transition: transform 0.2s ease-in-out;
+}
+
+.social-media a:hover img.social-media__icon,
+.social-media a:focus img.social-media__icon {
+  transform: rotate(20deg);
+  height: 2.7rem;
+  width: 2.7rem;
+}

@@ -1,18 +1,18 @@
-import React from "react"
-import Container from "react-bootstrap/Container"
-import { PageLayout, PageTitle } from "../components"
+import React from 'react'
+import { PageLayout, PageTitle } from '../components'
+import SEO from '../utils/seo'
 
-import SEO from "../utils/seo"
-
-export default ({ title, excerpt, html, subTitle }) => (
+export default ({ title, description, html, subTitle, image, pathname }) => (
   <PageLayout>
-    <SEO title={title} description={excerpt} />
-    <Container className="text-center" fluid>
-      <PageTitle title={title} />
-      {subTitle}
-      <Container className="text-justify">
-        <div dangerouslySetInnerHTML={{ __html: html }} />
-      </Container>
-    </Container>
+    <SEO
+      title={title}
+      description={description}
+      image={image}
+      pathname={pathname}
+    />
+    <PageTitle title={title} />
+    {subTitle}
+    <div dangerouslySetInnerHTML={{ __html: html }} />
+    <p className='u-logo u-margin-bottom-xs'>Tati</p>
   </PageLayout>
 )

@@ -1,0 +1,105 @@
+@import '../../styles/settings/colors';
+@import '../../styles/settings/spacing';
+@import '../../styles/settings/media';
+@import '../../styles/settings/typography';
+
+.slider {
+  max-width: 35rem;
+
+  @include screen-tablet-portrait-and-bigger {
+    max-width: 40rem;
+  }
+
+  @include screen-tablet-landscape-and-bigger {
+    max-width: 60rem;
+  }
+
+  .keen-slider__slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20rem;
+    background: $color-white;
+
+    @include screen-tablet-portrait-and-bigger {
+      height: 32rem;
+    }
+  }
+
+  .keen-slider__slide img {
+    max-width: 35rem;
+    object-fit: cover;
+
+    @include screen-tablet-portrait-and-bigger {
+      max-width: 40rem;
+    }
+
+    @include screen-tablet-landscape-and-bigger {
+      max-width: 60rem;
+    }
+  }
+
+  .keen-slider__slide p {
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    font-size: 1.2rem;
+    background-color: $color-white;
+
+    @include screen-tablet-portrait-and-bigger {
+      font-size: $font-size-body;
+    }
+  }
+
+  .navigation-wrapper {
+    position: relative;
+  }
+
+  .dots {
+    display: flex;
+    padding: $global-spacing-xs 0;
+    justify-content: center;
+  }
+
+  .dots button:focus {
+    border: 0.1rem solid $color-pink;
+  }
+
+  .dot {
+    border: none;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    margin: 0 ($global-spacing-xs / 2);
+    padding: ($global-spacing-xs / 2);
+    cursor: pointer;
+    background: rgba($color-pink, 0.4);
+  }
+
+  .dot:focus {
+    outline: none;
+  }
+
+  .dot.active {
+    background: $color-pink;
+  }
+
+  .arrow {
+    width: 3rem;
+    height: 3rem;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    cursor: pointer;
+  }
+
+  .arrow--left {
+    left: 0.5rem;
+  }
+
+  .arrow--right {
+    left: auto;
+    right: 0.5rem;
+  }
+}

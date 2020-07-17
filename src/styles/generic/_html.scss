@@ -1,0 +1,84 @@
+html,
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-width: 320px;
+  min-height: 100%;
+}
+
+html {
+  font-family: $font-family-body;
+  font-size: $font-size-root;
+  min-height: 100%;
+
+  &.no--scroll {
+    overflow-y: hidden !important;
+  }
+}
+
+body {
+  margin: 0;
+  font-size: $font-size-body;
+  line-height: $font-line-height-body;
+  hyphens: auto;
+  word-break: normal;
+  color: $color-gray-800;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+p {
+  font-size: $font-size-body;
+  line-height: $font-line-height-body;
+  font-weight: $font-weight-regular;
+  text-align: justify;
+  margin-bottom: $global-spacing-sm;
+  color: $color-gray-800;
+}
+
+small {
+  font-size: 90%;
+  text-align: justify;
+  color: $color-gray-800;
+}
+
+h1 {
+  @include h1;
+}
+
+h2 {
+  @include h2;
+}
+
+h3 {
+  @include h3;
+}
+
+h4 {
+  @include h4;
+}
+
+h5 {
+  @include h5;
+}
+
+h6 {
+  @include h6;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+small,
+a,
+body {
+  transition: border 0.4s ease-in-out, color 0.4s ease-in-out,
+    background 0.4s ease-in-out, shadow 0.2s ease-in-out;
+}

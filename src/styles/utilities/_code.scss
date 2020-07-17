@@ -1,0 +1,27 @@
+// CODE EXAMPLES
+
+@mixin code-example {
+  padding: $global-spacing-xs;
+  margin-bottom: $global-spacing-sm;
+  overflow-y: auto;
+
+  p {
+    margin-bottom: $global-spacing-xs;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.u-bad-example {
+  background-color: $color-light-red;
+  border-left: 0.4rem solid $color-red;
+  @include code-example;
+}
+
+.u-good-example {
+  background-color: $color-light-green;
+  border-left: 0.4rem solid $color-green;
+  @include code-example;
+}

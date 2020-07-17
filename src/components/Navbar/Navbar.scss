@@ -1,0 +1,55 @@
+@import '../../styles/settings/spacing';
+@import '../../styles/settings/colors';
+@import '../../styles/settings/media';
+
+.navbar {
+  height: 7rem;
+  padding: $global-spacing-xs $global-spacing-xlg;
+  z-index: 2;
+  background: $color-ice-pink;
+  border-bottom: 0.1rem solid $color-yellow;
+
+  @include screen-tablet-portrait-and-bigger {
+    background: rgba($color-ice-pink, 0.8);
+  }
+
+  a.nav-link {
+    padding: $global-spacing-sm !important;
+    height: 7rem;
+    display: flex;
+    margin: 0 !important;
+    color: $color-pink !important;
+
+    &:hover,
+    &:focus {
+      background: rgba($color-yellow, 0.25);
+    }
+  }
+
+  a.navbar-brand:hover,
+  a.navbar-brand:focus,
+  a.nav-link:hover,
+  a.nav-link:focus {
+    text-shadow: 0.2rem 0.2rem 0.4rem $color-pink;
+  }
+
+  .navbar-toggler {
+    color: transparent;
+    border: none;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  .navbar-toggler-icon {
+    background-image: url('../../../assets/svg/menu.svg');
+    height: 3rem;
+    width: 3rem;
+  }
+
+  form.my-auto {
+    width: 4rem;
+    text-align: center;
+  }
+}

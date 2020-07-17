@@ -1,0 +1,54 @@
+@import '../../styles/settings/colors';
+@import '../../styles/settings/spacing';
+@import '../../styles/settings/media';
+@import '../../styles/settings/typography';
+
+.footer {
+  height: 100%;
+  width: 100%;
+  padding: $global-spacing-xs;
+  display: flex;
+  flex-direction: column;
+  background: $color-ice-pink;
+  border-top: 0.1rem solid $color-yellow;
+
+  @include screen-tablet-portrait-and-bigger {
+    background: rgba($color-ice-pink, 0.8);
+  }
+}
+
+.footer__avatar {
+  margin: -$global-spacing-xlg auto $global-spacing-sm auto;
+}
+
+.footer__avatar img {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 4rem;
+  box-shadow: none;
+  transition: box-shadow 0.2s ease-in-out;
+  border: 0.1rem solid $color-yellow;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0 0 2.2rem 0.3rem $color-yellow;
+  }
+}
+
+.footer__info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: $global-spacing-sm;
+}
+
+.footer__info p,
+.footer__info a {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.footer__heart {
+  color: $color-pink;
+}

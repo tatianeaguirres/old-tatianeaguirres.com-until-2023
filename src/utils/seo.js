@@ -1,9 +1,9 @@
 /** https://www.gatsbyjs.org/docs/add-seo-component/ */
 
-import React from "react"
-import PropTypes from "prop-types"
-import { Helmet } from "react-helmet"
-import { useStaticQuery, graphql } from "gatsby"
+import React from 'react'
+import PropTypes from 'prop-types'
+import { Helmet } from 'react-helmet'
+import { useStaticQuery, graphql } from 'gatsby'
 
 const SEO = ({ description, lang, meta, image: img, title, pathname }) => {
   const { site } = useStaticQuery(query)
@@ -26,18 +26,18 @@ const SEO = ({ description, lang, meta, image: img, title, pathname }) => {
         { property: `og:description`, content: metaDescription },
         { property: `og:type`, content: `website` },
         { name: `twitter:creator`, content: site.siteMetadata.author },
-        { name: `twitter:title`, content: `title` },
-        { name: `twitter:description`, content: metaDescription },
+        { name: `twitter:title`, content: title },
+        { name: `twitter:description`, content: metaDescription }
       ]
         .concat(
           img
             ? [
-                { property: "og:image", content: image },
-                { property: "og:image:width", content: img.width },
-                { property: "og:image:height", content: img.height },
-                { name: "twitter:card", content: "summary_large_image" },
+                { property: 'og:image', content: image },
+                { property: 'og:image:width', content: img.width },
+                { property: 'og:image:height', content: img.height },
+                { name: 'twitter:card', content: 'summary_large_image' }
               ]
-            : [{ name: "twitter:card", content: "summary" }]
+            : [{ name: 'twitter:card', content: 'summary' }]
         )
         .concat(meta)}
     />
@@ -54,15 +54,15 @@ SEO.propTypes = {
   image: PropTypes.shape({
     src: PropTypes.string.isRequired,
     height: PropTypes.number.isRequired,
-    width: PropTypes.number.isRequired,
+    width: PropTypes.number.isRequired
   }),
-  pathname: PropTypes.string,
+  pathname: PropTypes.string
 }
 
 SEO.defaultProps = {
   lang: `en`,
   meta: [],
-  description: ``,
+  description: ``
 }
 
 const query = graphql`

@@ -1,0 +1,28 @@
+// LISTS
+
+.u-unordered-list {
+  list-style: none;
+  margin-left: $global-spacing-sm;
+
+  li::before {
+    content: '\2022';
+    color: $color-hot-pink;
+    font-weight: bold;
+    display: inline-block;
+    width: 1.4rem;
+    margin-left: -1.4rem;
+  }
+
+  li {
+    margin-bottom: 1rem;
+  }
+}
+
+.u-ordered-list {
+  margin-left: $global-spacing-sm;
+
+  &--sublist {
+    list-style-type: lower-alpha;
+    margin-left: $global-spacing-sm;
+  }
+}

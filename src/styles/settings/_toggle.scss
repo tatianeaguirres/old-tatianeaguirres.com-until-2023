@@ -1,0 +1,54 @@
+@import 'themes';
+
+// TOGGLE
+
+.custom-control-input:focus:not(:checked) ~ .custom-control-label::before {
+  border: none;
+  box-shadow: none;
+}
+
+.custom-control-input:focus ~ .custom-control-label::before {
+  box-shadow: none;
+}
+
+.custom-control-input ~ .custom-control-label {
+  outline: none;
+  border: none;
+  box-shadow: none;
+}
+
+.custom-switch .custom-control-label::before {
+  width: 3rem;
+  cursor: pointer;
+}
+
+.custom-control-label::before {
+  height: 1.4rem;
+}
+
+.custom-switch .custom-control-label::after {
+  width: calc(1.5rem - 4px);
+  height: calc(1.4rem - 4px);
+  cursor: pointer;
+}
+
+// light mode
+.custom-control-input ~ .custom-control-label::before {
+  border-color: $color-yellow;
+  background-color: $color-yellow;
+}
+
+.custom-switch .custom-control-input ~ .custom-control-label::after {
+  background-color: $color-white;
+}
+
+// dark mode
+.custom-control-input:checked ~ .custom-control-label::before {
+  border-color: $color-dark-gray;
+  background-color: $color-dark-gray;
+}
+
+.custom-switch .custom-control-input:checked ~ .custom-control-label::after {
+  background-color: $color-rose-gold;
+  transform: translateX(1.5rem);
+}

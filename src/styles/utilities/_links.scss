@@ -1,0 +1,36 @@
+// LINKS
+
+a.u-link {
+  text-decoration: none;
+  line-height: $font-line-height-body;
+  font-weight: $font-weight-regular;
+  cursor: pointer;
+  display: inline-block;
+  color: $color-pink;
+
+  small {
+    color: $color-pink;
+  }
+}
+
+a.u-link:after {
+  display: block;
+  content: '';
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out;
+  color: $color-pink;
+  border-bottom: 0.1rem solid $color-pink;
+}
+
+a.u-link:hover:after,
+a.u-link:focus:after {
+  transform: scaleX(1);
+  transform-origin: 0% 50%;
+}
+
+a.u-anchor {
+  display: block;
+  position: relative;
+  top: -250px;
+  visibility: hidden;
+}

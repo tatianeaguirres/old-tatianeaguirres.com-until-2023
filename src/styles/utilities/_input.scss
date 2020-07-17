@@ -1,0 +1,19 @@
+// INPUT
+
+input.u-input {
+  display: block;
+  width: 100%;
+  height: calc(1.5rem + 0.5rem + 0.2rem);
+  padding: $global-spacing-sm;
+  font-size: $font-size-body;
+  font-weight: $font-weight-regular;
+  line-height: $font-line-height-body;
+  background-color: transparent;
+  background-clip: padding-box;
+  border-radius: 0.2rem;
+  transition: all 0.4s ease-in-out;
+  border: 0.1rem solid $color-yellow;
+  &:focus {
+    box-shadow: 0 0 1rem 0.1rem $color-yellow;
+  }
+}

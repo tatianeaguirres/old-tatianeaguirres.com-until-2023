@@ -1,13 +1,13 @@
 const path = require(`path`)
 const { createFilePath } = require(`gatsby-source-filesystem`)
 
-const requiresTemplate = [`blog`, `projects`]
+const requiresTemplate = [`blog`]
 
 const getContentType = node =>
   node.fileAbsolutePath.match(/content(.*)/)[0].split(`/`)[1]
 
 exports.onCreateNode = ({ node, getNode, actions }) => {
-  if (node.internal.type === "MarkdownRemark") {
+  if (node.internal.type === 'MarkdownRemark') {
     const contentType = getContentType(node)
     const path = `content/${contentType}/`
     const { createNodeField } = actions
@@ -17,7 +17,7 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
       createNodeField({
         node,
         name: `templatePath`,
-        value: `./src/templates/${contentType}-post.js`,
+        value: `./src/templates/${contentType}-post.js`
       })
     }
   }
@@ -50,8 +50,8 @@ exports.createPages = async ({ graphql, actions }) => {
         context: {
           //   Data passed to context is available in page queries as graphql variables
           slug: node.fields.slug,
-          templatePath: node.fields.templatePath,
-        },
+          templatePath: node.fields.templatePath
+        }
       })
     }
   })

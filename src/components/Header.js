@@ -1,9 +1,8 @@
-import React from "react"
-import { Container } from "react-bootstrap"
-import Navbar from "./Navbar"
+import React from 'react'
+import Navbar from './Navbar/Navbar'
 
 export default () => (
-  <Container fluid className="px-0">
+  <header>
     <Navbar />
-  </Container>
+  </header>
 )

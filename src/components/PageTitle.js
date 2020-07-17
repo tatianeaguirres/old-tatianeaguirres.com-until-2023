@@ -1,10 +1,7 @@
-import React from "react"
-import { Jumbotron } from "react-bootstrap"
+import React from 'react'
 
 export default ({ title, children }) => (
-  <Jumbotron className="bg-none pt-4 mb-5 pb-0">
-    <h1>
-      {title}&nbsp;<span>{children}</span>&nbsp;
-    </h1>
-  </Jumbotron>
+  <h2 className='u-margin-bottom-md'>
+    {title}&nbsp;<span>{children}</span>&nbsp;
+  </h2>
 )

@@ -1,13 +1,12 @@
-import React, { useState } from "react"
-import { graphql } from "gatsby"
-import { PageLayout, PageTitle, BlogLink } from "../components"
-import { SEO, Utils } from "../utils"
-import { Container, Form, FormControl } from "react-bootstrap"
+import React, { useState } from 'react'
+import { graphql } from 'gatsby'
+import { PageLayout, PageTitle, BlogLink } from '../components'
+import { SEO, Utils } from '../utils'
 
 export default ({ data }) => {
   const [state, setState] = useState({
     filteredData: [],
-    query: "",
+    query: ''
   })
 
   const allFeaturedImages = data.allFile.edges || []
@@ -28,49 +27,42 @@ export default ({ data }) => {
         (description && description.toLowerCase().includes(stdQuery)) ||
         title.toLowerCase().includes(stdQuery) ||
         author.toLowerCase().includes(stdQuery) ||
-        (tags && tags.join("").toLowerCase().includes(stdQuery))
+        (tags && tags.join('').toLowerCase().includes(stdQuery))
       )
     })
 
     setState({
       query,
-      filteredData,
+      filteredData
     })
   }
 
   const { filteredData, query } = state
-  const filteredPosts = query !== "" ? filteredData : allPosts
+  const filteredPosts = query !== '' ? filteredData : allPosts
 
   return (
     <PageLayout>
-      <SEO title="Blog" />
-      <PageTitle title="My Blog" />
-      <Container className="px-5 mb-5 text-center">
-        <Form className="aurebesh blog-filter">
-          <FormControl
-            className="bg-none search"
-            type="text"
-            placeholder="Search"
-            onChange={handleChange}
-          />
-        </Form>
-      </Container>
-      <Container
-        fluid
-        className="p-3 w-auto text-left d-flex flex-wrap justify-content-center"
-      >
-        {filteredPosts.map(({ node }) => (
-          <div key={node.id} className="p-3">
-            <BlogLink
-              to={node.fields.slug}
-              featuredImage={featuredImageMap[node.fields.slug]}
-              title={node.frontmatter.title}
-              subtitle={node.frontmatter.date}
-              excerpt={node.excerpt}
-            />
-          </div>
-        ))}
-      </Container>
+      <SEO title='Blog' />
+      <PageTitle title='Blog' />
+      <form className='u-margin-bottom-lg'>
+        <input
+          className='u-input'
+          type='text'
+          placeholder='Search'
+          onChange={handleChange}
+        />
+      </form>
+      {filteredPosts.map(({ node }) => (
+        <BlogLink
+          key={node.id}
+          to={node.fields.slug}
+          featuredImage={featuredImageMap[node.fields.slug]}
+          title={node.frontmatter.title}
+          date={node.frontmatter.date}
+          description={node.frontmatter.description}
+          tags={node.frontmatter.tags}
+        />
+      ))}
     </PageLayout>
   )
 }

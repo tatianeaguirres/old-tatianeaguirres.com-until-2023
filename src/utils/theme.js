@@ -1,28 +1,16 @@
-import React, { Component } from "react"
-import { Howl } from "howler"
-
-const vaderAudio = new Howl({
-  src: ["../../sounds/Darth-Vader.mp3"],
-  volume: 0.2,
-  format: ["mp3"],
-})
-const r2d2Audio = new Howl({
-  src: ["../../sounds/R2-D2.mp3"],
-  volume: 0.2,
-  format: ["mp3"],
-})
+import React, { Component } from 'react'
 
 const defaultState = {
   dark: false,
   toString: () => `light`,
-  toggleDark: () => {},
+  toggleDark: () => {}
 }
 
 const ThemeContext = React.createContext(defaultState)
 
 class ThemeProvider extends Component {
   state = {
-    dark: false,
+    dark: false
   }
 
   toString = () => (this.state.dark ? `dark` : `light`)
@@ -30,9 +18,6 @@ class ThemeProvider extends Component {
   toggleDark = () => {
     let dark = !this.state.dark
     this.setState({ dark })
-    vaderAudio.stop()
-    r2d2Audio.stop()
-    dark ? vaderAudio.play() : r2d2Audio.play()
   }
 
   render() {
@@ -43,7 +28,7 @@ class ThemeProvider extends Component {
         value={{
           dark,
           toggleDark: this.toggleDark,
-          toString: this.toString,
+          toString: this.toString
         }}
       >
         {children}

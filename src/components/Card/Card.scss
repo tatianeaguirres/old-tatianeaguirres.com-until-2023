@@ -1,0 +1,58 @@
+@import '../../styles/settings/spacing';
+@import '../../styles/settings/colors';
+@import '../../styles/settings/media';
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  margin-bottom: $global-spacing-md;
+
+  @include screen-tablet-portrait-and-bigger {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
+.cards a {
+  text-decoration: none;
+
+  &:hover h3,
+  &:focus h3 {
+    color: $color-pink;
+  }
+}
+
+.cards__card {
+  height: 100%;
+  width: 100%;
+  max-width: 250px;
+  min-height: 222px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: $global-spacing-sm;
+  margin-bottom: $global-spacing-xs;
+  border: 0.1rem solid transparent;
+  border-radius: 0.2rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.cards__card p {
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.cards__card:hover .cards__card-icon,
+.cards__card:focus .cards__card-icon {
+  transform: rotate(20deg);
+}
+
+.cards__card-icon {
+  height: 6rem;
+  width: 6rem;
+  margin-bottom: $global-spacing-xs;
+  transition: all 0.4s ease-in-out;
+}

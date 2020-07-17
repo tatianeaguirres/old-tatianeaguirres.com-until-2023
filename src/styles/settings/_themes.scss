@@ -1,0 +1,246 @@
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';
+@import 'colors';
+
+/*
+ * Theme definitions
+ */
+
+$themes: (
+  light: (
+    backgroundColor: transparent,
+    footerBackground: $color-ice-pink,
+    navBackground: $color-ice-pink,
+    textColor: $color-gray-800,
+    cardTextColor: $color-black,
+    linkNav: $color-pink,
+    linkHover: rgba($color-yellow, 0.25),
+    heartColor: $color-pink,
+    titleColor: $color-pink,
+    borderColor: $color-yellow,
+    contentColor: rgba($color-white, 0.8),
+    markColor: rgba($color-yellow, 0.8),
+    linkColor: $color-pink,
+    backgroundSlider: $color-white,
+    dotsSlider: $color-pink
+  ),
+  dark: (
+    backgroundColor: $color-dark-gray,
+    footerBackground: $color-gray-700,
+    navBackground: $color-gray-700,
+    linkNav: $color-hot-pink,
+    linkHover: rgba($color-rose-gold, 0.25),
+    textColor: $color-gray-300,
+    cardTextColor: $color-white,
+    titleColor: $color-hot-pink,
+    heartColor: $color-light-pink,
+    borderColor: $color-rose-gold,
+    contentColor: rgba($color-dark-gray, 0.8),
+    markColor: rgba($color-light-pink, 0.8),
+    linkColor: $color-hot-pink,
+    backgroundSlider: $color-dark-gray,
+    dotsSlider: $color-hot-pink
+  )
+);
+
+/*
+ * Implementation of themes
+ */
+@mixin themify($themes) {
+  @each $theme, $map in $themes {
+    .theme-#{$theme} & {
+      $theme-map: () !global;
+      @each $key, $submap in $map {
+        $value: map-get(map-get($themes, $theme), '#{$key}');
+        $theme-map: map-merge(
+          $theme-map,
+          (
+            $key: $value
+          )
+        ) !global;
+      }
+      @content;
+      $theme-map: null !global;
+    }
+  }
+}
+
+@function themed($key) {
+  @return map-get($theme-map, $key);
+}
+
+/** CUSTOM THEMING BEGIN */
+
+.navbar {
+  @include themify($themes) {
+    border-bottom: 0.1rem solid themed('borderColor');
+  }
+}
+
+.navbar,
+.footer {
+  @include themify($themes) {
+    background: themed('navBackground');
+  }
+}
+
+.theme-light .navbar,
+.theme-light .footer {
+  @include screen-tablet-portrait-and-bigger {
+    background: rgba($color-ice-pink, 0.8);
+  }
+}
+
+.nav-links.navbar-nav {
+  @include themify($themes) {
+    @include screen-tablet-portrait-and-smaller {
+      background: themed('navBackground') !important;
+      align-items: center;
+    }
+  }
+}
+
+.footer {
+  @include themify($themes) {
+    border-top: 0.1rem solid themed('borderColor');
+  }
+}
+
+.nav-links a {
+  @include themify($themes) {
+    color: themed('linkNav') !important;
+    &:hover,
+    &:focus {
+      background: themed('linkHover');
+    }
+  }
+}
+
+a.navbar-brand:hover,
+a.navbar-brand:focus,
+a.nav-link:hover,
+a.nav-link:focus {
+  @include themify($themes) {
+    text-shadow: 0.2rem 0.2rem 0.4rem themed('linkNav');
+  }
+}
+
+.footer__heart {
+  @include themify($themes) {
+    color: themed('heartColor');
+  }
+}
+
+input.u-input {
+  @include themify($themes) {
+    border: 0.1rem solid themed('borderColor');
+    color: themed('textColor');
+    &:focus {
+      box-shadow: 0 0 1rem 0.1rem themed('borderColor');
+    }
+  }
+}
+
+.footer__avatar img,
+a.blog-link:hover,
+a.blog-link:focus {
+  @include themify($themes) {
+    border: 0.1rem solid themed('borderColor');
+  }
+}
+
+.footer__avatar img:hover,
+.footer__avatar img:focus {
+  @include themify($themes) {
+    box-shadow: 0 0 2.2rem 0.3rem themed('borderColor');
+  }
+}
+
+h1,
+h2,
+a.blog-link:hover h3,
+a.blog-link:focus h3,
+a.cards__card:hover h3,
+a.cards__card:focus h3 {
+  @include themify($themes) {
+    color: themed('titleColor');
+  }
+}
+
+a.blog-link:hover p,
+a.blog-link:focus p,
+a.blog-link:hover small,
+a.blog-link:focus small {
+  @include themify($themes) {
+    color: themed('cardTextColor');
+  }
+}
+
+.u-container {
+  @include themify($themes) {
+    background: themed('backgroundColor');
+  }
+}
+
+.u-content,
+.keen-slider__slide p {
+  @include themify($themes) {
+    background: themed('contentColor') !important;
+  }
+}
+
+p,
+small,
+h3,
+h4,
+h5,
+h6 {
+  @include themify($themes) {
+    color: themed('textColor');
+  }
+}
+
+mark {
+  @include themify($themes) {
+    background: themed('markColor');
+  }
+}
+
+a.u-link {
+  @include themify($themes) {
+    color: themed('linkColor');
+    small {
+      color: themed('linkColor');
+    }
+    &:after {
+      color: themed('linkColor');
+      border-bottom: 0.1rem solid themed('linkColor');
+    }
+  }
+}
+
+.u-logo {
+  @include themify($themes) {
+    color: themed('titleColor');
+  }
+}
+
+.keen-slider__slide {
+  @include themify($themes) {
+    background: themed('backgroundSlider');
+  }
+}
+
+.slider .dot {
+  @include themify($themes) {
+    background: rgba(themed('dotsSlider'), 0.4);
+    &.active {
+      background: themed('dotsSlider');
+    }
+  }
+}
+
+.slider .dots button:focus {
+  @include themify($themes) {
+    border: 0.1rem solid themed('dotsSlider');
+  }
+}

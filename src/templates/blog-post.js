@@ -1,15 +1,29 @@
-import React from "react"
-import { graphql } from "gatsby"
-import PostTemplate from "./post-template"
+import React from 'react'
+import { graphql } from 'gatsby'
+import PostTemplate from './post-template'
+import clockIcon from '../../assets/svg/clock.svg'
 
 const SubTitle = ({ ttr, date, author }) => (
-  <h5 className="text-muted mb-5">
-    Time to read: {ttr} <small>min</small> | {date} | {author}
-  </h5>
+  <p className='u-margin-bottom-md'>
+    <img
+      src={clockIcon}
+      className='posts__clock-icon'
+      alt='clock'
+      title='clock'
+      height='30px'
+      width='30px'
+    />
+    <small>
+      &nbsp; Time to read: {ttr} min | {date} | by {author}
+    </small>
+  </p>
 )
 
 export default ({ data }) => {
-  const post = data.markdownRemark
+  const post = data.markdownRemark || []
+  const image = post.frontmatter.image
+    ? post.frontmatter.image.childImageSharp.resize
+    : null
   return (
     <PostTemplate
       title={post.frontmatter.title}
@@ -20,8 +34,10 @@ export default ({ data }) => {
           author={post.frontmatter.author}
         />
       }
-      excerpt={post.excerpt}
+      description={post.frontmatter.description || post.excerpt}
       html={post.html}
+      image={image}
+      pathname={post.fields.slug}
     />
   )
 }
@@ -34,8 +50,21 @@ export const query = graphql`
         title
         author
         date(formatString: "DD MMMM, YYYY")
+        description
+        image: featured {
+          childImageSharp {
+            resize(width: 650) {
+              src
+              height
+              width
+            }
+          }
+        }
       }
-      excerpt
+      fields {
+        slug
+      }
+      excerpt(pruneLength: 160)
       timeToRead
     }
   }
