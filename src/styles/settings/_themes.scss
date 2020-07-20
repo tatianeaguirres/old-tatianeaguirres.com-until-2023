@@ -21,7 +21,8 @@ $themes: (
     markColor: rgba($color-yellow, 0.8),
     linkColor: $color-pink,
     backgroundSlider: $color-white,
-    dotsSlider: $color-pink
+    dotsSlider: $color-pink,
+    codeColor: $color-jam-pink
   ),
   dark: (
     backgroundColor: $color-dark-gray,
@@ -38,7 +39,8 @@ $themes: (
     markColor: rgba($color-light-pink, 0.8),
     linkColor: $color-hot-pink,
     backgroundSlider: $color-dark-gray,
-    dotsSlider: $color-hot-pink
+    dotsSlider: $color-hot-pink,
+    codeColor: $color-light-pink
   )
 );
 
@@ -193,9 +195,19 @@ small,
 h3,
 h4,
 h5,
-h6 {
+h6,
+ul,
+ol,
+li {
   @include themify($themes) {
     color: themed('textColor');
+  }
+}
+
+pre,
+code {
+  @include themify($themes) {
+    color: themed('codeColor');
   }
 }
 

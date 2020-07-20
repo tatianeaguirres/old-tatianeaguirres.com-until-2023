@@ -1,4 +1,5 @@
 @import '../settings/media';
+@import '../settings/colors';
 
 // VISIBILITY
 
@@ -32,4 +33,8 @@
 .u-column-reserve {
   display: flex;
   flex-direction: column-reverse;
+}
+
+.u-outline:focus {
+  outline: 1px solid $color-pink;
 }

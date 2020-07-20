@@ -12,17 +12,19 @@ export default ({ data }) => {
       <PageTitle title='How wonderful to see you here. You are very welcome!' />
       <Card />
       <h2 className='u-margin-bottom-sm'>Last posts</h2>
-      {lastPosts.slice(Math.max(lastPosts.length - 3, 0)).map(({ node }) => (
-        <BlogLink
-          key={node.id}
-          to={node.fields.slug}
-          title={node.frontmatter.title}
-          date={node.frontmatter.date}
-          excerpt={node.excerpt}
-          description={node.frontmatter.description}
-          tags={node.frontmatter.tags}
-        />
-      ))}
+      <div className='u-column-reserve'>
+        {lastPosts.slice(Math.max(lastPosts.length - 3, 0)).map(({ node }) => (
+          <BlogLink
+            key={node.id}
+            to={node.fields.slug}
+            title={node.frontmatter.title}
+            date={node.frontmatter.date}
+            excerpt={node.excerpt}
+            description={node.frontmatter.description || node.excerpt}
+            tags={node.frontmatter.tags}
+          />
+        ))}
+      </div>
     </PageLayout>
   )
 }
@@ -43,7 +45,7 @@ export const query = graphql`
           fields {
             slug
           }
-          excerpt
+          excerpt(pruneLength: 200)
         }
       }
     }
