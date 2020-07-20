@@ -59,7 +59,7 @@ export default ({ data }) => {
           featuredImage={featuredImageMap[node.fields.slug]}
           title={node.frontmatter.title}
           date={node.frontmatter.date}
-          description={node.frontmatter.description}
+          description={node.frontmatter.description || node.excerpt}
           tags={node.frontmatter.tags}
         />
       ))}
@@ -87,7 +87,7 @@ export const query = graphql`
           fields {
             slug
           }
-          excerpt
+          excerpt(pruneLength: 200)
         }
       }
     }

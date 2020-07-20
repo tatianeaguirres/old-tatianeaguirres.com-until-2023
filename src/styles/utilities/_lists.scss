@@ -2,7 +2,7 @@
 
 .u-unordered-list {
   list-style: none;
-  margin-left: $global-spacing-sm;
+  margin: 0 0 $global-spacing-sm $global-spacing-sm;
 
   li::before {
     content: '\2022';
@@ -14,15 +14,20 @@
   }
 
   li {
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  ul li {
+    margin-left: $global-spacing-md;
+    list-style: none;
   }
 }
 
 .u-ordered-list {
-  margin-left: $global-spacing-sm;
+  margin: 0 0 $global-spacing-sm $global-spacing-sm;
 
   &--sublist {
     list-style-type: lower-alpha;
-    margin-left: $global-spacing-sm;
+    margin-left: $global-spacing-md;
   }
 }
