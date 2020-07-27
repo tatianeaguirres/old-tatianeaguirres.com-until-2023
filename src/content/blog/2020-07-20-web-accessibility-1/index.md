@@ -63,18 +63,18 @@ The default keyboard navigation must be logical and intuitive. This generally me
 Main keys used for navigation:
 
 <ul class="u-unordered-list">
-<li><code>Tab:</code> Moves focus to the next focusable element.</li>
-<li><code>Shift + Tab:</code> Moves focus to the previous focusable element.</li>
-<li><code>Enter or Space:</code> Buttons can be activated with both key commands.</li>
-<li><code>Enter:</code> Access the link's destination of an anchor element, expand the menu (optional) and select an option.</li>
-<li><code>Spacebar:</code></li> 
+<li><mark>Tab:</mark> Moves focus to the next focusable element.</li>
+<li><mark>Shift + Tab:</mark> Moves focus to the previous focusable element.</li>
+<li><mark>Enter or Space:</mark> Buttons can be activated with both key commands.</li>
+<li><mark>Enter:</mark> Access the link's destination of an anchor element, expand the menu (optional) and select an option.</li>
+<li><mark>Spacebar:</mark></li> 
 <ul>
 <li>Checkboxes should be used when one or more options can be selected.</li>
 <li>Expands the dropdown menus.</li>
 <li>Minimize horizontal scrolling.</li>
 </ul>
-<li><code>Esc:</code> Close modals.</li>
-<li><code>Arrows:</code> Used to navigate between menu options or to scroll the page.</li>
+<li><mark>Esc:</mark> Close modals.</li>
+<li><mark>Arrows:</mark> Used to navigate between menu options or to scroll the page.</li>
 </ul>
 </section>
 
@@ -114,14 +114,14 @@ button:focus {
 
 The tabindex attribute defines the navigation order for focusable elements (typically links and form controls) within a page. It can also be used to define whether elements should be focusable or not.
 
-Links and form controls have tabindex by default, but it can be used when the default tab order is not ideal or when you need to give focus to elements that are not natively focusable, such as <code>div</code>, <code>span</code>, <code>p</code>, and <code>a</code> with no href.
+Links and form controls have tabindex by default, but it can be used when the default tab order is not ideal or when you need to give focus to elements that are not natively focusable, such as <mark>div</mark>, <mark>span</mark>, <mark>p</mark>, and <mark>a</mark> with no href.
 
 The three distinct uses of tabindex:
 
 <ul  class="u-unordered-list">
-<li><code>tabindex="1"</code> (or any number greater than 1) defines an explicit tab order. WARNING: This is almost always a bad idea, the better solution is to fix the navigation order by restructuring the HTML.</li>
-<li><code>tabindex="0"</code> allows elements besides links and form elements to receive keyboard focus. It does not change the tab order but places the element in the logical navigation flow as if it were a link on the page.</li>
-<li><code>tabindex="-1"</code> allows things besides links and form elements to receive "programmatic" focus, meaning focus can be set to the element through scripting, links, etc.</li>
+<li><mark>tabindex="1"</mark> (or any number greater than 1) defines an explicit tab order. WARNING: This is almost always a bad idea, the better solution is to fix the navigation order by restructuring the HTML.</li>
+<li><mark>tabindex="0"</mark> allows elements besides links and form elements to receive keyboard focus. It does not change the tab order but places the element in the logical navigation flow as if it were a link on the page.</li>
+<li><mark>tabindex="-1"</mark> allows things besides links and form elements to receive "programmatic" focus, meaning focus can be set to the element through scripting, links, etc.</li>
 </ul>
 </section>
 <section style="position: relative;">

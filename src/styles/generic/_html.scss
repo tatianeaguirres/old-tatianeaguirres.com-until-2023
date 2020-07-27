@@ -89,3 +89,7 @@ body {
   transition: border 0.4s ease-in-out, color 0.4s ease-in-out,
     background 0.4s ease-in-out, shadow 0.2s ease-in-out;
 }
+
+mark {
+  background-color: rgba($color-yellow, 0.8);
+}

@@ -167,26 +167,16 @@ It's important to follow some indispensable patterns of Semantic HTML for this:
 Example:
 
 ```html
-<h1>Italian Restaurant Menu</h1>
-(just one h1, describing the whole content)
-<h2>Pasta</h2>
-(first item level, the most important after the main title)
-<h3>Carbonara</h3>
-(subitem of heading 2)
-<h3>Pesto</h3>
-(subitem of heading 2)
-<h3>Lasagna</h3>
-(subitem of heading 2)
-<h4>Four Cheese</h4>
-(subitem of heading 3)
-<h4>Bolognese</h4>
-(subitem of heading 3)
-<h2>Risotto</h2>
-(first item level, the most important after the main title)
-<h3>Mushroom</h3>
-(subitem of heading 2)
-<h3>Garlic Parmesan</h3>
-(subitem of heading 2)
+<h1>Italian Restaurant Menu (just one h1, describing the whole content)</h1>
+<h2>Pasta (first item level, the most important after the main title)</h2>
+<h3>Carbonara (subitem of heading 2)</h3>
+<h3>Pesto (subitem of heading 2)</h3>
+<h3>Lasagna (subitem of heading 2)</h3>
+<h4>Four Cheese (subitem of heading 3)</h4>
+<h4>Bolognese (subitem of heading 3)</h4>
+<h2>Risotto (first item level, the most important after the main title)</h2>
+<h3>Mushroom (subitem of heading 2)</h3>
+<h3>Garlic Parmesan (subitem of heading 2)</h3>
 ```
 
 </section>
