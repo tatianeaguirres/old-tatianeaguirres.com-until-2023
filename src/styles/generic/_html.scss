@@ -25,16 +25,23 @@ body {
   color: $color-gray-800;
 }
 
+pre {
+  background-color: $color-dark-gray;
+  padding: $global-spacing-sm;
+}
+
+pre,
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+  color: $color-light-pink;
 }
 
 p {
   font-size: $font-size-body;
   line-height: $font-line-height-body;
   font-weight: $font-weight-regular;
-  text-align: justify;
+  text-align: left;
   margin-bottom: $global-spacing-sm;
   color: $color-gray-800;
 }

@@ -22,7 +22,7 @@ $themes: (
     linkColor: $color-pink,
     backgroundSlider: $color-white,
     dotsSlider: $color-pink,
-    codeColor: $color-jam-pink
+    codeBackground: $color-dark-gray
   ),
   dark: (
     backgroundColor: $color-dark-gray,
@@ -40,7 +40,7 @@ $themes: (
     linkColor: $color-hot-pink,
     backgroundSlider: $color-dark-gray,
     dotsSlider: $color-hot-pink,
-    codeColor: $color-light-pink
+    codeBackground: $color-black
   )
 );
 
@@ -204,10 +204,9 @@ li {
   }
 }
 
-pre,
-code {
+pre {
   @include themify($themes) {
-    color: themed('codeColor');
+    background-color: themed('codeBackground');
   }
 }
 
