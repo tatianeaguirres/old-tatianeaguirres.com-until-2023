@@ -1,17 +1,7 @@
 // LISTS
 
 .u-unordered-list {
-  list-style: none;
   margin: 0 0 $global-spacing-sm $global-spacing-sm;
-
-  li::before {
-    content: '\2022';
-    color: $color-hot-pink;
-    font-weight: bold;
-    display: inline-block;
-    width: 1.4rem;
-    margin-left: -1.4rem;
-  }
 
   li {
     margin-bottom: 0.5rem;
@@ -19,7 +9,6 @@
 
   ul li {
     margin-left: $global-spacing-md;
-    list-style: none;
   }
 }
 
