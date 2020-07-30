@@ -40,7 +40,7 @@ const bottomGradient = {
 
 function BottomImage() {
   return (
-    <div className='u-desktop-only'>
+    <div>
       <div style={bottomImageCircle}>
         <svg height='150' width='400'>
           <defs>

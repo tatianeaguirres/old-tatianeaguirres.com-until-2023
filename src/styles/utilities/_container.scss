@@ -3,7 +3,7 @@
 .u-container {
   margin-top: 7rem;
   padding: $global-spacing-md $global-spacing-md $global-spacing-xlg;
-  background: transparent;
+  background: $color-white;
 
   @include screen-mobile-plus {
     padding: $global-spacing-xlg 10%;
@@ -11,6 +11,10 @@
 
   @include screen-tablet-portrait {
     padding: $global-spacing-xlg 15%;
+  }
+
+  @include screen-tablet-portrait-and-bigger {
+    background: transparent;
   }
 
   @include screen-tablet-landscape {

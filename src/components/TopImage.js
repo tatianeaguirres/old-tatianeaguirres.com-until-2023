@@ -32,7 +32,7 @@ const gradient = {
 
 function TopImage() {
   return (
-    <div className='u-desktop-only'>
+    <div>
       <div style={topImage}>
         <svg
           viewBox='0 0 500 150'

@@ -52,4 +52,11 @@
     width: 4rem;
     text-align: center;
   }
+
+  .nav-links.navbar-nav {
+    @include screen-tablet-portrait-and-smaller {
+      background: $color-ice-pink;
+      align-items: center;
+    }
+  }
 }

@@ -1,5 +1,6 @@
 @import '../../styles/settings/colors';
 @import '../../styles/settings/spacing';
+@import '../../styles/settings/media';
 
 a.blog-link {
   text-decoration: none;
@@ -33,7 +34,12 @@ a.blog-link {
 
 .blog-link__post {
   width: 100%;
-  padding: 1rem 2rem;
+  margin-bottom: $global-spacing-sm;
+
+  @include screen-tablet-portrait-and-bigger {
+    margin-bottom: 0;
+    padding: $global-spacing-xs $global-spacing-sm;
+  }
 }
 
 .blog-link__icon {

@@ -7,6 +7,7 @@
 
 $themes: (
   light: (
+    mobileBackgroundColor: $color-white,
     backgroundColor: transparent,
     footerBackground: $color-ice-pink,
     navBackground: $color-ice-pink,
@@ -26,6 +27,7 @@ $themes: (
     disqusBackground: transparent
   ),
   dark: (
+    mobileBackgroundColor: $color-dark-gray,
     backgroundColor: $color-dark-gray,
     footerBackground: $color-gray-700,
     navBackground: $color-gray-700,
@@ -98,7 +100,6 @@ $themes: (
   @include themify($themes) {
     @include screen-tablet-portrait-and-smaller {
       background: themed('navBackground') !important;
-      align-items: center;
     }
   }
 }
@@ -181,14 +182,17 @@ a.blog-link:focus small {
 
 .u-container {
   @include themify($themes) {
-    background: themed('backgroundColor');
+    background: themed('mobileBackgroundColor');
+    @include screen-tablet-portrait-and-bigger {
+      background: themed('backgroundColor');
+    }
   }
 }
 
 .u-content,
 .keen-slider__slide p {
   @include themify($themes) {
-    background: themed('contentColor') !important;
+    background: themed('contentColor');
   }
 }
 
