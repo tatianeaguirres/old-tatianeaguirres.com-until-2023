@@ -37,18 +37,25 @@ code {
   color: $color-light-pink;
 }
 
+pre {
+  margin-bottom: $global-spacing-sm;
+}
+
 p {
   font-size: $font-size-body;
   line-height: $font-line-height-body;
   font-weight: $font-weight-regular;
-  text-align: left;
   margin-bottom: $global-spacing-sm;
-  color: $color-gray-800;
 }
 
 small {
   font-size: 90%;
-  text-align: justify;
+}
+
+p,
+small,
+time,
+mark {
   color: $color-gray-800;
 }
 
