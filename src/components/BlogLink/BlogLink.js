@@ -8,7 +8,7 @@ export default props => {
     <Link className='blog-link' to={props.to} title={props.title}>
       <article className='blog-link__post'>
         <h3>{props.title}</h3>
-        <small>{props.date}</small>
+        <time>{props.date}</time>
         <p>{props.description}</p>
         <small className='blog-link__tags'>
           <img

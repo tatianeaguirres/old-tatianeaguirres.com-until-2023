@@ -174,7 +174,9 @@ a.cards__card:focus h3 {
 a.blog-link:hover p,
 a.blog-link:focus p,
 a.blog-link:hover small,
-a.blog-link:focus small {
+a.blog-link:focus small,
+a.blog-link:hover time,
+a.blog-link:focus time {
   @include themify($themes) {
     color: themed('cardTextColor');
   }
@@ -198,6 +200,7 @@ a.blog-link:focus small {
 
 p,
 small,
+time,
 h3,
 h4,
 h5,
