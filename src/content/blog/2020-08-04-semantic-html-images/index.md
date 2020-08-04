@@ -8,7 +8,7 @@ featured: 'images/featured.jpg'
 
 The HTML <mark>img</mark> tag represents an image in an HTML document. It's used for embedding the image into the document.
 
-In most of the cases images are used to make the website's content more pleasant or to demonstrate an impression or emotion to the user. However, there are other factors besides "visually pleasing" that contribute to your user having a great experience on your website. In this post you will learn in 6 steps how we use the image element semantically for all users, from the user of mobile devices to the user of screen readers.
+In most of the cases, images are used to make the website's content more pleasant or to demonstrate an impression or emotion to the user. However, there are other factors besides "visually pleasing" that contribute to your user having a great experience on your website. In this post, you will learn in 6 steps how we use the image element semantically for all users, from the user of mobile devices to the user of screen readers.
 
 ### Table of Contents
 
@@ -50,15 +50,15 @@ In most of the cases images are used to make the website's content more pleasant
 
 ### 1. HTML img Element
 
-The basic sintax of an image element is:
+The basic syntax of an image element is:
 
 ```html
 <img src="" alt="" />
 ```
 
-Where the <mark>src</mark> attribute is required, and contains the path to the image you want to embed.
+Where the <mark>src</mark> attribute is required and contains the path to the image you want to embed.
 
-The <mark>alt</mark> attribute holds an alternative text of the image, which isn't mandatory but is incredibly helpful for users who need to use a screen reader to navigate websites. This descriptive text is also displayed when the image can't be displayed or in the event that someone views your website with images disabled in their web browser - common for users using data-roaming on mobile devices.
+The <mark>alt</mark> attribute holds an alternative text of the image, which isn't mandatory but is incredibly helpful for users who need to use a screen reader to navigate websites. This descriptive text is also displayed when the image can't be displayed or if someone views your website with images disabled in their web browser - common for users using data-roaming on mobile devices.
 
 </section>
 
@@ -74,7 +74,7 @@ There are 7 specific attributes for the img tag:
     <mark>src</mark> is required and specifies the URL of the image to be embedded into the image.
   </li>
   <li>
-    <mark>alt</mark> isn't required because there are few cases when you don't need to use it (as in the case of decorative images), but in most of the cases it's very important in terms of accessibility and you must describe the image clearly.
+    <mark>alt</mark> isn't required because there are few cases when you don't need to use it (as in the case of decorative images), but in most cases, it's very important in terms of accessibility and you must describe the image clearly.
   </li>
   <li>
     <mark>crossorigin</mark> isn't required and is a CORS settings attribute. The purpose of the crossorigin attribute is to allow you to configure the CORS requests for the element's fetched data. If this attribute is not specified, CORS is not used at all. An invalid keyword and an empty string will be handled as the anonymous value.
@@ -90,7 +90,7 @@ There are 7 specific attributes for the img tag:
   </li>
 </ul>
 
-You can also see the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes" class="u-link" target="_blank" rel="noreferrer noopener">full list of the Global Attributes</a>, which contains attributes accepted in the img tag and in all HTML 5 tags.
+You can also see the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes" class="u-link" target="_blank" rel="noreferrer noopener">full list of the Global Attributes</a>, which contains attributes accepted in the img tag and all HTML 5 tags.
 
 </section>
 
@@ -99,7 +99,7 @@ You can also see the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/
 
 ### 3. Accessibility
 
-Images make the content of the site more pleasant and help people with cognitive and learning disabilities to understand more easily. However, images can be a barrier for users with low vision or blind, who use screen readers. Accessible images are essential to ensure a good experience for users of screen readers or speech input software, as well to help users of mobile devices that can disable images when using data-roaming.
+Images make the content of the site more pleasant and help people with cognitive and learning disabilities to understand more easily. However, images can be a barrier for users with low vision or blind, who use screen readers. Accessible images are essential to ensure a good experience for users of screen readers or speech input software, as well as to help users of mobile devices that can disable images when using data-roaming.
 
 You can find tips and tricks to make your images really accessible on the previous <a href="https://www.tatianeaguirres.com/blog/2020-07-27-web-accessibility-2/#images" class="u-link" target="_blank" rel="noreferrer noopener">post about Accessibility to Screen Readers Users</a> on this blog.
 
@@ -139,7 +139,7 @@ Warning: Browsers don't provide any special information on background images to 
 
 ### 5. Linked Images
 
-Linked images, when clicked on, open another web page or URL. You can place the link code around an image when your goal is to implicitly take the user to another place. A good example is using a image as link to social networks, to the website's logo, or to indicate file's download.
+Linked images, when clicked on, open another web page or URL. You can place the link code around an image when your goal is to implicitly take the user to another place. A good example is using an image as a link to social networks, to the website's logo, or to indicate a file's download.
 
 Examples:
 
@@ -193,7 +193,7 @@ With the style above, the image will be scaled according to the browser window's
 
 Resize the browser window to see how the image will scale. Even on the smallest mobile screen, it will be fully responsive.
 
-You can see that I also used the CSS property <mark>object-fit</mark>, that specify how an image should be resized to fit its container. See the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/object-fit" class="u-link" target="_blank" rel="noreferrer noopener">Mozilla Web Docs</a> to learn more about the object-fit property.
+You can see that I also used the CSS property <mark>object-fit</mark>, which specifies how an image should be resized to fit its container. See the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/object-fit" class="u-link" target="_blank" rel="noreferrer noopener">Mozilla Web Docs</a> to learn more about the object-fit property.
 
 </section>
 
