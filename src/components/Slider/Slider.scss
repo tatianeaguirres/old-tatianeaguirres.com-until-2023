@@ -44,7 +44,7 @@
     position: absolute;
     bottom: 0;
     font-size: 1.2rem;
-    background-color: $color-white;
+    background-color: rgba($color-white, 0.8);
 
     @include screen-tablet-portrait-and-bigger {
       font-size: $font-size-body;

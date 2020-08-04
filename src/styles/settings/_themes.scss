@@ -115,7 +115,7 @@ $themes: (
     color: themed('linkNav') !important;
     &:hover,
     &:focus {
-      background: themed('linkHover');
+      background: themed('linkHover') !important;
     }
   }
 }
@@ -125,7 +125,7 @@ a.navbar-brand:focus,
 a.nav-link:hover,
 a.nav-link:focus {
   @include themify($themes) {
-    text-shadow: 0.2rem 0.2rem 0.4rem themed('linkNav');
+    text-shadow: 0.2rem 0.2rem 0.4rem themed('linkNav') !important;
   }
 }
 
@@ -194,7 +194,8 @@ a.blog-link:focus time {
 .u-content,
 .keen-slider__slide p {
   @include themify($themes) {
-    background: themed('contentColor');
+    color: themed('textColor');
+    background-color: themed('contentColor') !important;
   }
 }
 
