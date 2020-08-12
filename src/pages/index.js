@@ -8,7 +8,7 @@ export default ({ data }) => {
 
   return (
     <PageLayout>
-      <SEO title='Home' />
+      <SEO title='Tatiane Aguirres Nogueira' />
       <PageTitle title='How wonderful to see you here. You are very welcome!' />
       <Card />
       <h2 className='u-margin-bottom-sm'>Last posts</h2>

@@ -9,7 +9,10 @@ const SEO = ({ description, lang, meta, image: img, title, pathname }) => {
   const { site } = useStaticQuery(query)
 
   const metaDescription = description || site.siteMetadata.description
-  const image = img && img.src ? `${site.siteMetadata.siteUrl}${img.src}` : null
+  const image =
+    img && img.src
+      ? `${site.siteMetadata.siteUrl}${img.src}`
+      : site.siteMetadata.imageUrl
 
   const canonical = pathname ? `${site.siteMetadata.siteUrl}${pathname}` : null
 
@@ -74,6 +77,7 @@ const query = graphql`
         author
         keywords
         siteUrl
+        imageUrl
       }
     }
   }
