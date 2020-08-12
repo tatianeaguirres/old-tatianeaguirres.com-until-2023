@@ -1,0 +1,19 @@
+// SYNTAX HIGHLIGHTER
+
+.gatsby-highlight pre[class*='language-'].line-numbers {
+  padding-left: $global-spacing-sm;
+}
+
+.gatsby-highlight {
+  background-color: $color-ice-pink;
+  border-radius: 0.3rem;
+  margin-bottom: $global-spacing-sm;
+  padding: $global-spacing-xs;
+  overflow: auto;
+}
+
+.gatsby-highlight pre[class*='language-'].line-numbers {
+  padding: 0;
+  padding-left: $global-spacing-sm;
+  overflow: initial;
+}

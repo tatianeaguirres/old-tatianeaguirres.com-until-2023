@@ -25,22 +25,6 @@ body {
   color: $color-gray-800;
 }
 
-pre {
-  background-color: $color-dark-gray;
-  padding: $global-spacing-sm;
-}
-
-pre,
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-  color: $color-light-pink;
-}
-
-pre {
-  margin-bottom: $global-spacing-sm;
-}
-
 p {
   font-size: $font-size-body;
   line-height: $font-line-height-body;

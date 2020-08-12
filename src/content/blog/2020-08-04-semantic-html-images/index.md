@@ -6,7 +6,7 @@ date: '2020-08-04'
 featured: 'images/featured.jpg'
 ---
 
-The HTML <mark>img</mark> tag represents an image in an HTML document. It's used for embedding the image into the document.
+The HTML `<img>` tag represents an image in an HTML document. It's used for embedding the image into the document.
 
 In most of the cases, images are used to make the website's content more pleasant or to demonstrate an impression or emotion to the user. However, there are other factors besides "visually pleasing" that contribute to your user having a great experience on your website. In this post, you will learn in 6 steps how we use the image element semantically for all users, from the user of mobile devices to the user of screen readers.
 
@@ -56,9 +56,9 @@ The basic syntax of an image element is:
 <img src="" alt="" />
 ```
 
-Where the <mark>src</mark> attribute is required and contains the path to the image you want to embed.
+Where the <code>src</code> attribute is required and contains the path to the image you want to embed.
 
-The <mark>alt</mark> attribute holds an alternative text of the image, which isn't mandatory but is incredibly helpful for users who need to use a screen reader to navigate websites. This descriptive text is also displayed when the image can't be displayed or if someone views your website with images disabled in their web browser - common for users using data-roaming on mobile devices.
+The <code>alt</code> attribute holds an alternative text of the image, which isn't mandatory but is incredibly helpful for users who need to use a screen reader to navigate websites. This descriptive text is also displayed when the image can't be displayed or if someone views your website with images disabled in their web browser - common for users using data-roaming on mobile devices.
 
 </section>
 
@@ -71,22 +71,22 @@ There are 7 specific attributes for the img tag:
 
 <ul class="u-unordered-list">
   <li>
-    <mark>src</mark> is required and specifies the URL of the image to be embedded into the image.
+    <code>src</code> is required and specifies the URL of the image to be embedded into the image.
   </li>
   <li>
-    <mark>alt</mark> isn't required because there are few cases when you don't need to use it (as in the case of decorative images), but in most cases, it's very important in terms of accessibility and you must describe the image clearly.
+    <code>alt</code> isn't required because there are few cases when you don't need to use it (as in the case of decorative images), but in most cases, it's very important in terms of accessibility and you must describe the image clearly.
   </li>
   <li>
-    <mark>crossorigin</mark> isn't required and is a CORS settings attribute. The purpose of the crossorigin attribute is to allow you to configure the CORS requests for the element's fetched data. If this attribute is not specified, CORS is not used at all. An invalid keyword and an empty string will be handled as the anonymous value.
+    <code>crossorigin</code> isn't required and is a CORS settings attribute. The purpose of the crossorigin attribute is to allow you to configure the CORS requests for the element's fetched data. If this attribute is not specified, CORS is not used at all. An invalid keyword and an empty string will be handled as the anonymous value.
   </li>
   <li>
-    <mark>ismap</mark> and <mark>usemap</mark> aren't required and are for image maps. See more about the map tag on <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/map" class="u-link" target="_blank" rel="noreferrer noopener">Mozilla Web Docs</a>.
+    <code>ismap</code> and <code>usemap</code> aren't required and are for image maps. See more about the map tag on <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/map" class="u-link" target="_blank" rel="noreferrer noopener">Mozilla Web Docs</a>.
   </li>
   <li>
-    <mark>width</mark> isn't required and specifies the width of the image.
+    <code>width</code> isn't required and specifies the width of the image.
   </li>
   <li>
-    <mark>height</mark> isn't required and specifies the height of the image.
+    <code>height</code> isn't required and specifies the height of the image.
   </li>
 </ul>
 
@@ -193,7 +193,7 @@ With the style above, the image will be scaled according to the browser window's
 
 Resize the browser window to see how the image will scale. Even on the smallest mobile screen, it will be fully responsive.
 
-You can see that I also used the CSS property <mark>object-fit</mark>, which specifies how an image should be resized to fit its container. See the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/object-fit" class="u-link" target="_blank" rel="noreferrer noopener">Mozilla Web Docs</a> to learn more about the object-fit property.
+You can see that I also used the CSS property <code>object-fit</code>, which specifies how an image should be resized to fit its container. See the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/object-fit" class="u-link" target="_blank" rel="noreferrer noopener">Mozilla Web Docs</a> to learn more about the object-fit property.
 
 </section>
 
