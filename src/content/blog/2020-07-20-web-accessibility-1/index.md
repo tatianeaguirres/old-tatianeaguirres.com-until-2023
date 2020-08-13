@@ -50,7 +50,7 @@ As front-enders, we must use the best accessibility practices and techniques to 
 <span class="u-anchor" id="navigation"></span>
 <h3>1. Navigation</h3>
 
-A keyboard user usually uses the <mark>tab</mark> key to navigate the website, going through interactive elements, such as links, buttons, and forms. In addition to traditional keyboards, some users may use modified keyboards or other hardware that mimics the functionality of a keyboard.
+A keyboard user usually uses the <kbd>tab</kbd> key to navigate the website, going through interactive elements, such as links, buttons, and forms. In addition to traditional keyboards, some users may use modified keyboards or other hardware that mimics the functionality of a keyboard.
 
 The default keyboard navigation must be logical and intuitive. This generally means that it follows the visual flow of the page: left to right, top to bottom - header first, then main navigation, then page navigation (if present), and finally the footer.
 
@@ -63,18 +63,18 @@ The default keyboard navigation must be logical and intuitive. This generally me
 Main keys used for navigation:
 
 <ul class="u-unordered-list">
-<li><mark>Tab:</mark> Moves focus to the next focusable element.</li>
-<li><mark>Shift + Tab:</mark> Moves focus to the previous focusable element.</li>
-<li><mark>Enter or Space:</mark> Buttons can be activated with both key commands.</li>
-<li><mark>Enter:</mark> Access the link's destination of an anchor element, expand the menu (optional) and select an option.</li>
-<li><mark>Spacebar:</mark></li> 
+<li><kbd>Tab</kbd>: Moves focus to the next focusable element.</li>
+<li><kbd>Shift</kbd> + <kbd>Tab</kbd>: Moves focus to the previous focusable element.</li>
+<li><kbd>Enter</kbd> or <kbd>Space</kbd>: Buttons can be activated with both key commands.</li>
+<li><kbd>Enter</kbd>: Access the link's destination of an anchor element, expand the menu (optional) and select an option.</li>
+<li><kbd>Spacebar</kbd>:</li> 
 <ul>
 <li>Checkboxes should be used when one or more options can be selected.</li>
 <li>Expands the dropdown menus.</li>
 <li>Minimize horizontal scrolling.</li>
 </ul>
-<li><mark>Esc:</mark> Close modals.</li>
-<li><mark>Arrows:</mark> Used to navigate between menu options or to scroll the page.</li>
+<li><kbd>Esc</kbd>: Close modals.</li>
+<li><kbd>Arrows</kbd>: Used to navigate between menu options or to scroll the page.</li>
 </ul>
 </section>
 
@@ -83,7 +83,7 @@ Main keys used for navigation:
 <h3>3. Focus</h3>
 <span>
 
-The most common browsers, such as Chrome, Firefox, Safari, and Internet Explorer, have <mark>:focus</mark> on almost all (if not all) interactive elements by default, usually adding the <a class="u-link" href="https://developer.mozilla.org/en-US/docs/Web/CSS/outline" target="_blank" rel="noreferrer noopener">outline CSS property</a>. You can see an outline example by clicking on the input below.
+The most common browsers, such as Chrome, Firefox, Safari, and Internet Explorer, have <code>:focus</code> on almost all (if not all) interactive elements by default, usually adding the <a class="u-link" href="https://developer.mozilla.org/en-US/docs/Web/CSS/outline" target="_blank" rel="noreferrer noopener">outline CSS property</a>. You can see an outline example by clicking on the input below.
 
 <input class="u-outline" placeholder="Click here" /><br>
 
@@ -98,7 +98,7 @@ The rule is clear: everything which is clickable for a mouse user needs to be fo
 <li>Widgets, like a calendar picker</li>
 </ul>
 
-A good practice is to provide for these interactive elements the same style of <mark>:hover</mark>, so that the keyboard user has the same experience as the mouse user. Example:
+A good practice is to provide for these interactive elements the same style of <code>:hover</code>, so that the keyboard user has the same experience as the mouse user. Example:
 
 ```css
 button:hover,
@@ -114,14 +114,14 @@ button:focus {
 
 The tabindex attribute defines the navigation order for focusable elements (typically links and form controls) within a page. It can also be used to define whether elements should be focusable or not.
 
-Links and form controls have tabindex by default, but it can be used when the default tab order is not ideal or when you need to give focus to elements that are not natively focusable, such as <mark>div</mark>, <mark>span</mark>, <mark>p</mark>, and <mark>a</mark> with no href.
+Links and form controls have tabindex by default, but it can be used when the default tab order is not ideal or when you need to give focus to elements that are not natively focusable, such as `<div>`, `<span>`, `<p>`, and `<a>` with no href.
 
 The three distinct uses of tabindex:
 
 <ul  class="u-unordered-list">
-<li><mark>tabindex="1"</mark> (or any number greater than 1) defines an explicit tab order. WARNING: This is almost always a bad idea, the better solution is to fix the navigation order by restructuring the HTML.</li>
-<li><mark>tabindex="0"</mark> allows elements besides links and form elements to receive keyboard focus. It does not change the tab order but places the element in the logical navigation flow as if it were a link on the page.</li>
-<li><mark>tabindex="-1"</mark> allows things besides links and form elements to receive "programmatic" focus, meaning focus can be set to the element through scripting, links, etc.</li>
+<li><code>tabindex="1"</code> (or any number greater than 1) defines an explicit tab order. WARNING: This is almost always a bad idea, the better solution is to fix the navigation order by restructuring the HTML.</li>
+<li><code>tabindex="0"</code> allows elements besides links and form elements to receive keyboard focus. It does not change the tab order but places the element in the logical navigation flow as if it were a link on the page.</li>
+<li><code>tabindex="-1"</code> allows things besides links and form elements to receive "programmatic" focus, meaning focus can be set to the element through scripting, links, etc.</li>
 </ul>
 </section>
 <section style="position: relative;">

@@ -83,7 +83,7 @@ A screen reader user normally uses his keyboard to navigate the website, so I re
 
 As each language has its particularities, the screen reader needs to know which language it will speak, to guarantee a good experience of the content read to the user. If the screen reader doesn't know what is the language of the website, it will use the default operating system's language, which may cause mispronunciations.
 
-You can easily solve this by adding the attribute <mark>lang</mark> to your HTML tag. Example:
+You can easily solve this by adding the attribute <code>lang</code> to your HTML tag. Example:
 
 ```html
 <html lang="en"></html>
@@ -91,7 +91,7 @@ You can easily solve this by adding the attribute <mark>lang</mark> to your HTML
 
 See the <a href="https://www.w3schools.com/tags/ref_language_codes.asp" class="u-link" target="_blank" rel="noreferrer noopener">full list of lang codes</a> for further understanding.
 
-If your application has a quote or similar in another language, you will also need to indicate it using a <mark>span</mark> tag. Example:
+If your application has a quote or similar in another language, you will also need to indicate it using a `<span>` tag. Example:
 
 ```html
 <blockquote>
@@ -114,7 +114,7 @@ span[lang] {
 <span class="u-anchor" id="links"></span>
 <h3>2. Links</h3>
 
-The screen reader user generally uses the keyboard to navigate the website, going from link to link using the <mark>tab</mark> key, and pressing the <mark>enter</mark> key to select this link. Links and form controls receive focus by default when the tab key is used, but if you want to assign focus to another element, you need to use the <mark>tabindex</mark> attribute into this (you can find <a class="u-link" href="https://www.tatianeaguirres.com/blog/2020-07-20-web-accessibility-1/" target="_blank" rel="noreferrer noopener">more info about tabindex on the previous post</a>).
+The screen reader user generally uses the keyboard to navigate the website, going from link to link using the <kbd>tab</kbd> key, and pressing the <kbd>enter</kbd> key to select this link. Links and form controls receive focus by default when the tab key is used, but if you want to assign focus to another element, you need to use the <code>tabindex</code> attribute into this (you can find <a class="u-link" href="https://www.tatianeaguirres.com/blog/2020-07-20-web-accessibility-1/" target="_blank" rel="noreferrer noopener">more info about tabindex on the previous post</a>).
 
 The link must be self-explanatory, that is, the user does not want to read the same thing twice or read obvious things like "click here" because they already know that this is a link. It needs to be understandable by the context of the link. Examples:
 
@@ -150,17 +150,17 @@ It's important to follow some indispensable patterns of Semantic HTML for this:
 
 <ul class="u-unordered-list">
   <li>
-    The <mark>h1</mark> tag must describe the page and have content similar to the <mark>title</mark> tag.
+    The <code>h1</code> tag must describe the page and have content similar to the <code>title</code> tag.
   </li>
-  <li>The page must have only one <mark>h1</mark>.</li>
+  <li>The page must have only one <code>h1</code>.</li>
   <li>
-    Don't skip heading levels, such as from <mark>h2</mark> to <mark>h4</mark>.
+    Don't skip heading levels, such as from <code>h2</code> to <code>h4</code>.
   </li>
   <li>
     To highlight or emphasize text that is not a heading, use CSS to style it, and not heading tags to achieve visual results.
   </li>
   <li>
-    Headings from <mark>h2</mark> through <mark>h6</mark> represent increasing degrees of indentation.
+    Headings from <code>h2</code> through <code>h6</code> represent increasing degrees of indentation.
   </li>
 </ul>
 
@@ -186,14 +186,14 @@ Example:
 
 ARIA is a set of attributes you can add to HTML elements that define ways to make web content and applications accessible to users with special needs. When accessibility issues cannot be managed with native HTML, ARIA can help bridge those gaps.
 
-There are three main components used in ARIA: <mark>Roles</mark>, <mark>States</mark>, and <mark>Properties</mark>.
+There are three main components used in ARIA: <strong>Roles</strong>, <strong>States</strong>, and <strong>Properties</strong>.
 
 </section>
 <section style="position: relative;" class="u-margin-bottom-sm">
 <span class="u-anchor" id="roles"></span>
 <h4>4.1. ARIA - Roles</h4>
 
-HTML elements have a default role that is presented to assistive technology, like the <mark>button</mark> tag, that has a default role of "button". Roles are used to defining a type of user interface (UI) element, and ARIA can define roles that are not available in HTML.
+HTML elements have a default role that is presented to assistive technology, like the `<button>` tag, that has a default role of <code>button</code>. Roles are used to defining a type of user interface (UI) element, and ARIA can define roles that are not available in HTML.
 
 You can see the <a href="https://www.w3.org/WAI/PF/aria-1.1/roles" class="u-link" target="_blank" rel="noreferrer noopener">full list of ARIA Roles</a> to go deeper into it.
 
@@ -212,7 +212,7 @@ Examples:
 <span class="u-anchor" id="states-properties"></span>
 <h4>4.2. ARIA - States and Properties</h4>
 
-ARIA States are attributes that define the current condition of an element. They generally change based on user interaction or some dynamic variable. An example is <mark>aria-invalid="true"</mark> in an input. This property will cause a screen reader to read this input as currently being invalid (meaning it needs to be corrected), but this state value could easily be changed to false dynamically based on user input. While ARIA Properties define additional semantics not supported in standard HTML. An example is <mark>aria-haspopup="true"</mark> in a button. This property extends the standard button to announce to the screen reader that the button, if activated, will trigger a pop-up.
+ARIA States are attributes that define the current condition of an element. They generally change based on user interaction or some dynamic variable. An example is <code>aria-invalid="true"</code> in an input. This property will cause a screen reader to read this input as currently being invalid (meaning it needs to be corrected), but this state value could easily be changed to false dynamically based on user input. While ARIA Properties define additional semantics not supported in standard HTML. An example is <code>aria-haspopup="true"</code> in a button. This property extends the standard button to announce to the screen reader that the button, if activated, will trigger a pop-up.
 
 See also the <a href="https://www.w3.org/WAI/PF/aria-1.1/states_and_properties" class="u-link" target="_blank" rel="noreferrer noopener">full list of States and Properties</a> for further knowledge.
 
@@ -261,10 +261,10 @@ What you should do to make your image accessible:
     As for any text, using punctuation in the text alternative makes the information easier to understand, especially for screen readers.
   </li>
   <li>
-    If you use a null (empty) text alternative (alt="") to hide decorative images, make sure that there is no space character in between the quotes. If a space character is present, the image may not be effectively hidden from assistive technologies.
+    If you use a null (empty) text alternative (<code>alt=""</code>) to hide decorative images, make sure that there is no space character in between the quotes. If a space character is present, the image may not be effectively hidden from assistive technologies.
   </li>
   <li>
-    There's no need to include words such as "image", "icon", or "picture" in the alt text, this is redundant.
+    There's no need to include words such as 'image', 'icon', or 'picture' in the alt text, this is redundant.
   </li>
   <li>
     Prioritize the most important information about this image and write a concise description. If it is not possible, consider adding a long description to it (see example below).
@@ -323,7 +323,7 @@ Some good examples:
 <span class="u-anchor" id="svg"></span>
 <h3>6. SVG - Scalable Vector Graphics</h3>
 
-ARIA can be used to ensure the content in SVG elements is accessible. The addition of the role="img" attribute defines the element as an image, and the accessible name (alternative text) can be defined using aria-labeledby, which references the <mark>title</mark> element in the SVG. Example:
+ARIA can be used to ensure the content in SVG elements is accessible. The addition of the <code>role="img"</code> attribute defines the element as an image, and the accessible name (alternative text) can be defined using aria-labeledby, which references the `<title>` element in the SVG. Example:
 
 ```html
 <svg role="img" aria-labelledby="title">
@@ -338,9 +338,9 @@ ARIA can be used to ensure the content in SVG elements is accessible. The additi
 <span class="u-anchor" id="invisible-content"></span>
 <h3>7. Invisible Content</h3>
 
-The <mark>aria-hidden="true"</mark> attribute hides certain types of content from screen readers. I think there are very few use cases for aria-hidden because if something is visible on the page, it should almost always be presented to screen reader users. But a good example of aria-hidden usage is to avoid significant repetition of content or for elements that should not be presented to screen reader users.
+The <code>aria-hidden="true"</code> attribute hides certain types of content from screen readers. I think there are very few use cases for aria-hidden because if something is visible on the page, it should almost always be presented to screen reader users. But a good example of aria-hidden usage is to avoid significant repetition of content or for elements that should not be presented to screen reader users.
 
-The <mark>display: none;</mark> and <mark>visibility: hidden;</mark> styles will hide the content from all users. The item is removed from the visual flow of the page and is ignored by screen readers as well. So do not use this CSS if you want the content to be read by a screen reader.
+The <code>display: none;</code> and <code>visibility: hidden;</code> styles will hide the content from all users. The item is removed from the visual flow of the page and is ignored by screen readers as well. So do not use this CSS if you want the content to be read by a screen reader.
 
 But if your goal is to hide text visually and keep it accessible for screen readers, you should use the following style:
 
