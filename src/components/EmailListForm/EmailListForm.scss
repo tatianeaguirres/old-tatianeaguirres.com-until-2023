@@ -1,0 +1,34 @@
+@import '../../styles/settings/spacing';
+
+.email-list-form {
+  margin: $global-spacing-md 0;
+}
+
+.email-list-form__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 66rem;
+}
+
+.email-list-form__row {
+  height: auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-bottom: $global-spacing-md;
+
+  label {
+    width: 6rem;
+  }
+
+  p {
+    margin: 0;
+  }
+}
+
+.email-list-form__newsletter-icon {
+  height: 6rem;
+  width: 6rem;
+  margin-right: $global-spacing-sm;
+}

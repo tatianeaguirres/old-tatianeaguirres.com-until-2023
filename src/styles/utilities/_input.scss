@@ -13,7 +13,12 @@ input.u-input {
   border-radius: 0.2rem;
   transition: all 0.4s ease-in-out;
   border: 0.1rem solid $color-yellow;
+
   &:focus {
     box-shadow: 0 0 1rem 0.1rem $color-yellow;
+  }
+
+  &--small {
+    max-width: 60rem;
   }
 }

@@ -1,5 +1,11 @@
 import React from 'react'
-import { PageTitle, PageLayout, Card, BlogLink } from '../components'
+import {
+  PageTitle,
+  PageLayout,
+  Card,
+  BlogLink,
+  EmailListForm
+} from '../components'
 import { SEO } from '../utils'
 import { graphql } from 'gatsby'
 
@@ -12,7 +18,7 @@ export default ({ data }) => {
       <PageTitle title='How wonderful to see you here. You are very welcome!' />
       <Card />
       <h2 className='u-margin-bottom-sm'>Last posts</h2>
-      <div className='u-column-reserve'>
+      <section className='u-column-reserve'>
         {lastPosts.slice(Math.max(lastPosts.length - 3, 0)).map(({ node }) => (
           <BlogLink
             key={node.id}
@@ -24,7 +30,8 @@ export default ({ data }) => {
             tags={node.frontmatter.tags}
           />
         ))}
-      </div>
+      </section>
+      <EmailListForm />
     </PageLayout>
   )
 }

@@ -1,5 +1,11 @@
 import React from 'react'
-import { PageLayout, PageTitle, SocialMedia, Slider } from '../components'
+import {
+  PageLayout,
+  PageTitle,
+  SocialMedia,
+  Slider,
+  EmailListForm
+} from '../components'
 import { SEO } from '../utils'
 
 export default ({ data }) => {
@@ -59,6 +65,7 @@ export default ({ data }) => {
         </p>
         <Slider />
       </section>
+      <EmailListForm />
     </PageLayout>
   )
 }

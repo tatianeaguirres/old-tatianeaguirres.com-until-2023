@@ -89,6 +89,13 @@ module.exports = {
         color: `deeppink`,
         showSpinner: true
       }
+    },
+    {
+      resolve: 'gatsby-plugin-mailchimp',
+      options: {
+        endpoint:
+          'https://tatianeaguirres.us17.list-manage.com/subscribe/post?u=16ee6d34da915d49943cda81f&amp;id=ecdbc09d61'
+      }
     }
   ]
 }

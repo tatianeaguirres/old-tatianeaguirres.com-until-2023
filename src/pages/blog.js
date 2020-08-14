@@ -44,11 +44,12 @@ export default ({ data }) => {
     <PageLayout>
       <SEO title='Blog' />
       <PageTitle title='Blog' />
-      <form className='u-margin-bottom-lg'>
+      <form className='u-margin-bottom-lg' role='search'>
         <input
           className='u-input'
           type='text'
           placeholder='Search'
+          aria-label='search'
           onChange={handleChange}
         />
       </form>

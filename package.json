@@ -23,6 +23,7 @@
     "disqus-react": "^1.0.9",
     "gatsby": "^2.23.11",
     "gatsby-plugin-catch-links": "^2.3.7",
+    "gatsby-plugin-mailchimp": "^5.2.2",
     "gatsby-plugin-manifest": "^2.4.14",
     "gatsby-plugin-nprogress": "^2.3.6",
     "gatsby-plugin-offline": "^3.2.13",

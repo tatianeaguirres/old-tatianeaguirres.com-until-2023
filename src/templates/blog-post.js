@@ -15,7 +15,7 @@ const SubTitle = ({ ttr, date, author }) => (
     />
     <small>
       &nbsp; Time to read: {ttr} min |{' '}
-      <time datetime={new Date(date)}>{date}</time> | by {author}
+      <time dateTime={new Date(date)}>{date}</time> | by {author}
     </small>
   </p>
 )
