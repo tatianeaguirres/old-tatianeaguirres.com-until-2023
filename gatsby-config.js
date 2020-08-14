@@ -15,7 +15,11 @@ module.exports = {
     occupation: `Front-end Developer`,
     keywords: [`Tatiane`, `Aguirres`, `Nogueira`, `Personal`, `Blog`, `Site`],
     siteUrl: `https://www.tatianeaguirres.com/` || `http://localhost:8000`,
-    imageUrl: `https://p838mw.ch.files.1drv.com/y4mJrMDICWvXBo2hcaTjsiAs14EABDt7k9SvLPOs4d5eUiJ4zo1N8jHx2yekGQLze2odtk_erT9391RByfmsdo18XGMoCXfKuHV1orPp-m9Lle_5nYDvSg5Wy_8caZ-jDPQulQteXscE4Eh2sTjRB2xOTYKf56hJz3HcJe0kfLNeC3O8rFsfccMyAwRb-in-nins9vL5H3N4y4saQiPBYNgsA?width=1024&height=512&cropmode=none`
+    imagePreview: {
+      src: `https://p838mw.ch.files.1drv.com/y4mJrMDICWvXBo2hcaTjsiAs14EABDt7k9SvLPOs4d5eUiJ4zo1N8jHx2yekGQLze2odtk_erT9391RByfmsdo18XGMoCXfKuHV1orPp-m9Lle_5nYDvSg5Wy_8caZ-jDPQulQteXscE4Eh2sTjRB2xOTYKf56hJz3HcJe0kfLNeC3O8rFsfccMyAwRb-in-nins9vL5H3N4y4saQiPBYNgsA?width=1024&height=512&cropmode=none`,
+      height: 512,
+      width: 1024
+    }
   },
   plugins: [
     `gatsby-plugin-preload-link-crossorigin`,
