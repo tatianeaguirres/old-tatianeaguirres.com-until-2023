@@ -8,6 +8,7 @@ import {
 } from '../components'
 import { SEO } from '../utils'
 import { graphql } from 'gatsby'
+import newsletterIcon from '../../assets/svg/newsletter.svg'
 
 export default ({ data }) => {
   const lastPosts = data.allMarkdownRemark.edges || []
@@ -31,7 +32,23 @@ export default ({ data }) => {
           />
         ))}
       </section>
-      <EmailListForm />
+      <section>
+        <h2 className='u-margin-bottom-md'>Don’t miss any post</h2>
+        <div className='email-list-form__row'>
+          <img
+            src={newsletterIcon}
+            className='email-list-form__newsletter-icon'
+            alt='newsletter'
+            title='newsletter'
+          />
+          <p>
+            I'll send you only quality content like the latest blog posts,
+            tutorials, tips & tricks, and much more related to front-end
+            development.
+          </p>
+        </div>
+        <EmailListForm ebook={false} />
+      </section>
     </PageLayout>
   )
 }

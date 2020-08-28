@@ -4,9 +4,10 @@ import { SEO } from '../utils'
 import tdcDrawing from '../../assets/images/tdc-drawing.jpeg'
 
 export default () => {
+  const style = { maxWidth: '175px' }
   return (
     <PageLayout>
-      <SEO title='Tatiane Aguirres Nogueira' />
+      <SEO title='Thanks!' />
       <PageTitle title='Thanks!' />
       <article>
         <p>
@@ -20,9 +21,8 @@ export default () => {
           <img
             src={tdcDrawing}
             className='u-margin-bottom-sm u-margin-right-sm u-float-left'
-            height='250px'
-            width='175px'
-            alt='Tatiane caricature made for the TDC event'
+            alt='Tatiane caricature made for the TDC event.'
+            style={style}
           />
           <p>
             <b>Add me to your contacts list</b>: Be sure to place

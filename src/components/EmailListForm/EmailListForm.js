@@ -3,9 +3,8 @@ import { navigate } from 'gatsby'
 import addToMailchimp from 'gatsby-plugin-mailchimp'
 
 import './EmailListForm.scss'
-import newsletterIcon from '../../../assets/svg/newsletter.svg'
 
-const EmailListForm = () => {
+const EmailListForm = ({ ebook }) => {
   const [email, setEmail] = useState('')
   const [name, setName] = useState('')
   const [isSubscribed, setIsSubscribed] = useState('')
@@ -39,20 +38,6 @@ const EmailListForm = () => {
   return (
     <section className='email-list-form'>
       <form onSubmit={handleSubmit}>
-        <h2 className='u-margin-bottom-md'>Don’t miss any post</h2>
-        <div className='email-list-form__row'>
-          <img
-            src={newsletterIcon}
-            className='email-list-form__newsletter-icon'
-            alt='newsletter'
-            title='newsletter'
-          />
-          <p>
-            I'll send you only quality content like the latest blog posts,
-            tutorials, tips & tricks, and much more related to front-end
-            development.
-          </p>
-        </div>
         <div className='email-list-form__wrapper'>
           <div className='email-list-form__row'>
             <label htmlFor='name'>Name:</label>
@@ -85,7 +70,7 @@ const EmailListForm = () => {
             name='submit'
             className='u-button u-margin-bottom-md'
           >
-            Subscribe
+            {ebook ? 'Get your free eBook' : 'Subscribe'}
           </button>
           {isSubscribed && <p className='u-text-center'>{isSubscribed}</p>}
         </div>

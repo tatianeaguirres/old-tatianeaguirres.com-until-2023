@@ -7,6 +7,7 @@ import {
   EmailListForm
 } from '../components'
 import { SEO } from '../utils'
+import newsletterIcon from '../../assets/svg/newsletter.svg'
 
 export default ({ data }) => {
   return (
@@ -57,7 +58,7 @@ export default ({ data }) => {
         <p>You can easily find me on any of the networks below:</p>
         <SocialMedia align='left' />
       </section>
-      <section>
+      <section className='u-margin-bottom-md'>
         <h2 className='u-margin-bottom-md'>My journey</h2>
         <p>
           Good times to remember, lots of learning, sharing and friendships in
@@ -65,7 +66,23 @@ export default ({ data }) => {
         </p>
         <Slider />
       </section>
-      <EmailListForm />
+      <section>
+        <h2 className='u-margin-bottom-md'>Don’t miss any post</h2>
+        <div className='email-list-form__row'>
+          <img
+            src={newsletterIcon}
+            className='email-list-form__newsletter-icon'
+            alt='newsletter'
+            title='newsletter'
+          />
+          <p>
+            I'll send you only quality content like the latest blog posts,
+            tutorials, tips & tricks, and much more related to front-end
+            development.
+          </p>
+        </div>
+        <EmailListForm ebook={false} />
+      </section>
     </PageLayout>
   )
 }
