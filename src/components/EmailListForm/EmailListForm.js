@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
+import { navigate } from 'gatsby'
 import addToMailchimp from 'gatsby-plugin-mailchimp'
+
 import './EmailListForm.scss'
 import newsletterIcon from '../../../assets/svg/newsletter.svg'
 
@@ -20,6 +22,9 @@ const EmailListForm = () => {
     })
       .then(data => {
         formatMsg(data)
+        setTimeout(() => {
+          navigate('/thanks')
+        }, 3000)
       })
       .catch(error => {
         alert('There was an error, please try again later.')
