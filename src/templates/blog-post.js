@@ -10,8 +10,6 @@ const SubTitle = ({ ttr, date, author }) => (
       className='posts__clock-icon'
       alt='clock'
       title='clock'
-      height='30px'
-      width='30px'
     />
     <small>
       &nbsp; Time to read: {ttr} min |{' '}
