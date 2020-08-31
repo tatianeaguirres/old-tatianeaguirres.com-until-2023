@@ -1,7 +1,7 @@
 import React from 'react'
 import womanIcon from '../../../assets/svg/woman.svg'
 import trophyIcon from '../../../assets/svg/trophy.svg'
-import devicesIcon from '../../../assets/svg/devices.svg'
+import eBookIcon from '../../../assets/svg/ebook.svg'
 import './Card.scss'
 
 export default () => (
@@ -34,16 +34,16 @@ export default () => (
         initiatives.
       </p>
     </a>
-    <a href='/blog' className='cards__card'>
+    <a href='/ebook' className='cards__card'>
       <img
-        src={devicesIcon}
+        src={eBookIcon}
         className='cards__card-icon'
-        alt='devices'
-        title='devices'
+        alt='ebook'
+        title='ebook'
       />
-      <h3>Blog Posts</h3>
+      <h3>Free eBook</h3>
       <p>
-        Everything a front-ender needs to know to become a top-level
+        Learn everything a front-ender needs to know to become a top-level
         professional.
       </p>
     </a>

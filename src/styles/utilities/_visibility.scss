@@ -25,7 +25,7 @@
 }
 
 .u-desktop-only {
-  @include screen-tablet-portrait-and-smaller {
+  @include screen-tablet-landscape-and-smaller {
     display: none;
   }
 }

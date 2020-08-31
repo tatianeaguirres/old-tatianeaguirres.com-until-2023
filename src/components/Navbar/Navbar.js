@@ -28,6 +28,9 @@ export default () => {
           <Nav.Link as={Link} to='/about' title='About'>
             About
           </Nav.Link>
+          <Nav.Link as={Link} to='/ebook' title='eBook'>
+            eBook
+          </Nav.Link>
           <Form className='my-auto'>
             <Form.Check
               type='switch'

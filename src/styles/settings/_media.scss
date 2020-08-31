@@ -8,6 +8,7 @@ $breakpoint-tablet-portrait: 'only screen and (min-width: 768px) and (max-width:
 $breakpoint-tablet-portrait-and-smaller: 'only screen and (max-width: 767px)';
 $breakpoint-tablet-portrait-and-bigger: 'only screen and (min-width: 768px)';
 $breakpoint-tablet-landscape: 'only screen and (min-width: 1024px) and (max-width: 1239px)';
+$breakpoint-tablet-landscape-and-smaller: 'only screen and (max-width: 1023px)';
 $breakpoint-tablet-landscape-and-bigger: 'only screen and (min-width: 1024px)';
 $breakpoint-laptop: 'only screen and (min-width: 1240px) and (max-width: 1599px)';
 $breakpoint-desktop: 'only screen and (min-width: 1600px)';
@@ -62,6 +63,12 @@ $breakpoint-desktop: 'only screen and (min-width: 1600px)';
 */
 @mixin screen-tablet-landscape {
   @media #{$breakpoint-tablet-landscape} {
+    @content;
+  }
+}
+
+@mixin screen-tablet-landscape-and-smaller {
+  @media #{$breakpoint-tablet-landscape-and-smaller} {
     @content;
   }
 }
