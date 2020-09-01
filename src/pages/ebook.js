@@ -7,7 +7,7 @@ import eBookCover from '../images/ebook-cover-ipad.png'
 export default ({ data }) => {
   const style = { maxWidth: '350px' }
   const image = data.fileName.childImageSharp.fixed
-  console.log(image)
+
   return (
     <PageLayout>
       <SEO
