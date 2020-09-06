@@ -2,7 +2,7 @@ import React from 'react'
 import womanIcon from '../../../assets/svg/woman.svg'
 import trophyIcon from '../../../assets/svg/trophy.svg'
 import eBookIcon from '../../../assets/svg/ebook.svg'
-import './Card.scss'
+import './Cards.scss'
 
 export default () => (
   <section className='cards'>
