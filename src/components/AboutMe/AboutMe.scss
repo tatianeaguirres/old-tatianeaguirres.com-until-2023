@@ -1,0 +1,50 @@
+@import '../../styles/settings/spacing';
+@import '../../styles/settings/colors';
+@import '../../styles/settings/media';
+@import '../../styles/settings/typography';
+
+.c-about-me {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  h2 {
+    margin-bottom: $global-spacing-md;
+  }
+
+  p {
+    font-family: $font-tertiary;
+  }
+
+  div {
+    width: 100%;
+  }
+
+  div:first-child {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 $global-spacing-xlg $global-spacing-lg 0;
+  }
+
+  @include screen-tablet-portrait-and-bigger {
+    flex-direction: row;
+
+    div:first-child {
+      width: 35%;
+    }
+
+    div:last-child {
+      width: 65%;
+    }
+  }
+
+  .about-me__avatar {
+    height: 20rem;
+    width: 20rem;
+
+    @include screen-tablet-landscape-and-bigger {
+      height: 24rem;
+      width: 24rem;
+    }
+  }
+}
