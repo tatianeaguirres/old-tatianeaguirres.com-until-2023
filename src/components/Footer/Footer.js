@@ -1,65 +1,58 @@
 import React from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
 import { SocialMedia } from '../../components'
-
-import avatar from '../../../assets/images/avatar.png'
 import './Footer.scss'
 
 export default () => {
   const { author } = useStaticQuery(query).site.siteMetadata
   return (
     <footer className='footer'>
-      <div className='footer__avatar'>
-        <img
-          src={avatar}
-          alt='Tatianes avatar smiling and holding a microphone'
-        />
-      </div>
-      <SocialMedia align='center' />
-      <div className='footer__info'>
-        <p>
-          {author} &copy; {new Date().getFullYear()}. Made with
-          <span className='footer__heart'>&nbsp;❤&nbsp;</span> &&nbsp;
-          <a
-            href='https://www.gatsbyjs.org/'
-            className='u-link'
-            target='_blank'
-            rel='noreferrer noopener'
-          >
-            Gatsby
-          </a>
-        </p>
-        <p>
-          <a
-            href='https://github.com/tatianeaguirres/tatianeaguirres.com/blob/master/LICENSE'
-            className='u-link'
-            target='_blank'
-            rel='noreferrer noopener'
-          >
-            Terms of Use
-          </a>
-          . Icons made by&nbsp;
-          <a
-            href='https://www.flaticon.com/authors/freepik'
-            title='Freepik'
-            className='u-link'
-            target='_blank'
-            rel='noreferrer noopener'
-          >
-            Freepik
-          </a>
-          &nbsp; from&nbsp;
-          <a
-            href='https://www.flaticon.com/'
-            title='Flaticon'
-            className='u-link'
-            target='_blank'
-            rel='noreferrer noopener'
-          >
-            www.flaticon.com
-          </a>
-        </p>
-      </div>
+      <article>
+        <SocialMedia dark={true} />
+        <hr />
+        <div className='u-row-flex-wrap u-margin-top-xlg'>
+          <p>
+            {author} &copy; {new Date().getFullYear()} | Made with
+            <span className='footer__heart'>&nbsp;❤&nbsp;</span> &&nbsp;
+            <a
+              href='https://www.gatsbyjs.org/'
+              target='_blank'
+              rel='noreferrer noopener'
+            >
+              Gatsby
+            </a>
+            .&nbsp;
+          </p>
+          <p>
+            <a
+              href='https://github.com/tatianeaguirres/tatianeaguirres.com/blob/master/LICENSE'
+              target='_blank'
+              rel='noreferrer noopener'
+            >
+              Terms of Use
+            </a>
+            &nbsp;• Icons made by&nbsp;
+            <a
+              href='https://www.flaticon.com/authors/freepik'
+              title='Freepik'
+              target='_blank'
+              rel='noreferrer noopener'
+            >
+              Freepik
+            </a>
+            &nbsp; from&nbsp;
+            <a
+              href='https://www.flaticon.com/'
+              title='Flaticon'
+              target='_blank'
+              rel='noreferrer noopener'
+            >
+              Flaticon
+            </a>
+            .
+          </p>
+        </div>
+      </article>
     </footer>
   )
 }
