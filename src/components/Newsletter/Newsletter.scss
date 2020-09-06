@@ -1,0 +1,13 @@
+@import '../../styles/settings/spacing';
+@import '../../styles/settings/typography';
+
+.newsletter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+
+  p {
+    font-family: $font-tertiary;
+  }
+}
