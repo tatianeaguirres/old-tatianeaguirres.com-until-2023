@@ -1,12 +1,16 @@
 import React from 'react'
-import avatar from '../../../static/images/avatar.png'
+import avatar from '../../../static/assets/images/avatar.png'
 import './AboutMe.scss'
 
 const AboutMe = () => {
   return (
     <article className='u-section c-about-me'>
       <div>
-        <img src={avatar} className='about-me__avatar' />
+        <img
+          src={avatar}
+          className='about-me__avatar'
+          alt='Tatiane avatar holding a microphone while speaking.'
+        />
       </div>
       <div>
         <h2>

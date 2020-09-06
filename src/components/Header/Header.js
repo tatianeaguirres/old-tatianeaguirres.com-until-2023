@@ -2,7 +2,7 @@ import React, { useState, useRef } from 'react'
 import { Link } from 'gatsby'
 import { useMediaQuery } from 'react-responsive'
 import './Header.scss'
-import MenuIcon from '../../../assets/svg/menu.svg'
+import MenuIcon from '../../../static/assets/svg/menu.svg'
 import useOnclickOutside from '../../hooks/use-onclick-outside'
 import Navbar from '../Navbar/Navbar'
 
@@ -47,7 +47,7 @@ const Header = () => {
             aria-label='Open menu'
           >
             <span className='u-sr-only'>Clique here to open the menu</span>
-            <img src={MenuIcon} className='header__menu-icon' />
+            <img src={MenuIcon} className='header__menu-icon' alt='menu' />
           </button>
           {openMobileNav && <Navbar props={mobileProps} ref={ref} />}
         </div>

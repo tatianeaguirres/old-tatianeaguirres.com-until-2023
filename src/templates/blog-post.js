@@ -1,7 +1,7 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 import PostTemplate from './post-template'
-import clockIcon from '../../assets/svg/clock.svg'
+import clockIcon from '../../static/assets/svg/clock.svg'
 
 const SubTitle = ({ ttr, date, author }) => (
   <p className='u-margin-bottom-md'>

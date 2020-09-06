@@ -19,7 +19,7 @@
 }
 
 .u-mobile-only {
-  @include screen-tablet-portrait-and-bigger {
+  @include screen-tablet-landscape-and-bigger {
     display: none;
   }
 }
@@ -33,6 +33,12 @@
 .u-column-reserve {
   display: flex;
   flex-direction: column-reverse;
+}
+
+.u-row-flex-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .u-outline:focus {

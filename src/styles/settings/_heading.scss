@@ -4,30 +4,34 @@
   line-height: $font-line-height-h1;
   text-transform: capitalize;
   font-weight: $font-weight-medium;
-  color: $color-pink;
+  color: $color-black;
 }
 
 @mixin h2 {
+  font-family: $font-primary;
   font-size: $font-size-h2;
   line-height: $font-line-height-h2;
   font-weight: $font-weight-regular;
-  color: $color-pink;
+  color: $color-black;
 }
 
 @mixin h3 {
+  font-family: $font-primary;
   font-size: $font-size-h3;
   line-height: $font-line-height-h3;
-  font-weight: $font-weight-bold;
+  font-weight: $font-weight-regular;
   margin-bottom: $global-spacing-xs;
-  color: $color-gray-800;
+  color: $color-black;
+  font-style: italic;
 }
 
 @mixin h4 {
+  font-family: $font-primary;
   font-size: $font-size-h4;
   line-height: $font-line-height-h4;
-  font-weight: $font-weight-bold;
+  font-weight: $font-weight-regular;
   margin-bottom: $global-spacing-xs;
-  color: $color-gray-800;
+  color: $color-black;
 }
 
 @mixin h5 {
@@ -36,7 +40,7 @@
   text-transform: uppercase;
   font-weight: $font-weight-bold;
   margin-bottom: $global-spacing-xs;
-  color: $color-gray-800;
+  color: $color-black;
 }
 
 @mixin h6 {
@@ -45,5 +49,5 @@
   text-transform: uppercase;
   font-weight: $font-weight-bold;
   margin-bottom: $global-spacing-xs;
-  color: $color-gray-800;
+  color: $color-black;
 }

@@ -93,3 +93,30 @@ img {
 span[lang] {
   font-style: italic;
 }
+
+hr {
+  background-color: $color-black;
+  border: none;
+  height: 0.1rem;
+  margin: 0 $global-spacing-md;
+
+  @include screen-mobile-plus {
+    margin: 0 0.8rem;
+  }
+
+  @include screen-tablet-portrait {
+    margin: 0 3rem;
+  }
+
+  @include screen-tablet-landscape {
+    margin: 0 5rem;
+  }
+
+  @include screen-laptop {
+    margin: 0 12rem;
+  }
+
+  @include screen-desktop {
+    margin: 0 12rem;
+  }
+}

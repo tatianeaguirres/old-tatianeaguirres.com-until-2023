@@ -1,54 +1,45 @@
 import React from 'react'
-import {
-  PageTitle,
-  PageLayout,
-  Card,
-  BlogLink,
-  EmailListForm
-} from '../components'
-import { SEO } from '../utils'
+import { PageLayout, Banner, BlogLink, Cards, Newsletter } from '../components'
+import { SEO, Utils } from '../utils'
 import { graphql } from 'gatsby'
-import newsletterIcon from '../../assets/svg/newsletter.svg'
 
 export default ({ data }) => {
+  const allFeaturedImages = data.allFile.edges || []
+  const regex = /\/[blog].*\/|$/
+  const featuredImageMap = Utils.getImageMap(allFeaturedImages, regex)
   const lastPosts = data.allMarkdownRemark.edges || []
 
   return (
-    <PageLayout>
+    <PageLayout parallax={true}>
       <SEO title='Tatiane Aguirres Nogueira' />
-      <PageTitle title='How wonderful to see you here. You are very welcome!' />
-      <Card />
-      <h2 className='u-margin-bottom-sm'>Last posts</h2>
-      <section className='u-column-reserve'>
-        {lastPosts.slice(Math.max(lastPosts.length - 3, 0)).map(({ node }) => (
-          <BlogLink
-            key={node.id}
-            to={node.fields.slug}
-            title={node.frontmatter.title}
-            date={node.frontmatter.date}
-            excerpt={node.excerpt}
-            description={node.frontmatter.description || node.excerpt}
-            tags={node.frontmatter.tags}
-          />
-        ))}
-      </section>
-      <section>
-        <h2 className='u-margin-bottom-md'>Don’t miss any post</h2>
-        <div className='email-list-form__row'>
-          <img
-            src={newsletterIcon}
-            className='email-list-form__newsletter-icon'
-            alt='newsletter'
-            title='newsletter'
-          />
-          <p>
-            I'll send you only quality content like the latest blog posts,
-            tutorials, tips & tricks, and much more related to front-end
-            development.
-          </p>
-        </div>
-        <EmailListForm ebook={false} />
-      </section>
+      <Banner page='index'>
+        <section className='u-text-center'>
+          <h1 className='u-text-shadow'>Tatiane Aguirres</h1>
+          <p className='u-text-shadow'>Front-end Developer</p>
+        </section>
+        <Cards />
+      </Banner>
+      <article className='u-section'>
+        <h2 className='u-margin-bottom-md u-text-center'>Latest Posts</h2>
+        <article className='u-row-flex-wrap'>
+          {lastPosts
+            .slice(Math.max(lastPosts.length - 3, 0))
+            .map(({ node }) => (
+              <BlogLink
+                key={node.id}
+                to={node.fields.slug}
+                title={node.frontmatter.title}
+                date={node.frontmatter.date}
+                excerpt={node.excerpt}
+                description={node.frontmatter.description || node.excerpt}
+                tags={node.frontmatter.tags}
+                featuredImage={featuredImageMap[node.fields.slug + 'images/']}
+              />
+            ))}
+        </article>
+      </article>
+      <hr />
+      <Newsletter />
     </PageLayout>
   )
 }
@@ -70,6 +61,24 @@ export const query = graphql`
             slug
           }
           excerpt(pruneLength: 200)
+        }
+      }
+    }
+    allFile(
+      filter: {
+        extension: { eq: "jpg" }
+        relativePath: { regex: "/feature/" }
+        relativeDirectory: { regex: "/content/blog/" }
+      }
+    ) {
+      edges {
+        node {
+          childImageSharp {
+            fluid(maxWidth: 400) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+          relativePath
         }
       }
     }

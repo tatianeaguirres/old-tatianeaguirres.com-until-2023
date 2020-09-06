@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { graphql } from 'gatsby'
-import { PageLayout, PageTitle, BlogLink } from '../components'
+import { PageLayout, BlogLink } from '../components'
 import { SEO, Utils } from '../utils'
 
 export default ({ data }) => {
@@ -12,8 +12,8 @@ export default ({ data }) => {
   const allFeaturedImages = data.allFile.edges || []
   const allPosts = data.allMarkdownRemark.edges || []
   const regex = /\/[blog].*\/|$/
-  const featuredImageMap = Utils.getImageMap(allFeaturedImages, regex)
 
+  const featuredImageMap = Utils.getImageMap(allFeaturedImages, regex)
   const handleChange = e => {
     const query = e.target.value
 
@@ -43,7 +43,6 @@ export default ({ data }) => {
   return (
     <PageLayout>
       <SEO title='Blog' />
-      <PageTitle title='Blog' />
       <form className='u-margin-bottom-lg' role='search'>
         <input
           className='u-input'
@@ -53,17 +52,19 @@ export default ({ data }) => {
           onChange={handleChange}
         />
       </form>
-      {filteredPosts.map(({ node }) => (
-        <BlogLink
-          key={node.id}
-          to={node.fields.slug}
-          featuredImage={featuredImageMap[node.fields.slug]}
-          title={node.frontmatter.title}
-          date={node.frontmatter.date}
-          description={node.frontmatter.description || node.excerpt}
-          tags={node.frontmatter.tags}
-        />
-      ))}
+      <article className='u-row-flex-wrap'>
+        {filteredPosts.map(({ node }) => (
+          <BlogLink
+            key={node.id}
+            to={node.fields.slug}
+            featuredImage={featuredImageMap[node.fields.slug + 'images/']}
+            title={node.frontmatter.title}
+            date={node.frontmatter.date}
+            description={node.frontmatter.description || node.excerpt}
+            tags={node.frontmatter.tags}
+          />
+        ))}
+      </article>
     </PageLayout>
   )
 }

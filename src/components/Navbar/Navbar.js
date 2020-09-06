@@ -2,7 +2,7 @@ import React, { forwardRef } from 'react'
 import { Link } from 'gatsby'
 import useLockBodyScroll from '../../hooks/use-lock-body-scroll'
 import './Navbar.scss'
-import CloseIcon from '../../../assets/svg/close.svg'
+import CloseIcon from '../../../static/assets/svg/close.svg'
 
 const Navbar = forwardRef((props, ref) => {
   const device = props.props.device
@@ -28,7 +28,7 @@ const Navbar = forwardRef((props, ref) => {
               className='navbar__close-button'
             >
               <span className='u-sr-only'>Clique here to close the menu</span>
-              <img src={CloseIcon} className='navbar__close-icon' />
+              <img src={CloseIcon} className='navbar__close-icon' alt='close' />
             </button>
           </div>
         )}

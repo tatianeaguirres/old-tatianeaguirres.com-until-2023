@@ -14,7 +14,7 @@ const Ebook = () => {
           />
         </div>
         <div>
-          <h2>Get this eBooks for free!</h2>
+          <h2>Get this eBook for free!</h2>
           <p>
             Discover which skills you need to become a{' '}
             <em>high-skilled Front-end Developer</em>.

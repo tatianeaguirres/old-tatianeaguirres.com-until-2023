@@ -1,7 +1,7 @@
 import React from 'react'
-import womanIcon from '../../../assets/svg/woman.svg'
-import trophyIcon from '../../../assets/svg/trophy.svg'
-import eBookIcon from '../../../assets/svg/ebook.svg'
+import womanIcon from '../../../static/assets/svg/woman.svg'
+import trophyIcon from '../../../static/assets/svg/trophy.svg'
+import eBookIcon from '../../../static/assets/svg/ebook.svg'
 import './Cards.scss'
 
 export default () => (
@@ -43,8 +43,7 @@ export default () => (
       />
       <h3>Free eBook</h3>
       <p>
-        Learn everything a front-ender needs to know to become a top-level
-        professional.
+        Discover which skills you need to become a high-skilled Front-ender.
       </p>
     </a>
   </section>

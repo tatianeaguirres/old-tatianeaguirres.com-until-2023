@@ -1,10 +1,5 @@
 // LOGO
 
 .u-logo {
-  font-family: $font-family-logo;
-  font-size: $font-size-h1;
-  line-height: $font-line-height-h1;
-  text-transform: capitalize;
-  font-weight: $font-weight-medium;
-  color: $color-pink;
+  @include h1;
 }

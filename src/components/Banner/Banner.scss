@@ -43,11 +43,11 @@
 }
 
 .banner__index {
-  background-image: url('/images/background-desk.jpg');
+  background-image: url('/assets/images/background-desk.jpg');
 }
 
 .banner__about {
-  background-image: url('/images/background-netherlands.jpg');
+  background-image: url('/assets/images/background-netherlands.jpg');
   min-height: 40rem;
 
   @include screen-tablet-portrait-and-bigger {
@@ -56,7 +56,7 @@
 }
 
 .banner__newsletter {
-  background-image: url('/images/background-newsletter.jpg');
+  background-image: url('/assets/images/background-newsletter.jpg');
   min-height: 40rem;
 
   @include screen-tablet-portrait-and-bigger {
@@ -65,7 +65,7 @@
 }
 
 .banner__thanks {
-  background-image: url('/images/background-thanks.jpg');
+  background-image: url('/assets/images/background-thanks.jpg');
   min-height: 40rem;
 
   @include screen-tablet-portrait-and-bigger {
