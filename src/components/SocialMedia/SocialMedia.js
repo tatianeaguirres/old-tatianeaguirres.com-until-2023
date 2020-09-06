@@ -1,5 +1,4 @@
-import React, { useContext } from 'react'
-import ThemeContext from '../../utils/theme'
+import React from 'react'
 
 import twitterIcon from '../../../assets/svg/twitter.svg'
 import linkedinIcon from '../../../assets/svg/linkedin.svg'
@@ -10,10 +9,9 @@ import instagramIcon from '../../../assets/svg/instagram.svg'
 
 import './SocialMedia.scss'
 
-export default ({ align }) => {
-  const { dark } = useContext(ThemeContext)
+export default ({ dark }) => {
   return (
-    <div className={`social-media social-media--${align}`}>
+    <div className='social-media'>
       <a
         href='mailto:aguirres.tati@gmail.com'
         target='_blank'
