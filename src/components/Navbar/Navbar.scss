@@ -1,62 +1,97 @@
 @import '../../styles/settings/spacing';
 @import '../../styles/settings/colors';
-@import '../../styles/settings/media';
+@import '../../styles/settings/typography';
 
-.navbar {
-  height: 7rem;
-  padding: $global-spacing-xs $global-spacing-xlg;
-  z-index: 2;
-  background: $color-ice-pink;
-  border-bottom: 0.1rem solid $color-yellow;
+.c-navbar {
+  &--desktop {
+    .navbar__nav {
+      height: 7rem;
+    }
 
-  @include screen-tablet-portrait-and-bigger {
-    background: rgba($color-ice-pink, 0.8);
-  }
+    .navbar__nav-list {
+      display: flex;
+      list-style: none;
+      height: 100%;
+      width: 100%;
+    }
 
-  a.nav-link {
-    padding: $global-spacing-sm !important;
-    height: 7rem;
-    display: flex;
-    margin: 0 !important;
-    color: $color-pink !important;
+    .navbar__nav-item a {
+      padding: $global-spacing-sm;
+      height: 7rem;
+      width: 100%;
+      display: flex;
+      text-decoration: none;
+      font-family: $font-tertiary;
+      color: $color-black;
+      text-transform: uppercase;
+      transition: all 0.4s ease-in-out;
+    }
 
-    &:hover,
-    &:focus {
-      background: rgba($color-yellow, 0.25);
+    .navbar__nav-item a:hover,
+    .navbar__nav-item a:focus {
+      color: $color-pink;
+      cursor: pointer;
     }
   }
 
-  a.navbar-brand:hover,
-  a.navbar-brand:focus,
-  a.nav-link:hover,
-  a.nav-link:focus {
-    text-shadow: 0.2rem 0.2rem 0.4rem $color-pink;
-  }
-
-  .navbar-toggler {
-    color: transparent;
-    border: none;
-
-    &:focus {
-      outline: none;
-    }
-  }
-
-  .navbar-toggler-icon {
-    background-image: url('../../../assets/svg/menu.svg');
-    height: 3rem;
-    width: 3rem;
-  }
-
-  form.my-auto {
-    width: 4rem;
-    text-align: center;
-  }
-
-  .nav-links.navbar-nav {
-    @include screen-tablet-portrait-and-smaller {
-      background: $color-ice-pink;
+  &--mobile {
+    .navbar__nav {
+      position: absolute;
+      visibility: visible;
+      top: 0;
+      right: 0;
+      max-width: 35rem;
+      width: 70%;
+      height: 108vh;
+      z-index: 3;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
       align-items: center;
+      background-color: $color-white;
+      box-shadow: 0 0 1.3rem 0 rgba($color-gray-800, 0.4);
+    }
+
+    .navbar__button-row {
+      height: 13rem;
+      width: 100%;
+      padding: $global-spacing-sm $global-spacing-md;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
+
+    .navbar__close-icon {
+      height: 4rem;
+      width: 4rem;
+    }
+
+    .navbar__nav-list {
+      list-style: none;
+      width: 100%;
+      padding: $global-spacing-sm;
+    }
+
+    .navbar__nav-item {
+      height: 8rem;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .navbar__nav-item a {
+      text-decoration: none;
+      font-family: $font-tertiary;
+      color: $color-black;
+      text-transform: uppercase;
+      transition: all 0.4s ease-in-out;
+    }
+
+    .navbar__nav-item a:hover,
+    .navbar__nav-item a:focus {
+      color: $color-pink;
+      cursor: pointer;
     }
   }
 }
