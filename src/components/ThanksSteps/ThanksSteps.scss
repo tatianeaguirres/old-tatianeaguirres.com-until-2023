@@ -1,0 +1,64 @@
+@import '../../styles/settings/spacing';
+@import '../../styles/settings/colors';
+@import '../../styles/settings/media';
+@import '../../styles/settings/typography';
+
+.thanks-steps {
+  h2 {
+    margin-bottom: $global-spacing-md;
+  }
+
+  p {
+    font-family: $font-tertiary;
+  }
+
+  b {
+    font-weight: 600;
+  }
+}
+
+.thanks-steps__align-left {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  @include screen-tablet-portrait-and-bigger {
+    flex-direction: row;
+
+    div.thanks-steps__align-left-wrap:first-child {
+      display: flex;
+      justify-content: center;
+      width: 30%;
+      margin: 0 $global-spacing-lg 0 0;
+    }
+
+    div.thanks-steps__align-left-wrap:last-child {
+      width: 70%;
+    }
+  }
+}
+
+.thanks-steps__align-right {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  @include screen-tablet-portrait-and-bigger {
+    flex-direction: row;
+
+    div.thanks-steps__align-left-wrap:first-child {
+      width: 70%;
+    }
+
+    div.thanks-steps__align-left-wrap:last-child {
+      display: flex;
+      justify-content: center;
+      width: 30%;
+      margin: 0 0 0 $global-spacing-lg;
+    }
+  }
+}
+
+.thanks-steps__avatar {
+  max-width: 20rem;
+}
