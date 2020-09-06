@@ -1,0 +1,19 @@
+@import '../../styles/settings/spacing';
+@import '../../styles/settings/colors';
+@import '../../styles/settings/media';
+@import '../../styles/settings/typography';
+
+.featured-image {
+  background-color: $color-gray-400;
+  background-image: url('/images/image-tdc.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  min-height: 40rem;
+
+  @include screen-tablet-portrait-and-bigger {
+    min-height: 50rem;
+  }
+}
