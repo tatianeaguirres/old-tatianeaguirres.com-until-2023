@@ -1,6 +1,6 @@
 ---
 title: '9 Ways a Front-end Developer Can Improve Technical Skills'
-tags: ['Front-end', 'Developer', 'Skills', 'Technical', 'Improve']
+tags: ['Career', 'Skills', 'Tips']
 author: 'Tatiane Aguirres Nogueira'
 date: '2020-09-01'
 featured: 'images/featured.jpg'
