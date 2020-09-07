@@ -22,12 +22,16 @@
   flex-direction: column;
   width: 100%;
 
+  div.thanks-steps__align-left-wrap:first-child {
+    display: flex;
+    justify-content: center;
+    margin-bottom: $global-spacing-md;
+  }
+
   @include screen-tablet-portrait-and-bigger {
     flex-direction: row;
 
     div.thanks-steps__align-left-wrap:first-child {
-      display: flex;
-      justify-content: center;
       width: 30%;
       margin: 0 $global-spacing-lg 0 0;
     }
@@ -40,8 +44,14 @@
 
 .thanks-steps__align-right {
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   width: 100%;
+
+  div.thanks-steps__align-left-wrap:last-child {
+    display: flex;
+    justify-content: center;
+    margin-bottom: $global-spacing-md;
+  }
 
   @include screen-tablet-portrait-and-bigger {
     flex-direction: row;
@@ -51,8 +61,6 @@
     }
 
     div.thanks-steps__align-left-wrap:last-child {
-      display: flex;
-      justify-content: center;
       width: 30%;
       margin: 0 0 0 $global-spacing-lg;
     }
@@ -60,5 +68,11 @@
 }
 
 .thanks-steps__avatar {
-  max-width: 20rem;
+  max-width: 15rem;
+  max-height: 20.3rem;
+
+  @include screen-tablet-portrait-and-bigger {
+    max-width: 20rem;
+    max-height: 27.1rem;
+  }
 }

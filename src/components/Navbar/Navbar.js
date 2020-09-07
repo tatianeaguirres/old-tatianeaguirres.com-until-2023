@@ -2,7 +2,7 @@ import React, { forwardRef } from 'react'
 import { Link } from 'gatsby'
 import useLockBodyScroll from '../../hooks/use-lock-body-scroll'
 import './Navbar.scss'
-import CloseIcon from '../../../static/assets/svg/close.svg'
+import CloseIcon from '../../../static/svg/close.svg'
 
 const Navbar = forwardRef((props, ref) => {
   const device = props.props.device

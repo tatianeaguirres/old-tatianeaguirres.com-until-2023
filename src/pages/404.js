@@ -1,6 +1,6 @@
 import React from 'react'
 import { PageLayout } from '../components'
-import pageNotFoundIcon from '../../static/assets/svg/page-not-found.svg'
+import pageNotFoundIcon from '../../static/svg/page-not-found.svg'
 
 export default () => {
   return (

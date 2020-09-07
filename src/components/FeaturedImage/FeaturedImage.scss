@@ -4,16 +4,34 @@
 @import '../../styles/settings/typography';
 
 .featured-image {
-  background-color: $color-gray-400;
-  background-image: url('/assets/images/image-tdc.jpg');
+  background-color: $color-gray-800;
+  background-image: url('/images/background/320-767/image-tdc.jpg');
   background-attachment: fixed;
   background-position: center;
+  background-position-y: 130px;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-position: 50% 70%;
+  background-size: auto;
   width: 100%;
   min-height: 40rem;
 
-  @include screen-tablet-portrait-and-bigger {
+  @include screen-tablet-portrait {
+    background-image: url('/images/background/768-1023/image-tdc.jpg');
+    background-position: 50% 72%;
     min-height: 50rem;
+  }
+
+  @include screen-tablet-landscape-and-bigger {
+    background-position-y: 100px;
+    background-size: cover;
+    min-height: 50rem;
+  }
+
+  @include screen-tablet-landscape {
+    background-image: url('/images/background/1024-1239/image-tdc.jpg');
+  }
+
+  @include screen-laptop-and-bigger {
+    background-image: url('/images/background/1240/image-tdc.jpg');
   }
 }

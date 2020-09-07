@@ -2,7 +2,7 @@ import React, { useState, useRef } from 'react'
 import { Link } from 'gatsby'
 import { useMediaQuery } from 'react-responsive'
 import './Header.scss'
-import MenuIcon from '../../../static/assets/svg/menu.svg'
+import MenuIcon from '../../../static/svg/menu.svg'
 import useOnclickOutside from '../../hooks/use-onclick-outside'
 import Navbar from '../Navbar/Navbar'
 

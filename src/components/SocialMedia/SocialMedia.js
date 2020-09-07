@@ -1,11 +1,11 @@
 import React from 'react'
 
-import twitterIcon from '../../../static/assets/svg/twitter.svg'
-import linkedinIcon from '../../../static/assets/svg/linkedin.svg'
-import githubLightIcon from '../../../static/assets/svg/github-light.svg'
-import githubDarkIcon from '../../../static/assets/svg/github-dark.svg'
-import gmailIcon from '../../../static/assets/svg/gmail.svg'
-import instagramIcon from '../../../static/assets/svg/instagram.svg'
+import twitterIcon from '../../../static/svg/twitter.svg'
+import linkedinIcon from '../../../static/svg/linkedin.svg'
+import githubLightIcon from '../../../static/svg/github-light.svg'
+import githubDarkIcon from '../../../static/svg/github-dark.svg'
+import gmailIcon from '../../../static/svg/gmail.svg'
+import instagramIcon from '../../../static/svg/instagram.svg'
 
 import './SocialMedia.scss'
 

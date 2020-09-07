@@ -1,8 +1,8 @@
 import React from 'react'
 import SocialMedia from '../SocialMedia/SocialMedia'
-import avatarTDC from '../../../static/assets/images/avatar-tdc.png'
-import newsletterIcon from '../../../static/assets/svg/newsletter.svg'
-import networkingIcon from '../../../static/assets/svg/networking.svg'
+import avatarTDC from '../../../static/images/avatar-tdc.png'
+import newsletterIcon from '../../../static/svg/newsletter.svg'
+import networkingIcon from '../../../static/svg/networking.svg'
 import './ThanksSteps.scss'
 
 const ThanksSteps = () => {

@@ -1,7 +1,7 @@
 import React from 'react'
-import womanIcon from '../../../static/assets/svg/woman.svg'
-import trophyIcon from '../../../static/assets/svg/trophy.svg'
-import eBookIcon from '../../../static/assets/svg/ebook.svg'
+import womanIcon from '../../../static/svg/woman.svg'
+import trophyIcon from '../../../static/svg/trophy.svg'
+import eBookIcon from '../../../static/svg/ebook.svg'
 import './Cards.scss'
 
 export default () => (

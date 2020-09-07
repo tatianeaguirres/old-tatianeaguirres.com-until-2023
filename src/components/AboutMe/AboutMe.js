@@ -1,5 +1,5 @@
 import React from 'react'
-import avatar from '../../../static/assets/images/avatar.png'
+import avatar from '../../../static/images/avatar.png'
 import './AboutMe.scss'
 
 const AboutMe = () => {
