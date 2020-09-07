@@ -1,16 +1,12 @@
 import React from 'react'
-import Header from './Header'
+import Header from './Header/Header'
 import Container from './Container/Container'
 import Footer from './Footer/Footer'
-import TopImage from './TopImage'
-import BottomImage from './BottomImage'
 
-export default ({ children }) => (
+export default ({ children, parallax }) => (
   <>
-    <TopImage />
     <Header />
-    <Container>{children}</Container>
+    <Container parallax={parallax}>{children}</Container>
     <Footer />
-    <BottomImage />
   </>
 )

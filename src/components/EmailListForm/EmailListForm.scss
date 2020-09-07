@@ -1,34 +1,59 @@
 @import '../../styles/settings/spacing';
+@import '../../styles/settings/typography';
+@import '../../styles/settings/media';
 
 .email-list-form {
   margin: $global-spacing-md 0;
+  width: 100%;
+
+  form {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .email-list-form__wrapper {
+  height: auto;
+  width: 100%;
+  max-width: 95rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 66rem;
-}
-
-.email-list-form__row {
-  height: auto;
-  width: 100%;
-  display: flex;
-  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
   margin-bottom: $global-spacing-md;
 
-  label {
-    width: 6rem;
+  input {
+    margin-bottom: $global-spacing-md;
+
+    @include screen-tablet-landscape-and-bigger {
+      margin: 0;
+    }
+  }
+
+  @include screen-tablet-portrait {
+    flex-direction: row;
+    justify-content: center;
+
+    input {
+      margin-right: $global-spacing-md;
+    }
+  }
+
+  @include screen-tablet-landscape {
+    flex-direction: row;
+  }
+
+  @include screen-laptop {
+    flex-direction: row;
+  }
+
+  @include screen-desktop {
+    flex-direction: row;
   }
 
   p {
     margin: 0;
+    font-family: $font-tertiary;
   }
-}
-
-.email-list-form__newsletter-icon {
-  height: 6rem;
-  width: 6rem;
-  margin-right: $global-spacing-sm;
 }

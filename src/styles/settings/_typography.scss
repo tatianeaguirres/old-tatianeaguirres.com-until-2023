@@ -1,22 +1,24 @@
 // TYPOGRAPHY
 
 // Google fonts
-@import url('https://fonts.googleapis.com/css2?family=Sacramento&family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&family=Rubik&family=Playfair+Display:ital@0;1&family=Spartan&display=swap');
 
 // Font stacks
-$font-primary: 'Sacramento', cursive;
+$font-logo: 'Sacramento', cursive;
+$font-primary: 'Playfair Display', serif;
 $font-secondary: 'Rubik', sans-serif;
+$font-tertiary: 'Spartan', sans-serif;
 
 // Font settings
-$font-family-logo: $font-primary;
+$font-family-logo: $font-logo;
 $font-family-body: $font-secondary;
 
 // Font sizes
 $font-size-root: 10px;
 $font-size-menu: 1.6rem;
 $font-size-body: 1.5rem;
-$font-size-h1: 3.2rem;
-$font-size-h2: 2.6rem;
+$font-size-h1: 3.8rem;
+$font-size-h2: 3rem;
 $font-size-h3: 2.2rem;
 $font-size-h4: 1.8rem;
 $font-size-h5: 1.6rem;

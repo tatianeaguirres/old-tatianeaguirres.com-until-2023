@@ -1,0 +1,140 @@
+@import '../../styles/settings/spacing';
+@import '../../styles/settings/colors';
+@import '../../styles/settings/media';
+@import '../../styles/settings/typography';
+
+.banner {
+  background-color: $color-gray-400;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position-y: 120px;
+  min-height: 60rem;
+  width: 100%;
+  padding-top: $global-spacing-md;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+
+  @include screen-tablet-landscape-and-bigger {
+    background-size: cover;
+  }
+
+  p {
+    font-family: $font-tertiary;
+    color: $color-black;
+  }
+
+  blockquote {
+    max-width: 50rem;
+    display: grid;
+
+    span {
+      color: $color-black;
+      background-color: $color-white;
+      font-size: 1.8rem;
+      font-family: $font-primary;
+      font-style: italic;
+      width: max-content;
+      margin-bottom: $global-spacing-sm;
+
+      @include screen-tablet-portrait-and-bigger {
+        font-size: 3rem;
+      }
+    }
+  }
+}
+
+.banner__index {
+  background-image: url('/images/background/320-767/background-desk.jpg');
+  background-position-y: 130px;
+
+  @include screen-tablet-portrait {
+    background-image: url('/images/background/768-1023/background-desk.jpg');
+  }
+
+  @include screen-tablet-landscape {
+    background-image: url('/images/background/1024-1239/background-desk.jpg');
+    background-position-y: 0;
+  }
+
+  @include screen-laptop-and-bigger {
+    background-image: url('/images/background/1240/background-desk.jpg');
+    background-position-y: 0;
+  }
+}
+
+.banner__about {
+  background-image: url('/images/background/320-767/background-netherlands.jpg');
+
+  @include screen-tablet-portrait {
+    background-image: url('/images/background/768-1023/background-netherlands.jpg');
+    background-position-y: 120px;
+  }
+
+  @include screen-tablet-landscape {
+    background-image: url('/images/background/1024-1239/background-netherlands.jpg');
+    background-size: auto;
+    background-position-y: 120px;
+  }
+
+  @include screen-laptop-and-bigger {
+    background-image: url('/images/background/1240/background-netherlands.jpg');
+    background-position-y: 0;
+  }
+
+  min-height: 40rem;
+
+  @include screen-tablet-portrait-and-bigger {
+    min-height: 60rem;
+  }
+}
+
+.banner__newsletter {
+  background-image: url('/images/background/320-767/background-newsletter.jpg');
+
+  @include screen-tablet-portrait {
+    background-image: url('/images/background/768-1023/background-newsletter.jpg');
+  }
+
+  @include screen-tablet-landscape {
+    background-image: url('/images/background/1024-1239/background-newsletter.jpg');
+    background-size: auto;
+  }
+
+  @include screen-laptop-and-bigger {
+    background-image: url('/images/background/1240/background-newsletter.jpg');
+  }
+
+  min-height: 40rem;
+
+  @include screen-tablet-portrait-and-bigger {
+    min-height: 60rem;
+  }
+}
+
+.banner__thanks {
+  background-image: url('/images/background/320-767/background-thanks.jpg');
+  background-position-y: 120px;
+
+  @include screen-tablet-portrait {
+    background-image: url('/images/background/768-1023/background-thanks.jpg');
+  }
+
+  @include screen-tablet-landscape {
+    background-image: url('/images/background/1024-1239/background-thanks.jpg');
+  }
+
+  @include screen-laptop-and-bigger {
+    background-image: url('/images/background/1240/background-thanks.jpg');
+    background-position-y: 70px;
+  }
+
+  min-height: 40rem;
+
+  @include screen-tablet-portrait-and-bigger {
+    min-height: 60rem;
+  }
+}

@@ -1,6 +1,6 @@
 ---
 title: 'Semantic HTML: Texts and Formatting - part 2'
-tags: ['Semantic', 'HTML', 'Texts', 'Formatting', 'Web', 'Accessibility']
+tags: ['Semantic HTML', 'Accessibility', 'Formatting']
 author: 'Tatiane Aguirres Nogueira'
 date: '2020-08-23'
 featured: 'images/featured.jpg'

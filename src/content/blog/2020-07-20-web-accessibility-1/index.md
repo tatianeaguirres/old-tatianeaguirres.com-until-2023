@@ -1,6 +1,6 @@
 ---
 title: 'Web Accessibility I: Make Your Website Accessible to Keyboard Users'
-tags: ['Web', 'Accessibility', 'Keyboard', 'Users']
+tags: ['Web', 'Accessibility', 'Keyboard Users']
 author: 'Tatiane Aguirres Nogueira'
 date: '2020-07-20'
 featured: 'images/featured.jpg'

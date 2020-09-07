@@ -29,7 +29,8 @@ const PostTemplate = ({
       <PageTitle title={title} />
       {subTitle}
       <div dangerouslySetInnerHTML={{ __html: html }} />
-      <p className='u-logo u-margin-bottom-xlg'>Tati</p>
+      <p>XoXo</p>
+      <p className='u-logo u-margin-bottom-xlg'>Tatiane</p>
       <DiscussionEmbed
         className='disqus-box'
         shortname={shortname}

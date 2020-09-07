@@ -1,0 +1,54 @@
+@import '../../styles/settings/colors';
+@import '../../styles/settings/spacing';
+@import '../../styles/settings/media';
+@import '../../styles/settings/typography';
+@import '../../styles/settings/heading';
+
+.c-header {
+  height: 13rem;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  background-color: $color-white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: $global-spacing-md;
+
+  @include screen-mobile-plus {
+    padding: $global-spacing-xlg 0.8rem;
+  }
+
+  @include screen-tablet-portrait {
+    padding: $global-spacing-xlg 3rem;
+  }
+
+  @include screen-tablet-landscape {
+    padding: $global-spacing-xlg 5rem;
+  }
+
+  @include screen-laptop {
+    padding: $global-spacing-xlg 12rem;
+  }
+
+  @include screen-desktop {
+    padding: $global-spacing-xlg 12rem;
+  }
+}
+
+a.header__logo {
+  text-decoration: none;
+  @include h1;
+}
+
+a.header__logo:hover,
+a.header__logo:focus {
+  color: $color-pink;
+}
+
+.header__menu-icon {
+  height: 4rem;
+  width: 4rem;
+}

@@ -3,22 +3,33 @@
 input.u-input {
   display: block;
   width: 100%;
-  height: calc(1.5rem + 0.5rem + 0.2rem);
-  padding: $global-spacing-sm;
   font-size: $font-size-body;
   font-weight: $font-weight-regular;
   line-height: $font-line-height-body;
-  background-color: transparent;
-  background-clip: padding-box;
-  border-radius: 0.2rem;
-  transition: all 0.4s ease-in-out;
-  border: 0.1rem solid $color-yellow;
+  border: 1px solid $color-gray-600;
+  padding: 12px;
+  min-height: 20px;
+  box-sizing: border-box;
 
   &:focus {
-    box-shadow: 0 0 1rem 0.1rem $color-yellow;
+    outline: 1px solid $color-pink;
   }
 
   &--small {
-    max-width: 60rem;
+    max-width: 30rem;
+    min-width: 25rem;
   }
 }
+
+// .search {
+//   background-image: url('/images/icon-search.png');
+//   height: 2rem;
+//   width: 2rem;
+//   transition: background-image .2s ease-out;
+//   padding: 12px 12px 12px 45px;
+//   background: no-repeat 15px 50%;
+//   width: 100%;
+//   min-height: 20px;
+//   display: block;
+//   box-sizing: border-box;
+// }

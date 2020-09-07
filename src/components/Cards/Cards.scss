@@ -1,0 +1,107 @@
+@import '../../styles/settings/spacing';
+@import '../../styles/settings/colors';
+@import '../../styles/settings/media';
+@import '../../styles/settings/typography';
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: $global-spacing-lg;
+  padding: 0 $global-spacing-sm;
+  width: 100%;
+
+  @include screen-tablet-portrait-and-bigger {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: $global-spacing-xlg;
+  }
+
+  @include screen-mobile-plus {
+    padding: 0 0.8rem;
+  }
+
+  @include screen-tablet-portrait {
+    padding: 0 3rem;
+  }
+
+  @include screen-tablet-landscape {
+    padding: 0 5rem;
+    justify-content: space-between;
+  }
+
+  @include screen-laptop {
+    padding: 0 12rem;
+    justify-content: space-between;
+  }
+
+  @include screen-desktop {
+    padding: 0 12rem;
+    justify-content: center;
+  }
+}
+
+.cards a {
+  text-decoration: none;
+
+  &:hover h3,
+  &:focus h3 {
+    color: $color-pink;
+  }
+}
+
+.cards__card {
+  height: auto;
+  width: 100%;
+  min-height: 27rem;
+  max-width: 26rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: $global-spacing-md;
+  margin: $global-spacing-xs $global-spacing-xs $global-spacing-md;
+  transition: all 0.2s ease-in-out;
+  background-color: $color-white;
+  box-shadow: 0 0 2.5rem 0.1rem rgba(18, 18, 18, 0.76);
+
+  @include screen-tablet-portrait {
+    width: 46%;
+    max-width: 30rem;
+  }
+
+  @include screen-tablet-landscape {
+    width: 30%;
+    max-width: 30rem;
+  }
+
+  @include screen-laptop {
+    width: 30%;
+    max-width: 34rem;
+  }
+
+  @include screen-desktop {
+    width: 30%;
+    max-width: 38rem;
+    margin: $global-spacing-sm $global-spacing-xlg;
+  }
+}
+
+.cards__card p {
+  text-align: center;
+  margin-bottom: 0;
+  font-family: $font-tertiary;
+}
+
+.cards__card-icon {
+  height: 6rem;
+  width: 6rem;
+  margin-bottom: $global-spacing-md;
+  transition: all 0.4s ease-in-out;
+}
+
+.cards__card:hover .cards__card-icon,
+.cards__card:focus .cards__card-icon {
+  transform: rotate(20deg);
+}

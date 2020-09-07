@@ -1,6 +1,6 @@
 ---
 title: 'Semantic HTML: Images'
-tags: ['Semantic', 'HTML', 'Images', 'Web', 'Accessibility']
+tags: ['Accessibility', 'Semantic HTML', 'Images']
 author: 'Tatiane Aguirres Nogueira'
 date: '2020-08-04'
 featured: 'images/featured.jpg'

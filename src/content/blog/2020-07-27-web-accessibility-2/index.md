@@ -1,6 +1,6 @@
 ---
 title: 'Web Accessibility II: Make Your Website Accessible to Screen Readers Users'
-tags: ['Web', 'Accessibility', 'Screen', 'Readers', 'Users']
+tags: ['Web', 'Accessibility', 'Screen Readers']
 author: 'Tatiane Aguirres Nogueira'
 date: '2020-07-27'
 featured: 'images/featured.jpg'

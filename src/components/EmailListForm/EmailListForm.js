@@ -39,37 +39,33 @@ const EmailListForm = ({ ebook }) => {
     <section className='email-list-form'>
       <form onSubmit={handleSubmit}>
         <div className='email-list-form__wrapper'>
-          <div className='email-list-form__row'>
-            <label htmlFor='name'>Name:</label>
-            <input
-              className='u-input u-input--small'
-              id='name'
-              name='name'
-              type='text'
-              placeholder='Hermione'
-              required
-              aria-required='true'
-              onChange={event => handleChange(event, setName)}
-            />
-          </div>
-          <div className='email-list-form__row'>
-            <label htmlFor='email'>Email:</label>
-            <input
-              className='u-input u-input--small'
-              id='email'
-              name='email'
-              type='email'
-              placeholder='hgranger@gmail.com'
-              required
-              aria-required='true'
-              onChange={event => handleChange(event, setEmail)}
-            />
-          </div>
-          <button
-            type='submit'
-            name='submit'
-            className='u-button u-margin-bottom-md'
-          >
+          <label className='u-sr-only' htmlFor='name'>
+            Name:
+          </label>
+          <input
+            className='u-input u-input--small'
+            id='name'
+            name='name'
+            type='text'
+            placeholder='First Name'
+            required
+            aria-required='true'
+            onChange={event => handleChange(event, setName)}
+          />
+          <label className='u-sr-only' htmlFor='email'>
+            Email:
+          </label>
+          <input
+            className='u-input u-input--small'
+            id='email'
+            name='email'
+            type='email'
+            placeholder='Email Address'
+            required
+            aria-required='true'
+            onChange={event => handleChange(event, setEmail)}
+          />
+          <button type='submit' name='submit' className='u-button'>
             {ebook ? 'Get your free eBook' : 'Subscribe'}
           </button>
           {isSubscribed && <p className='u-text-center'>{isSubscribed}</p>}

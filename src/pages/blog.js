@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { graphql } from 'gatsby'
-import { PageLayout, PageTitle, BlogLink } from '../components'
+import { PageLayout, BlogLink } from '../components'
 import { SEO, Utils } from '../utils'
 
 export default ({ data }) => {
@@ -9,11 +9,12 @@ export default ({ data }) => {
     query: ''
   })
 
+  const imagePreviewSite = data.fileName.childImageSharp.fixed
   const allFeaturedImages = data.allFile.edges || []
   const allPosts = data.allMarkdownRemark.edges || []
   const regex = /\/[blog].*\/|$/
-  const featuredImageMap = Utils.getImageMap(allFeaturedImages, regex)
 
+  const featuredImageMap = Utils.getImageMap(allFeaturedImages, regex)
   const handleChange = e => {
     const query = e.target.value
 
@@ -42,8 +43,7 @@ export default ({ data }) => {
 
   return (
     <PageLayout>
-      <SEO title='Blog' />
-      <PageTitle title='Blog' />
+      <SEO title='Blog' image={imagePreviewSite} pathname='/blog' />
       <form className='u-margin-bottom-lg' role='search'>
         <input
           className='u-input'
@@ -53,23 +53,34 @@ export default ({ data }) => {
           onChange={handleChange}
         />
       </form>
-      {filteredPosts.map(({ node }) => (
-        <BlogLink
-          key={node.id}
-          to={node.fields.slug}
-          featuredImage={featuredImageMap[node.fields.slug]}
-          title={node.frontmatter.title}
-          date={node.frontmatter.date}
-          description={node.frontmatter.description || node.excerpt}
-          tags={node.frontmatter.tags}
-        />
-      ))}
+      <article className='u-row-flex-wrap'>
+        {filteredPosts.map(({ node }) => (
+          <BlogLink
+            key={node.id}
+            to={node.fields.slug}
+            featuredImage={featuredImageMap[node.fields.slug + 'images/']}
+            title={node.frontmatter.title}
+            date={node.frontmatter.date}
+            description={node.frontmatter.description || node.excerpt}
+            tags={node.frontmatter.tags}
+          />
+        ))}
+      </article>
     </PageLayout>
   )
 }
 
 export const query = graphql`
   query {
+    fileName: file(relativePath: { eq: "images/preview-site.jpg" }) {
+      childImageSharp {
+        fixed(height: 500, width: 1000) {
+          src
+          width
+          height
+        }
+      }
+    }
     allMarkdownRemark(
       filter: { fileAbsolutePath: { regex: "/blog/" } }
       sort: { fields: [frontmatter___date], order: DESC }
@@ -102,7 +113,7 @@ export const query = graphql`
       edges {
         node {
           childImageSharp {
-            fluid(maxWidth: 400) {
+            fluid(maxWidth: 800) {
               ...GatsbyImageSharpFluid
             }
           }

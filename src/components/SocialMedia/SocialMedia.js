@@ -1,19 +1,17 @@
-import React, { useContext } from 'react'
-import ThemeContext from '../../utils/theme'
+import React from 'react'
 
-import twitterIcon from '../../../assets/svg/twitter.svg'
-import linkedinIcon from '../../../assets/svg/linkedin.svg'
-import githubLightIcon from '../../../assets/svg/github-light.svg'
-import githubDarkIcon from '../../../assets/svg/github-dark.svg'
-import gmailIcon from '../../../assets/svg/gmail.svg'
-import instagramIcon from '../../../assets/svg/instagram.svg'
+import twitterIcon from '../../../static/svg/twitter.svg'
+import linkedinIcon from '../../../static/svg/linkedin.svg'
+import githubLightIcon from '../../../static/svg/github-light.svg'
+import githubDarkIcon from '../../../static/svg/github-dark.svg'
+import gmailIcon from '../../../static/svg/gmail.svg'
+import instagramIcon from '../../../static/svg/instagram.svg'
 
 import './SocialMedia.scss'
 
-export default ({ align }) => {
-  const { dark } = useContext(ThemeContext)
+export default ({ dark }) => {
   return (
-    <div className={`social-media social-media--${align}`}>
+    <div className='social-media'>
       <a
         href='mailto:aguirres.tati@gmail.com'
         target='_blank'

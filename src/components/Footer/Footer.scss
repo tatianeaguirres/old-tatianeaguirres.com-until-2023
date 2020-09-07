@@ -4,49 +4,72 @@
 @import '../../styles/settings/typography';
 
 .footer {
-  height: 100%;
   width: 100%;
-  padding: $global-spacing-xs;
-  display: flex;
-  flex-direction: column;
-  background: $color-ice-pink;
-  border-top: 0.1rem solid $color-yellow;
+  background-color: $color-black;
+  color: $color-white;
 
-  @include screen-tablet-portrait-and-bigger {
-    background: rgba($color-ice-pink, 0.8);
+  article {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: $global-spacing-md $global-spacing-md $global-spacing-xs;
+
+    div:last-child {
+      justify-content: center;
+      width: 100%;
+    }
+
+    @include screen-mobile-plus {
+      padding: $global-spacing-lg 0.8rem $global-spacing-xs;
+    }
+
+    @include screen-tablet-portrait {
+      padding: $global-spacing-lg 3rem $global-spacing-xs;
+    }
+
+    @include screen-tablet-landscape {
+      padding: $global-spacing-xlg 5rem $global-spacing-xs;
+    }
+
+    @include screen-laptop {
+      padding: $global-spacing-xlg 12rem $global-spacing-xs;
+
+      div:last-child {
+        justify-content: space-between;
+      }
+    }
+
+    @include screen-desktop {
+      padding: $global-spacing-md 12rem $global-spacing-xs;
+
+      div:last-child {
+        justify-content: space-between;
+      }
+    }
+
+    hr {
+      width: 100%;
+      background-color: $color-white;
+      margin-top: $global-spacing-xlg;
+    }
+
+    p {
+      color: $color-white;
+      font-family: $font-tertiary;
+      margin-bottom: 0;
+    }
+
+    a {
+      color: white;
+
+      &:hover,
+      &:focus {
+        color: $color-hot-pink;
+      }
+    }
   }
-}
-
-.footer__avatar {
-  margin: -$global-spacing-xlg auto $global-spacing-sm auto;
-}
-
-.footer__avatar img {
-  width: 8rem;
-  height: 8rem;
-  border-radius: 4rem;
-  box-shadow: none;
-  transition: box-shadow 0.2s ease-in-out;
-  border: 0.1rem solid $color-yellow;
-
-  &:hover,
-  &:focus {
-    box-shadow: 0 0 2.2rem 0.3rem $color-yellow;
-  }
-}
-
-.footer__info {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: $global-spacing-sm;
-}
-
-.footer__info p,
-.footer__info a {
-  font-size: 1.2rem;
-  margin: 0;
 }
 
 .footer__heart {

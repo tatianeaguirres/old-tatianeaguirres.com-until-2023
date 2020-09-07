@@ -1,39 +1,67 @@
 // CONTAINER
 
+.u-parallax {
+  margin-top: 13rem;
+}
+
 .u-container {
-  margin-top: 7rem;
+  margin-top: 13rem;
   padding: $global-spacing-md $global-spacing-md $global-spacing-xlg;
-  background: $color-white;
 
   @include screen-mobile-plus {
-    padding: $global-spacing-xlg 10%;
+    padding: $global-spacing-lg 0.8rem;
   }
 
   @include screen-tablet-portrait {
-    padding: $global-spacing-xlg 15%;
-  }
-
-  @include screen-tablet-portrait-and-bigger {
-    background: transparent;
+    padding: $global-spacing-lg 3rem;
   }
 
   @include screen-tablet-landscape {
-    padding: $global-spacing-xlg 15%;
+    padding: $global-spacing-lg 5rem;
   }
 
   @include screen-laptop {
-    padding: $global-spacing-xlg 20%;
+    padding: $global-spacing-lg 12rem;
   }
 
   @include screen-desktop {
-    padding: $global-spacing-xlg 20%;
+    padding: $global-spacing-lg 12rem;
   }
 }
 
-.u-content {
-  @include screen-tablet-portrait-and-bigger {
-    padding: $global-spacing-lg;
-    min-height: 70vh;
-    background: rgba($color-white, 0.8);
+.u-section {
+  margin: 10rem 0;
+  padding: $global-spacing-md $global-spacing-md $global-spacing-lg;
+
+  @include screen-mobile-plus {
+    padding: $global-spacing-md 0.8rem;
+    margin: 15rem 0;
   }
+
+  @include screen-tablet-portrait {
+    padding: $global-spacing-md 3rem;
+    margin: 15rem 0;
+  }
+
+  @include screen-tablet-landscape {
+    padding: 0 5rem;
+    margin: 15rem 0;
+  }
+
+  @include screen-laptop {
+    padding: 0 12rem;
+    margin: 15rem 0;
+  }
+
+  @include screen-desktop {
+    padding: 0 12rem;
+    margin: 16rem 0;
+  }
+}
+
+#gatsby-focus-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
 }
