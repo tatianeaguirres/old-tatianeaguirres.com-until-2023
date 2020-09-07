@@ -6,7 +6,7 @@ import { Helmet } from 'react-helmet'
 import { useStaticQuery, graphql } from 'gatsby'
 
 const SEO = ({ description, lang, meta, image: img, title, pathname }) => {
-  const { site } = useStaticQuery(query)
+  const { site, fileName } = useStaticQuery(query)
 
   const image = {}
 
@@ -15,13 +15,16 @@ const SEO = ({ description, lang, meta, image: img, title, pathname }) => {
     image.height = img.height
     image.width = img.width
   } else {
-    image.src = site.siteMetadata.imagePreview.src
-    image.height = site.siteMetadata.imagePreview.height
-    image.width = site.siteMetadata.imagePreview.width
+    image.src = `${site.siteMetadata.siteUrl}${fileName.childImageSharp.fixed.src}`
+    image.height = fileName.childImageSharp.fixed.height
+    image.width = fileName.childImageSharp.fixed.width
   }
 
   const metaDescription = description || site.siteMetadata.description
-  const canonical = pathname ? `${site.siteMetadata.siteUrl}${pathname}` : null
+
+  const canonical = pathname
+    ? `${site.siteMetadata.siteUrl}${pathname}`
+    : site.siteMetadata.siteUrl
 
   return (
     <Helmet
@@ -77,6 +80,15 @@ SEO.defaultProps = {
 
 const query = graphql`
   query SEO {
+    fileName: file(relativePath: { eq: "images/preview-site.jpg" }) {
+      childImageSharp {
+        fixed(height: 500, width: 1000) {
+          src
+          width
+          height
+        }
+      }
+    }
     site {
       siteMetadata {
         title
@@ -84,11 +96,6 @@ const query = graphql`
         author
         keywords
         siteUrl
-        imagePreview {
-          height
-          src
-          width
-        }
       }
     }
   }

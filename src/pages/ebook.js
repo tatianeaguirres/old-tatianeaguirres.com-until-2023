@@ -21,7 +21,7 @@ export default ({ data }) => {
 
 export const query = graphql`
   query {
-    fileName: file(relativePath: { eq: "images/ebook.jpg" }) {
+    fileName: file(relativePath: { eq: "images/preview-ebook.jpg" }) {
       childImageSharp {
         fixed(height: 630, width: 1200) {
           src

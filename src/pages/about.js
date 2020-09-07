@@ -1,4 +1,5 @@
 import React from 'react'
+import { graphql } from 'gatsby'
 import {
   AboutMe,
   Banner,
@@ -10,9 +11,10 @@ import {
 import { SEO } from '../utils'
 
 export default ({ data }) => {
+  const image = data.fileName.childImageSharp.fixed
   return (
     <PageLayout parallax={true}>
-      <SEO title='About Me' />
+      <SEO title='About' image={image} pathname='/about' />
       <Banner page='about'>
         <blockquote>
           <span>I help Front-end Developers</span>
@@ -36,3 +38,17 @@ export default ({ data }) => {
     </PageLayout>
   )
 }
+
+export const query = graphql`
+  query {
+    fileName: file(relativePath: { eq: "images/preview-site.jpg" }) {
+      childImageSharp {
+        fixed(height: 500, width: 1000) {
+          src
+          width
+          height
+        }
+      }
+    }
+  }
+`

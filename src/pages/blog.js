@@ -9,6 +9,7 @@ export default ({ data }) => {
     query: ''
   })
 
+  const imagePreviewSite = data.fileName.childImageSharp.fixed
   const allFeaturedImages = data.allFile.edges || []
   const allPosts = data.allMarkdownRemark.edges || []
   const regex = /\/[blog].*\/|$/
@@ -42,7 +43,7 @@ export default ({ data }) => {
 
   return (
     <PageLayout>
-      <SEO title='Blog' />
+      <SEO title='Blog' image={imagePreviewSite} pathname='/blog' />
       <form className='u-margin-bottom-lg' role='search'>
         <input
           className='u-input'
@@ -71,6 +72,15 @@ export default ({ data }) => {
 
 export const query = graphql`
   query {
+    fileName: file(relativePath: { eq: "images/preview-site.jpg" }) {
+      childImageSharp {
+        fixed(height: 500, width: 1000) {
+          src
+          width
+          height
+        }
+      }
+    }
     allMarkdownRemark(
       filter: { fileAbsolutePath: { regex: "/blog/" } }
       sort: { fields: [frontmatter___date], order: DESC }

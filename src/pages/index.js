@@ -4,6 +4,7 @@ import { SEO, Utils } from '../utils'
 import { graphql } from 'gatsby'
 
 export default ({ data }) => {
+  const imagePreviewSite = data.fileName.childImageSharp.fixed
   const allFeaturedImages = data.allFile.edges || []
   const regex = /\/[blog].*\/|$/
   const featuredImageMap = Utils.getImageMap(allFeaturedImages, regex)
@@ -11,7 +12,7 @@ export default ({ data }) => {
 
   return (
     <PageLayout parallax={true}>
-      <SEO title='Tatiane Aguirres Nogueira' />
+      <SEO title='Home' image={imagePreviewSite} />
       <Banner page='index'>
         <section className='u-text-center'>
           <h1 className='u-text-shadow'>Tatiane Aguirres</h1>
@@ -46,6 +47,15 @@ export default ({ data }) => {
 
 export const query = graphql`
   query {
+    fileName: file(relativePath: { eq: "images/preview-site.jpg" }) {
+      childImageSharp {
+        fixed(height: 500, width: 1000) {
+          src
+          width
+          height
+        }
+      }
+    }
     allMarkdownRemark {
       edges {
         node {
