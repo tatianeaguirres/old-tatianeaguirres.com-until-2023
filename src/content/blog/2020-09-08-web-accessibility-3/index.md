@@ -1,5 +1,5 @@
 ---
-title: 'Web Accessibility II: Make Your Website Accessible to Low Vision Users'
+title: 'Web Accessibility III: Make Your Website Accessible to Low Vision Users'
 tags: ['Web', 'Accessibility', 'Low Vision Users']
 author: 'Tatiane Aguirres Nogueira'
 date: '2020-09-08'
