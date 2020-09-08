@@ -77,7 +77,7 @@ A screen reader user normally uses his keyboard to navigate the website, so I re
   </li>
 </ol>
 
-<section style="position: relative;" class="u-margin-bottom-sm">
+<section style="position: relative;" class="u-margin-bottom-lg">
 <span class="u-anchor" id="language"></span>
 <h3>1. Language</h3>
 
@@ -110,7 +110,7 @@ span[lang] {
 ```
 
 </section>
-<section style="position: relative;" class="u-margin-bottom-sm">
+<section style="position: relative;" class="u-margin-bottom-lg">
 <span class="u-anchor" id="links"></span>
 <h3>2. Links</h3>
 
@@ -140,7 +140,7 @@ The links must be used to go somewhere, so if your link executes a function, it 
 ```
 
 </section>
-<section style="position: relative;" class="u-margin-bottom-sm">
+<section style="position: relative;" class="u-margin-bottom-lg">
 <span class="u-anchor" id="headings"></span>
 <h3>3.Headings </h3>
 
@@ -180,7 +180,7 @@ Example:
 ```
 
 </section>
-<section style="position: relative;" class="u-margin-bottom-sm">
+<section style="position: relative;" class="u-margin-bottom-lg">
 <span class="u-anchor" id="aria"></span>
 <h3>4. ARIA - Accessible Rich Internet Applications</h3>
 
@@ -189,7 +189,7 @@ ARIA is a set of attributes you can add to HTML elements that define ways to mak
 There are three main components used in ARIA: <strong>Roles</strong>, <strong>States</strong>, and <strong>Properties</strong>.
 
 </section>
-<section style="position: relative;" class="u-margin-bottom-sm">
+<section style="position: relative;" class="u-margin-bottom-lg">
 <span class="u-anchor" id="roles"></span>
 <h4>4.1. ARIA - Roles</h4>
 
@@ -208,7 +208,7 @@ Examples:
 ```
 
 </section>
-<section style="position: relative;" class="u-margin-bottom-sm">
+<section style="position: relative;" class="u-margin-bottom-lg">
 <span class="u-anchor" id="states-properties"></span>
 <h4>4.2. ARIA - States and Properties</h4>
 
@@ -225,7 +225,7 @@ Examples:
 ```
 
 </section>
-<section style="position: relative;" class="u-margin-bottom-sm">
+<section style="position: relative;" class="u-margin-bottom-lg">
 <span class="u-anchor" id="labels-descriptions"></span>
 <h4>4.3. ARIA - Labels and Descriptions</h4>
 
@@ -243,7 +243,7 @@ HTML facilitates associations that support accessibility. When HTML cannot creat
 ```
 
 </section>
-<section style="position: relative;" class="u-margin-bottom-sm">
+<section style="position: relative;" class="u-margin-bottom-lg">
 <span class="u-anchor" id="images"></span>
 <h3>5. Images</h3>
 
@@ -319,7 +319,7 @@ Some good examples:
 ```
 
 </section>
-<section style="position: relative;" class="u-margin-bottom-sm">
+<section style="position: relative;" class="u-margin-bottom-lg">
 <span class="u-anchor" id="svg"></span>
 <h3>6. SVG - Scalable Vector Graphics</h3>
 
@@ -334,7 +334,7 @@ ARIA can be used to ensure the content in SVG elements is accessible. The additi
 ```
 
 </section>
-<section style="position: relative;" class="u-margin-bottom-sm">
+<section style="position: relative;" class="u-margin-bottom-lg">
 <span class="u-anchor" id="invisible-content"></span>
 <h3>7. Invisible Content</h3>
 
@@ -358,7 +358,7 @@ But if your goal is to hide text visually and keep it accessible for screen read
 ```
 
 </section>
-<section style="position: relative;" class="u-margin-bottom-sm">
+<section style="position: relative;" class="u-margin-bottom-lg">
 <span class="u-anchor" id="testing"></span>
 <h3>8. Testing the Screen Reader</h3>
 

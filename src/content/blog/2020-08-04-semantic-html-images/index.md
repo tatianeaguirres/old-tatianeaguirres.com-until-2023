@@ -45,7 +45,7 @@ In most of the cases, images are used to make the website's content more pleasan
   </li>
 </ol>
 
-<section style="position: relative;" class="u-margin-bottom-sm">
+<section style="position: relative;" class="u-margin-bottom-lg">
 <span class="u-anchor" id="html-img-element"></span>
 
 ### 1. HTML img Element
@@ -62,7 +62,7 @@ The <code>alt</code> attribute holds an alternative text of the image, which isn
 
 </section>
 
-<section style="position: relative;" class="u-margin-bottom-sm">
+<section style="position: relative;" class="u-margin-bottom-lg">
 <span class="u-anchor" id="attributes"></span>
 
 ### 2. Attributes Specific to the img Element
@@ -94,7 +94,7 @@ You can also see the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/
 
 </section>
 
-<section style="position: relative;" class="u-margin-bottom-sm">
+<section style="position: relative;" class="u-margin-bottom-lg">
 <span class="u-anchor" id="accessibility"></span>
 
 ### 3. Accessibility
@@ -105,7 +105,7 @@ You can find tips and tricks to make your images really accessible on the previo
 
 </section>
 
-<section style="position: relative;" class="u-margin-bottom-sm">
+<section style="position: relative;" class="u-margin-bottom-lg">
 <span class="u-anchor" id="background-images"></span>
 
 ### 4. Background Images
@@ -134,7 +134,7 @@ Warning: Browsers don't provide any special information on background images to 
 
 </section>
 
-<section style="position: relative;" class="u-margin-bottom-sm">
+<section style="position: relative;" class="u-margin-bottom-lg">
 <span class="u-anchor" id="linked-images"></span>
 
 ### 5. Linked Images
@@ -163,7 +163,7 @@ Examples:
 
 </section>
 
-<section style="position: relative;" class="u-margin-bottom-sm">
+<section style="position: relative;" class="u-margin-bottom-lg">
 <span class="u-anchor" id="responsive-images"></span>
 
 ### 6. Responsive Images

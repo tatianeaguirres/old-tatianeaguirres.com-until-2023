@@ -58,7 +58,7 @@ Last week I did a <a href="https://www.slideshare.net/TatianeAguirres1/tecnologi
   </li>
 </ol>
 
-<section style="position: relative;" class="u-margin-bottom-sm">
+<section style="position: relative;" class="u-margin-bottom-lg">
 <span class="u-anchor" id="mdn"></span>
 
 ### 1. MDN Documentation
@@ -69,7 +69,7 @@ MDN is not just for beginners, they have great content that should be considered
 
 </section>
 
-<section style="position: relative;" class="u-margin-bottom-sm">
+<section style="position: relative;" class="u-margin-bottom-lg">
 <span class="u-anchor" id="games"></span>
 
 ### 2. Coding Games
@@ -86,7 +86,7 @@ I have three free and cool games to recommend to you:
 
 </section>
 
-<section style="position: relative;" class="u-margin-bottom-sm">
+<section style="position: relative;" class="u-margin-bottom-lg">
 <span class="u-anchor" id="events"></span>
 
 ### 3. Events from Front-end Community
@@ -97,7 +97,7 @@ The easiest way to find front-end community events near you is to search for you
 
 </section>
 
-<section style="position: relative;" class="u-margin-bottom-sm">
+<section style="position: relative;" class="u-margin-bottom-lg">
 <span class="u-anchor" id="youtube"></span>
 
 ### 4. YouTube
@@ -115,7 +115,7 @@ I recommend four YouTube channels that I like the way they teach technical thing
 
 </section>
 
-<section style="position: relative;" class="u-margin-bottom-sm">
+<section style="position: relative;" class="u-margin-bottom-lg">
 <span class="u-anchor" id="podcasts"></span>
 
 ### 5. Podcasts
@@ -133,7 +133,7 @@ Here, I have four amazing technical podcasts to indicate to you:
 
 </section>
 
-<section style="position: relative;" class="u-margin-bottom-sm">
+<section style="position: relative;" class="u-margin-bottom-lg">
 <span class="u-anchor" id="stack-overflow"></span>
 
 ### 6. Stack Overflow
@@ -154,7 +154,7 @@ My tips for you to use the maximum that this site have to offer to you is:
 
 </section>
 
-<section style="position: relative;" class="u-margin-bottom-sm">
+<section style="position: relative;" class="u-margin-bottom-lg">
 <span class="u-anchor" id="open-source"></span>
 
 ### 7. Open Source Projects
@@ -165,7 +165,7 @@ Want to contribute to open source? <a href="https://opensource.guide/how-to-cont
 
 </section>
 
-<section style="position: relative;" class="u-margin-bottom-sm">
+<section style="position: relative;" class="u-margin-bottom-lg">
 <span class="u-anchor" id="github-portfolio"></span>
 
 ### 8. GitHub Portfolio
@@ -178,7 +178,7 @@ Once you know what the most requested skills are, start working on projects that
 
 </section>
 
-<section style="position: relative;" class="u-margin-bottom-sm">
+<section style="position: relative;" class="u-margin-bottom-lg">
 <span class="u-anchor" id="blog-posts"></span>
 
 ### 9. Blog Posts

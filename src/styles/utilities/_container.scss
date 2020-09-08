@@ -1,9 +1,5 @@
 // CONTAINER
 
-.u-parallax {
-  margin-top: 13rem;
-}
-
 .u-container {
   margin-top: 13rem;
   padding: $global-spacing-md $global-spacing-md $global-spacing-xlg;
@@ -26,6 +22,23 @@
 
   @include screen-desktop {
     padding: $global-spacing-lg 12rem;
+  }
+}
+
+.u-container__parallax {
+  padding: 0;
+}
+
+.u-container__blog-content {
+  max-width: 80rem;
+  margin: 13rem auto $global-spacing-lg;
+
+  @include screen-tablet-portrait {
+    padding: $global-spacing-lg 10rem;
+  }
+
+  @include screen-tablet-landscape-and-bigger {
+    padding: 0;
   }
 }
 
