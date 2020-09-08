@@ -4,7 +4,7 @@ import { SEO } from '../utils'
 
 export default () => {
   return (
-    <PageLayout parallax={true}>
+    <PageLayout page='parallax'>
       <SEO title='Thanks!' />
       <Banner page='thanks'>
         <blockquote>

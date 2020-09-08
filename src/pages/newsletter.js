@@ -6,7 +6,7 @@ import { SEO } from '../utils'
 export default ({ data }) => {
   const image = data.fileName.childImageSharp.fixed
   return (
-    <PageLayout parallax={true}>
+    <PageLayout page='parallax'>
       <SEO
         title='Newsletter'
         description='Receive content about front-end development weekly.'

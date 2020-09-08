@@ -75,7 +75,7 @@ If you missed the previous part, I strongly recommend you visit <a href="https:/
   </li>
 </ol>
 
-<section style="position: relative;" class="u-margin-bottom-sm">
+<section style="position: relative;" class="u-margin-bottom-lg">
 <span class="u-anchor" id="mark"></span>
 
 ### 1. Mark Text element
@@ -132,7 +132,7 @@ mark::after {
 
 </section>
 
-<section style="position: relative;" class="u-margin-bottom-sm">
+<section style="position: relative;" class="u-margin-bottom-lg">
 <span class="u-anchor" id="paragraph"></span>
 
 ### 2. Paragraph element
@@ -156,7 +156,7 @@ p {
 
 </section>
 
-<section style="position: relative;" class="u-margin-bottom-sm">
+<section style="position: relative;" class="u-margin-bottom-lg">
 <span class="u-anchor" id="preformatted"></span>
 
 ### 3. Preformatted Text element
@@ -216,7 +216,7 @@ p {
 
 </section>
 
-<section style="position: relative;" class="u-margin-bottom-sm">
+<section style="position: relative;" class="u-margin-bottom-lg">
 <span class="u-anchor" id="section"></span>
 
 ### 4. Section element
@@ -247,7 +247,7 @@ Tips and tricks about the section usage:
 
 </section>
 
-<section style="position: relative;" class="u-margin-bottom-sm">
+<section style="position: relative;" class="u-margin-bottom-lg">
 <span class="u-anchor" id="small"></span>
 
 ### 5. Small: side comment element
@@ -271,7 +271,7 @@ Tips and tricks about the small element usage:
 
 </section>
 
-<section style="position: relative;" class="u-margin-bottom-sm">
+<section style="position: relative;" class="u-margin-bottom-lg">
 <span class="u-anchor" id="span"></span>
 
 ### 6. Span element
@@ -288,7 +288,7 @@ The Span element `<span>` doesn’t mean anything on its own but can be useful w
 
 </section>
 
-<section style="position: relative;" class="u-margin-bottom-sm">
+<section style="position: relative;" class="u-margin-bottom-lg">
 <span class="u-anchor" id="strong"></span>
 
 ### 7. Strong Importance element
@@ -309,7 +309,7 @@ Tips and tricks about the strong element usage:
 
 </section>
 
-<section style="position: relative;" class="u-margin-bottom-sm">
+<section style="position: relative;" class="u-margin-bottom-lg">
 <span class="u-anchor" id="subscript"></span>
 
 ### 8. Subscript element
@@ -329,7 +329,7 @@ A water molecule (H<sub>2</sub>O) consists of three atoms: an oxygen atom and tw
 
 </section>
 
-<section style="position: relative;" class="u-margin-bottom-sm">
+<section style="position: relative;" class="u-margin-bottom-lg">
 <span class="u-anchor" id="superscript"></span>
 
 ### 9. Superscript element
@@ -364,7 +364,7 @@ A quadratic equation is a second-order <b>polynomial equation</b> in a single va
 
 </section>
 
-<section style="position: relative;" class="u-margin-bottom-sm">
+<section style="position: relative;" class="u-margin-bottom-lg">
 <span class="u-anchor" id="time"></span>
 
 ### 10. Time element
@@ -389,7 +389,7 @@ Tips and tricks about the time element usage:
 
 </section>
 
-<section style="position: relative;" class="u-margin-bottom-sm">
+<section style="position: relative;" class="u-margin-bottom-lg">
 <span class="u-anchor" id="thematic-break"></span>
 
 ### 11. Thematic Break (Horizontal Rule) element
@@ -419,7 +419,7 @@ Content of the second section
 
 </section>
 
-<section style="position: relative;" class="u-margin-bottom-sm">
+<section style="position: relative;" class="u-margin-bottom-lg">
 <span class="u-anchor" id="variable"></span>
 
 ### 12. Variable element

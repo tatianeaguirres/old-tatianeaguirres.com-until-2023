@@ -11,7 +11,7 @@ export default ({ data }) => {
   const lastPosts = data.allMarkdownRemark.edges || []
 
   return (
-    <PageLayout parallax={true}>
+    <PageLayout page='parallax'>
       <SEO title='Home' image={imagePreviewSite} />
       <Banner page='index'>
         <section className='u-text-center'>

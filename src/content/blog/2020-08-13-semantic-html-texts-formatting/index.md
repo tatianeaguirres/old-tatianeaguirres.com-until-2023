@@ -75,7 +75,7 @@ Thinking about text and formatting, I selected 24 HTML tags that will help you t
   </li>
 </ol>
 
-<section style="position: relative;" class="u-margin-bottom-sm">
+<section style="position: relative;" class="u-margin-bottom-lg">
 <span class="u-anchor" id="abbreviation"></span>
 
 ### 1. Abbreviation element
@@ -98,7 +98,7 @@ abbr {
 
 </section>
 
-<section style="position: relative;" class="u-margin-bottom-sm">
+<section style="position: relative;" class="u-margin-bottom-lg">
 <span class="u-anchor" id="address"></span>
 
 ### 2. Address element
@@ -116,7 +116,7 @@ The Address element `<address>` indicates that the enclosed HTML provides contac
 
 </section>
 
-<section style="position: relative;" class="u-margin-bottom-sm">
+<section style="position: relative;" class="u-margin-bottom-lg">
 <span class="u-anchor" id="article"></span>
 
 ### 3. Article element
@@ -162,7 +162,7 @@ Tips and tricks about the article usage:
 
 </section>
 
-<section style="position: relative;" class="u-margin-bottom-sm">
+<section style="position: relative;" class="u-margin-bottom-lg">
 <span class="u-anchor" id="block-quotation"></span>
 
 ### 4. Block Quotation element
@@ -189,7 +189,7 @@ Some tips and tricks about the Block Quotation element:
 
 </section>
 
-<section style="position: relative;" class="u-margin-bottom-sm">
+<section style="position: relative;" class="u-margin-bottom-lg">
 <span class="u-anchor" id="citation"></span>
 
 ### 5. Citation element
@@ -222,7 +222,7 @@ cite {
 
 </section>
 
-<section style="position: relative;" class="u-margin-bottom-sm">
+<section style="position: relative;" class="u-margin-bottom-lg">
 <span class="u-anchor" id="code"></span>
 
 ### 6. Code element
@@ -242,7 +242,7 @@ To represent multiple lines of code, wrap the `<code>` element within a `<pre>` 
 
 </section>
 
-<section style="position: relative;" class="u-margin-bottom-sm">
+<section style="position: relative;" class="u-margin-bottom-lg">
 <span class="u-anchor" id="content-division"></span>
 
 ### 7. Content Division element
@@ -267,7 +267,7 @@ The above code will have no sign of using a div element, see below:
 
 </section>
 
-<section style="position: relative;" class="u-margin-bottom-sm">
+<section style="position: relative;" class="u-margin-bottom-lg">
 <span class="u-anchor" id="data"></span>
 
 ### 8. Data element
@@ -289,7 +289,7 @@ In the example above, each data element receives a distinct product, and the att
 
 </section>
 
-<section style="position: relative;" class="u-margin-bottom-sm">
+<section style="position: relative;" class="u-margin-bottom-lg">
 <span class="u-anchor" id="emphasis"></span>
 
 ### 9. Emphasis element
@@ -313,7 +313,7 @@ When should we <em>emphasize</em>?
 
 </section>
 
-<section style="position: relative;" class="u-margin-bottom-sm">
+<section style="position: relative;" class="u-margin-bottom-lg">
 <span class="u-anchor" id="heading"></span>
 
 ### 10. Heading elements
@@ -346,7 +346,7 @@ Tips and tricks about heading usage:
 
 </section>
 
-<section style="position: relative;" class="u-margin-bottom-sm">
+<section style="position: relative;" class="u-margin-bottom-lg">
 <span class="u-anchor" id="keyboard-input"></span>
 
 ### 11. Keyboard Input element
@@ -361,7 +361,7 @@ Result: Use the <kbd style="background-color: #eee; border-radius: 3px; border: 
 
 </section>
 
-<section style="position: relative;" class="u-margin-bottom-sm">
+<section style="position: relative;" class="u-margin-bottom-lg">
 <span class="u-anchor" id="line-break"></span>
 
 ### 12. Line Break element

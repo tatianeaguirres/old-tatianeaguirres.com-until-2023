@@ -3,10 +3,10 @@ import Header from './Header/Header'
 import Container from './Container/Container'
 import Footer from './Footer/Footer'
 
-export default ({ children, parallax }) => (
+export default ({ children, page }) => (
   <>
     <Header />
-    <Container parallax={parallax}>{children}</Container>
+    <Container page={page}>{children}</Container>
     <Footer />
   </>
 )

@@ -120,3 +120,15 @@ hr {
     margin: 0 12rem;
   }
 }
+
+blockquote {
+  margin: 0 0 $global-spacing-sm $global-spacing-md;
+
+  @include screen-tablet-portrait-and-bigger {
+    margin: 0 0 $global-spacing-sm $global-spacing-lg;
+  }
+
+  p {
+    margin-bottom: $global-spacing-xs;
+  }
+}
