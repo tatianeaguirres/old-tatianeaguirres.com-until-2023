@@ -2,3 +2,8 @@
   height: 30px;
   width: 30px;
 }
+
+.u-container__blog-content img:not(.posts__clock-icon) {
+  max-width: 64rem;
+  border: 0.1rem solid $color-gray-600;
+}
