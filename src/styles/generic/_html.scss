@@ -9,7 +9,6 @@ body {
 html {
   font-family: $font-family-body;
   font-size: $font-size-root;
-  min-height: 100%;
 
   &.no--scroll {
     overflow-y: hidden !important;
@@ -22,7 +21,11 @@ body {
   line-height: $font-line-height-body;
   hyphens: auto;
   word-break: normal;
-  color: $color-gray-800;
+  color: $color-black;
+}
+
+body {
+  background-color: $color-alabaster-white;
 }
 
 p {
@@ -40,7 +43,7 @@ p,
 small,
 time,
 mark {
-  color: $color-gray-800;
+  color: $color-black;
 }
 
 h1 {

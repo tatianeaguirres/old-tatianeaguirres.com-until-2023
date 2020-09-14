@@ -14,6 +14,8 @@ const Navbar = forwardRef((props, ref) => {
     <div
       ref={ref}
       className={device === 'mobile' ? 'c-navbar--mobile' : 'c-navbar--desktop'}
+      aria-modal={device === 'mobile' ? 'true' : 'false'}
+      aria-labelledby='menubutton'
     >
       <nav aria-labelledby='mainmenulabel' className='navbar__nav'>
         <h2 id='mainmenulabel' className='u-sr-only'>
@@ -27,7 +29,6 @@ const Navbar = forwardRef((props, ref) => {
               aria-label='Close menu'
               className='navbar__close-button'
             >
-              <span className='u-sr-only'>Clique here to close the menu</span>
               <img src={CloseIcon} className='navbar__close-icon' alt='close' />
             </button>
           </div>

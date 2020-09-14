@@ -6,7 +6,6 @@
 .footer {
   width: 100%;
   background-color: $color-black;
-  color: $color-white;
 
   article {
     width: 100%;
@@ -51,7 +50,7 @@
 
     hr {
       width: 100%;
-      background-color: $color-white;
+      background-color: $color-alabaster-white;
       margin-top: $global-spacing-xlg;
     }
 
@@ -62,7 +61,7 @@
     }
 
     a {
-      color: white;
+      color: $color-white;
 
       &:hover,
       &:focus {

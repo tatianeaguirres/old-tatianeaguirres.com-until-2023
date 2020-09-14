@@ -10,7 +10,10 @@ export default () => {
       <article>
         <SocialMedia dark={true} />
         <hr />
-        <div className='u-row-flex-wrap u-margin-top-xlg'>
+        <section
+          role='contentinfo'
+          className='u-row-flex-wrap u-margin-top-xlg'
+        >
           <p>
             {author} &copy; {new Date().getFullYear()} | Made with
             <span className='footer__heart'>&nbsp;❤&nbsp;</span> &&nbsp;
@@ -51,7 +54,7 @@ export default () => {
             </a>
             .
           </p>
-        </div>
+        </section>
       </article>
     </footer>
   )

@@ -47,9 +47,9 @@ export default ({ data }) => {
       <form className='u-margin-bottom-lg' role='search'>
         <input
           className='u-input'
-          type='text'
+          type='search'
+          aria-label='search blog posts'
           placeholder='Search'
-          aria-label='search'
           onChange={handleChange}
         />
       </form>

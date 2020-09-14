@@ -10,6 +10,7 @@ input.u-input {
   padding: 12px;
   min-height: 20px;
   box-sizing: border-box;
+  background-color: transparent;
 
   &:focus {
     outline: 1px solid $color-pink;
@@ -20,16 +21,3 @@ input.u-input {
     min-width: 25rem;
   }
 }
-
-// .search {
-//   background-image: url('/images/icon-search.png');
-//   height: 2rem;
-//   width: 2rem;
-//   transition: background-image .2s ease-out;
-//   padding: 12px 12px 12px 45px;
-//   background: no-repeat 15px 50%;
-//   width: 100%;
-//   min-height: 20px;
-//   display: block;
-//   box-sizing: border-box;
-// }

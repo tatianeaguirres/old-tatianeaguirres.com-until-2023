@@ -63,7 +63,7 @@
   padding: $global-spacing-md;
   margin: $global-spacing-xs $global-spacing-xs $global-spacing-md;
   transition: all 0.2s ease-in-out;
-  background-color: $color-white;
+  background-color: $color-alabaster-white;
   box-shadow: 0 0 2.5rem 0.1rem rgba(18, 18, 18, 0.76);
 
   @include screen-tablet-portrait {

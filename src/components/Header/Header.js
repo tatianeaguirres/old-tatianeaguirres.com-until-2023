@@ -45,8 +45,9 @@ const Header = () => {
             className='header__menu-button u-mobile-only'
             onClick={() => setOpenMobileNav(true)}
             aria-label='Open menu'
+            aria-haspopup='true'
+            id='menubutton'
           >
-            <span className='u-sr-only'>Clique here to open the menu</span>
             <img src={MenuIcon} className='header__menu-icon' alt='menu' />
           </button>
           {openMobileNav && <Navbar props={mobileProps} ref={ref} />}
