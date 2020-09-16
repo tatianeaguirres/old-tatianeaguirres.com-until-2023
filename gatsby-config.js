@@ -27,6 +27,23 @@ module.exports = {
     siteUrl: `https://www.tatianeaguirres.com/` || `http://localhost:8000`
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-gdpr-cookies`,
+      options: {
+        googleAnalytics: {
+          trackingId: process.env.GOOGLE_ANALYTICS_ID,
+          cookieName: 'tatianeaguirres-google-analytics',
+          anonymize: true
+        },
+        googleTagManager: {
+          trackingId: ''
+        },
+        facebookPixel: {
+          pixelId: ''
+        },
+        environments: ['production']
+      }
+    },
     `gatsby-plugin-preload-link-crossorigin`,
     `gatsby-plugin-catch-links`,
     {
