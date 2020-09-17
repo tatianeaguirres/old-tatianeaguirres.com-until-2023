@@ -1,5 +1,5 @@
 import React from 'react'
-import { useStaticQuery, graphql } from 'gatsby'
+import { useStaticQuery, graphql, Link } from 'gatsby'
 import { SocialMedia } from '../../components'
 import './Footer.scss'
 
@@ -15,7 +15,7 @@ export default () => {
           className='u-row-flex-wrap u-margin-top-xlg'
         >
           <p>
-            {author} &copy; {new Date().getFullYear()} | Made with
+            {author} &copy; {new Date().getFullYear()} • Made with
             <span className='footer__heart'>&nbsp;❤&nbsp;</span> &&nbsp;
             <a
               href='https://www.gatsbyjs.org/'
@@ -34,6 +34,8 @@ export default () => {
             >
               Terms of Use
             </a>
+            &nbsp;•&nbsp;
+            <Link to='/privacy'>Privacy Policy</Link>
             &nbsp;• Icons made by&nbsp;
             <a
               href='https://www.flaticon.com/authors/freepik'

@@ -15,7 +15,7 @@
     align-items: center;
     padding: $global-spacing-md $global-spacing-md $global-spacing-xs;
 
-    div:last-child {
+    section {
       justify-content: center;
       width: 100%;
     }
@@ -35,7 +35,7 @@
     @include screen-laptop {
       padding: $global-spacing-xlg 12rem $global-spacing-xs;
 
-      div:last-child {
+      section {
         justify-content: space-between;
       }
     }
@@ -43,7 +43,7 @@
     @include screen-desktop {
       padding: $global-spacing-md 12rem $global-spacing-xs;
 
-      div:last-child {
+      section {
         justify-content: space-between;
       }
     }
