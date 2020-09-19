@@ -1,0 +1,30 @@
+@import '../../styles/settings/spacing';
+@import '../../styles/settings/animations';
+@import '../../styles/settings/colors';
+@import '../../styles/settings/media';
+@import '../../styles/settings/typography';
+
+.modal {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  visibility: visible;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $color-alabaster-white;
+  margin: auto;
+  padding: $global-spacing-md;
+  z-index: 4;
+  overflow: auto;
+  box-shadow: 0 0 1.25rem 0 rgba($color-black, 0.35);
+  animation: scale-up-center 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  width: 30rem;
+  height: 20rem;
+
+  @include screen-tablet-landscape-and-bigger {
+    width: 35rem;
+    height: 20rem;
+  }
+}

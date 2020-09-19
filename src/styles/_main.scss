@@ -1,12 +1,12 @@
 // MAIN SCSS
 
 // Settings
+@import 'settings/animations';
 @import 'settings/colors';
 @import 'settings/heading';
 @import 'settings/media';
 @import 'settings/spacing';
 @import 'settings/highlight';
-// @import 'settings/toggle';
 @import 'settings/typography';
 @import 'settings/cookie-consent';
 
