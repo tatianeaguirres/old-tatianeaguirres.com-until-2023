@@ -10,6 +10,10 @@
 @import 'settings/typography';
 @import 'settings/cookie-consent';
 
+// Elements
+
+@import 'elements/lists';
+
 // Utilities
 @import 'utilities/button';
 @import 'utilities/code';
@@ -18,7 +22,6 @@
 @import 'utilities/image';
 @import 'utilities/input';
 @import 'utilities/links';
-@import 'utilities/lists';
 @import 'utilities/logo';
 @import 'utilities/margin';
 @import 'utilities/visibility';

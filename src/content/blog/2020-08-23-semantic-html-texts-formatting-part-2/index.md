@@ -12,70 +12,20 @@ If you missed the previous part, I strongly recommend you visit <a href="https:/
 
 ### Table of Contents
 
-<ol class='u-ordered-list'>
-  <li>
-    <a class='u-link' href='#mark'>
-      Mark Text element
-    </a>
-  </li>
-  <li>
-    <a class='u-link' href='#paragraph'>
-      Paragraph element
-    </a>
-  </li>
-  <li>
-    <a class='u-link' href='#preformatted'>
-      Preformatted Text element
-    </a>
-  </li>
-  <li>
-    <a class='u-link' href='#section'>
-      Section element
-    </a>
-  </li>
-  <li>
-    <a class='u-link' href='#small'>
-      Small: side comment element
-    </a>
-  </li>
-  <li>
-    <a class='u-link' href='#span'>
-      Span element
-    </a>
-  </li>
-  <li>
-    <a class='u-link' href='#strong'>
-      Strong Importance element
-    </a>
-  </li>
-  <li>
-    <a class='u-link' href='#subscript'>
-      Subscript element
-    </a>
-  </li>
-  <li>
-    <a class='u-link' href='#superscript'>
-      Superscript element
-    </a>
-  </li>
-  <li>
-    <a class='u-link' href='#time'>
-      Time element
-    </a>
-  </li>
-  <li>
-    <a class='u-link' href='#thematic-break'>
-      Thematic Break (Horizontal Rule) element
-    </a>
-  </li>
-  <li>
-    <a class='u-link' href='#variable'>
-      Variable element
-    </a>
-  </li>
-</ol>
+1. <a class='u-link' href='#mark'>Mark Text element</a>
+2. <a class='u-link' href='#paragraph'>Paragraph element</a>
+3. <a class='u-link' href='#preformatted'>Preformatted Text element</a>
+4. <a class='u-link' href='#section'>Section element</a>
+5. <a class='u-link' href='#small'>Small: side comment element</a>
+6. <a class='u-link' href='#span'>Span element</a>
+7. <a class='u-link' href='#strong'>Strong Importance element</a>
+8. <a class='u-link' href='#subscript'>Subscript element</a>
+9. <a class='u-link' href='#superscript'>Superscript element</a>
+10. <a class='u-link' href='#time'>Time element</a>
+11. <a class='u-link' href='#thematic-break'>Thematic Break (Horizontal Rule) element</a>
+12. <a class='u-link' href='#variable'>Variable element</a>
 
-<section style="position: relative;" class="u-margin-bottom-lg">
+<section style="position: relative;" class="u-margin-bottom-xlg u-margin-top-xlg">
 <span class="u-anchor" id="mark"></span>
 
 ### 1. Mark Text element
@@ -98,12 +48,10 @@ The Mark Text element `<mark>` represents the text that is **marked** or **highl
 
 Tips and tricks about the mark text usage:
 
-<ul class="u-unordered-list">
-  <li>When used in a citation (<code>q</code>) or a block quote (<code>blockquote</code>), it usually indicates a text of special interest, but not marked in the original source material. Think of it like using a highlighter pen in a book to mark passages you find interesting.</li>
-  <li>The <code>mark</code> element can indicate a part of the content that is relevant to the user at that moment, such as the result of a search.</li>
-  <li>Don't use <code>mark</code> for syntax highlighting purposes, instead use a <code>span</code> element styled with CSS.</li>
-  <li>Don't use <code>mark</code> to indicate that its contents have strong importance, instead use the <code>strong</code> element for this purpose.</li>
-</ul>
+- When used in a citation (<code>q</code>) or a block quote (<code>blockquote</code>), it usually indicates a text of special interest, but not marked in the original source material. Think of it like using a highlighter pen in a book to mark passages you find interesting.
+- The <code>mark</code> element can indicate a part of the content that is relevant to the user at that moment, such as the result of a search.
+- Don't use <code>mark</code> for syntax highlighting purposes, instead use a <code>span</code> element styled with CSS.
+- Don't use <code>mark</code> to indicate that its contents have strong importance, instead use the <code>strong</code> element for this purpose.
 
 The presence of the <code>mark</code> element is not advertised by most screen readers in their default configuration. You can easily change it by adding the following CSS style with the <code>::before</code> and <code>::after</code> pseudo-elements.
 
@@ -132,7 +80,7 @@ mark::after {
 
 </section>
 
-<section style="position: relative;" class="u-margin-bottom-lg">
+<section style="position: relative;" class="u-margin-bottom-xlg">
 <span class="u-anchor" id="paragraph"></span>
 
 ### 2. Paragraph element
@@ -156,7 +104,7 @@ p {
 
 </section>
 
-<section style="position: relative;" class="u-margin-bottom-lg">
+<section style="position: relative;" class="u-margin-bottom-xlg">
 <span class="u-anchor" id="preformatted"></span>
 
 ### 3. Preformatted Text element
@@ -216,7 +164,7 @@ p {
 
 </section>
 
-<section style="position: relative;" class="u-margin-bottom-lg">
+<section style="position: relative;" class="u-margin-bottom-xlg">
 <span class="u-anchor" id="section"></span>
 
 ### 4. Section element
@@ -239,15 +187,13 @@ The Section element `<section>` represents a standalone section — which doesn'
 
 Tips and tricks about the section usage:
 
-<ul class="u-unordered-list">
-  <li>Each <code>section</code> should be identified by adding a heading (<code>h1</code>-<code>h6</code> element) as a first section child.</li>
-  <li>If it makes sense to distribute the content of a <code>section</code>, then use the <code>article</code> element instead.</li>
-  <li>Don't use a <code>section</code> as a generic element, as for styling purposes, use a <code>div</code> instead, which was made for this.</li>
-</ul>
+- Each <code>section</code> should be identified by adding a heading (<code>h1</code>-<code>h6</code> element) as a first section child.
+- If it makes sense to distribute the content of a <code>section</code>, then use the <code>article</code> element instead.
+- Don't use a <code>section</code> as a generic element, as for styling purposes, use a <code>div</code> instead, which was made for this.
 
 </section>
 
-<section style="position: relative;" class="u-margin-bottom-lg">
+<section style="position: relative;" class="u-margin-bottom-xlg">
 <span class="u-anchor" id="small"></span>
 
 ### 5. Small: side comment element
@@ -263,15 +209,13 @@ The Small element `<small>` represents smaller text, like copyright, other side-
 
 Tips and tricks about the small element usage:
 
-<ul class="u-unordered-list">
-  <li>The <code>small</code> element doesn't "de-emphasize" or lower the importance of the text. To mark text as not emphasized or important, simply do not mark it up with the <code>em</code> or <code>strong</code> elements respectively.</li>
-  <li>Don't use the <code>small</code> element for subheadings, for that purpose, use the <code>hgroup</code> element.</li>
-  <li>The <code>small</code> element is only intended for short runs of text. Don't use it for extended spans of text, such as multiple paragraphs, lists, or sections of text.</li>
-</ul>
+- The <code>small</code> element doesn't "de-emphasize" or lower the importance of the text. To mark text as not emphasized or important, simply do not mark it up with the <code>em</code> or <code>strong</code> elements respectively.
+- Don't use the <code>small</code> element for subheadings, for that purpose, use the <code>hgroup</code> element.
+- The <code>small</code> element is only intended for short runs of text. Don't use it for extended spans of text, such as multiple paragraphs, lists, or sections of text.
 
 </section>
 
-<section style="position: relative;" class="u-margin-bottom-lg">
+<section style="position: relative;" class="u-margin-bottom-xlg">
 <span class="u-anchor" id="span"></span>
 
 ### 6. Span element
@@ -288,7 +232,7 @@ The Span element `<span>` doesn’t mean anything on its own but can be useful w
 
 </section>
 
-<section style="position: relative;" class="u-margin-bottom-lg">
+<section style="position: relative;" class="u-margin-bottom-xlg">
 <span class="u-anchor" id="strong"></span>
 
 ### 7. Strong Importance element
@@ -301,15 +245,13 @@ The Strong element `<strong>` represents strong importance, seriousness, or urge
 
 Tips and tricks about the strong element usage:
 
-<ul class="u-unordered-list">
-  <li>Don't use the <code>strong</code> element just to apply bold styling. Use the CSS <code>font-weight</code> property for that purpose.</li>
-  <li>If you want to draw attention to text without indicating that it's more important, use the <code>b</code> element instead.</li>
-  <li>If you want to mark text that has stress emphasis, use the <code>em</code> element instead.</li>
-</ul>
+- Don't use the <code>strong</code> element just to apply bold styling. Use the CSS <code>font-weight</code> property for that purpose.
+- If you want to draw attention to text without indicating that it's more important, use the <code>b</code> element instead.
+- If you want to mark text that has stress emphasis, use the <code>em</code> element instead.
 
 </section>
 
-<section style="position: relative;" class="u-margin-bottom-lg">
+<section style="position: relative;" class="u-margin-bottom-xlg">
 <span class="u-anchor" id="subscript"></span>
 
 ### 8. Subscript element
@@ -329,7 +271,7 @@ A water molecule (H<sub>2</sub>O) consists of three atoms: an oxygen atom and tw
 
 </section>
 
-<section style="position: relative;" class="u-margin-bottom-lg">
+<section style="position: relative;" class="u-margin-bottom-xlg">
 <span class="u-anchor" id="superscript"></span>
 
 ### 9. Superscript element
@@ -364,7 +306,7 @@ A quadratic equation is a second-order <b>polynomial equation</b> in a single va
 
 </section>
 
-<section style="position: relative;" class="u-margin-bottom-lg">
+<section style="position: relative;" class="u-margin-bottom-xlg">
 <span class="u-anchor" id="time"></span>
 
 ### 10. Time element
@@ -382,14 +324,12 @@ The kind of content is limited to various kinds of dates, times, time-zone offse
 
 Tips and tricks about the time element usage:
 
-<ul class="u-unordered-list">
-  <li>If the <code>datetime</code> attribute is present, its value must be a representation of the element’s contents in a machine-readable format.</li>
-  <li>If the <code>time</code> element doesn't have a datetime content attribute must not have any element descendants.</li>
-</ul>
+- If the <code>datetime</code> attribute is present, its value must be a representation of the element’s contents in a machine-readable format.
+- If the <code>time</code> element doesn't have a datetime content attribute must not have any element descendants.
 
 </section>
 
-<section style="position: relative;" class="u-margin-bottom-lg">
+<section style="position: relative;" class="u-margin-bottom-xlg">
 <span class="u-anchor" id="thematic-break"></span>
 
 ### 11. Thematic Break (Horizontal Rule) element
@@ -414,12 +354,13 @@ Result:
 
 Content of the first section
 
-<hr style="border: 0; border-bottom: 6px dotted orchid; width: 200px;" />
+<hr style="border: 0; border-bottom: 6px dotted orchid; width: 200px; margin: 0 0 20px 0; background-color: transparent;" />
+
 Content of the second section
 
 </section>
 
-<section style="position: relative;" class="u-margin-bottom-lg">
+<section style="position: relative;" class="u-margin-bottom-xlg">
 <span class="u-anchor" id="variable"></span>
 
 ### 12. Variable element
@@ -438,22 +379,8 @@ The `<var>` element represents a variable. This could be an actual variable in a
 
 ### References:
 
-<ul class='u-unordered-list'>
-  <li>
-    <a class='u-link' href='https://developer.mozilla.org/en-US/docs/Web/HTML' class='u-link' target='_blank' rel='noreferrer noopener'>
-      MDN Web Docs
-    </a>
-  </li>
-  <li>
-    <a class='u-link' href='https://www.w3.org/WAI/' class='u-link' target='_blank' rel='noreferrer noopener'>
-      W3C Web Accessibility Initiative (WAI)
-    </a>
-  </li>
-  <li>
-    <a class='u-link' href='https://www.asciiart.eu/' class='u-link' target='_blank' rel='noreferrer noopener'>
-      ASCII Art Archive
-    </a>
-  </li>
-</ul>
+- <a class='u-link' href='https://developer.mozilla.org/en-US/docs/Web/HTML' class='u-link' target='_blank' rel='noreferrer noopener'>MDN Web Docs</a>
+- <a class='u-link' href='https://www.w3.org/WAI/' class='u-link' target='_blank' rel='noreferrer noopener'>W3C Web Accessibility Initiative (WAI)</a>
+- <a class='u-link' href='https://www.asciiart.eu/' class='u-link' target='_blank' rel='noreferrer noopener'>ASCII Art Archive</a>
 
 Happy coding!

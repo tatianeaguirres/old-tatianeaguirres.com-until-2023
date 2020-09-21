@@ -10,65 +10,19 @@ In this post, I selected the must-have Chrome extensions about accessibility, JS
 
 ### Table of Contents
 
-<ol class='u-ordered-list'>
-  <li>
-    <a class='u-link' href='#wave'>
-      Wave
-    </a>
-  </li>
-  <li>
-    <a class='u-link' href='#react-dev-tools'>
-      React Developer Tools
-    </a>
-  </li>
-  <li>
-    <a class='u-link' href='#wcga-contrast-analyzer'>
-      WCAG Color contrast checker
-    </a>
-  </li>
-  <li>
-    <a class='u-link' href='#augury'>
-      Augury
-    </a>
-  </li>
-  <li>
-    <a class='u-link' href='#jsonview'>
-      JSONView
-    </a>
-  </li>
-  <li>
-    <a class='u-link' href='#whatfont'>
-      WhatFont
-    </a>
-  </li>
-  <li>
-    <a class='u-link' href='#perfect-pixel'>
-      Perfect Pixel
-    </a>
-  </li>
-  <li>
-    <a class='u-link' href='#cssviewer'>
-      CSSViewer
-    </a>
-  </li>
-  <li>
-    <a class='u-link' href='#chromevox'>
-      ChromeVox Classic Extension
-    </a>
-  </li>
-  <li>
-    <a class='u-link' href='#colorzilla'>
-      ColorZilla
-    </a>
-  </li>
-  <li>
-    <a class='u-link' href='#the-great-suspender'>
-      Bonus: The Great Suspender
-    </a>
-  </li>
-</ol>
+1. <a class='u-link' href='#wave'>Wave</a>
+2. <a class='u-link' href='#react-dev-tools'>React Developer Tools</a>
+3. <a class='u-link' href='#wcga-contrast-analyzer'>WCAG Color contrast checker</a>
+4. <a class='u-link' href='#augury'>Augury</a>
+5. <a class='u-link' href='#jsonview'>JSONView</a>
+6. <a class='u-link' href='#whatfont'>WhatFont</a>
+7. <a class='u-link' href='#perfect-pixel'>Perfect Pixel</a>
+8. <a class='u-link' href='#cssviewer'>CSSViewer</a>
+9. <a class='u-link' href='#chromevox'>ChromeVox Classic Extension</a>
+10. <a class='u-link' href='#colorzilla'>ColorZilla</a>
+11. <a class='u-link' href='#the-great-suspender'>Bonus: The Great Suspender</a>
 
-<section style="position: relative;" class="u-margin-bottom-xlg">
+<section style="position: relative;" class="u-margin-bottom-xlg u-margin-top-xlg">
 <span class="u-anchor" id="types"></span>
 
 ### 1. Wave

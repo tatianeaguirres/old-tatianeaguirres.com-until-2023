@@ -9,12 +9,12 @@ featured: 'images/featured.jpg'
 This is the third post of the "Web Accessibility Series". You will learn what low vision users need for web content, tools, and technologies to be accessible in six steps. It includes an overview of types of low vision and describes specific user needs.
 
 <blockquote cite="https://www.w3.org/TR/low-vision-needs/#incidence">
-    <p>In a fact sheet on visual impairment and blindness, the World Health Organization (WHO) estimates that there are 246 million people worldwide who have low vision and 39 million people are blind, indicating that 86% of the people with visual impairments have low vision.</p>
-    <footer>— 
-      <cite>
-        <a class='u-link' href='https://www.who.int/en/news-room/fact-sheets/detail/blindness-and-visual-impairment' target='_blank' rel='noreferrer noopener'>World Health Organization (WHO)</a>
-      </cite>
-    </footer>
+  <p>In a fact sheet on visual impairment and blindness, the World Health Organization (WHO) estimates that there are 246 million people worldwide who have low vision and 39 million people are blind, indicating that 86% of the people with visual impairments have low vision.</p>
+  <footer>— 
+    <cite>
+      <a class='u-link' href='https://www.who.int/en/news-room/fact-sheets/detail/blindness-and-visual-impairment' target='_blank' rel='noreferrer noopener'>World Health Organization (WHO)</a>
+    </cite>
+  </footer>
 </blockquote>
 
 "Low vision" refers to visual impairments other than blindness. In many contexts, the low vision includes only disabilities that are not corrected with normal glasses, contact lenses, medication, or surgery. Most of the low vision is caused by eye diseases and health problems, such as cataracts, glaucoma, and diabetes. These are more prevalent in older people, and some vision problems are caused by injuries or birth conditions.
@@ -23,57 +23,29 @@ If you missed the two previous posts in this series, you can check out and learn
 
 ### Table of Contents
 
-<ol class='u-ordered-list'>
-  <li>
-    <a class='u-link' href='#types'>
-      Types of Visual Impairments
-    </a>
-  </li>
-  <li>
-    <a class='u-link' href='#brightness'>
-      Brightness
-    </a>
-  </li>
-  <li>
-    <a class='u-link' href='#text-contrast'>
-      Text Contrast
-    </a>
-  </li>
-  <li>
-    <a class='u-link' href='#tracking'>
-      Tracking
-    </a>
-  </li>
-  <li>
-    <a class='u-link' href='#text-readability'>
-      Text Readability
-    </a>
-  </li>
-  <li>
-    <a class='u-link' href='#spacing-reading'>
-      Spacing for Reading
-    </a>
-  </li>
-</ol>
+1. <a class='u-link' href='#types'>Types of Visual Impairments</a>
+2. <a class='u-link' href='#brightness'>Brightness</a>
+3. <a class='u-link' href='#text-contrast'>Text Contrast</a>
+4. <a class='u-link' href='#tracking'>Tracking</a>
+5. <a class='u-link' href='#text-readability'>Text Readability</a>
+6. <a class='u-link' href='#spacing-reading'>Spacing for Reading</a>
 
-<section style="position: relative;" class="u-margin-bottom-lg">
+<section style="position: relative;" class="u-margin-bottom-xlg u-margin-top-xlg">
 <span class="u-anchor" id="types"></span>
 
 ### 1. Types of Visual Impairments
 
 There are 5 types of visual impairment that affect the use of the web, not including total blindness:
 
-<ul class='u-unordered-list'>
-  <li><b>Visual acuity (clarity)</b>: Visual acuity is the clarity or sharpness of the vision. It usually depends on the functioning of the retinal part of the eye and the interpretation of the brain. Some low visual acuity can be corrected with glasses, contact lenses, or surgery - and some can't. Therefore, some people will have the blurry vision (low visual acuity), no matter what.</li>
-  <li><b>Light sensitivity</b>: Many people with low vision have extreme sensitivity to light (called photophobia). The strong light makes it difficult or impossible to see and causes pain in the eyes and headaches. For some people, the normal brightness of a computer screen with a bright background is not readable and causes pain. They need to change the background to a darker color.</li>
-  <li><b>Contrast sensitivity</b>: Contrast sensitivity is the ability to distinguish light and dark areas from images, for example, to discern text in the background, such as gray text on a light background.</li>
-  <li><b>Field of vision</b>: The area from which a person's eye is able to collect visual information when looking straight ahead is called the field of view or visual field. People generally have a field of view of approximately 180 degrees and some people have a smaller field of view, called field loss. They may have reduced or absent in the middle of vision, only see in the central portion of the visual field (tunnel vision), or have scattered patches of obscured vision.</li>
-  <li><b>Color vision</b>: Some people can't see certain colors well or can't see at all, but it's very rare for a person to be unable to see any color. This usually happens because of deficiencies in the cone receptors in their eyes, which are responsible for color perception. This is commonly called "color blindness".</li>
-</ul>
+- <b>Visual acuity (clarity)</b>: Visual acuity is the clarity or sharpness of the vision. It usually depends on the functioning of the retinal part of the eye and the interpretation of the brain. Some low visual acuity can be corrected with glasses, contact lenses, or surgery - and some can't. Therefore, some people will have the blurry vision (low visual acuity), no matter what.
+- <b>Light sensitivity</b>: Many people with low vision have extreme sensitivity to light (called photophobia). The strong light makes it difficult or impossible to see and causes pain in the eyes and headaches. For some people, the normal brightness of a computer screen with a bright background is not readable and causes pain. They need to change the background to a darker color.
+- <b>Contrast sensitivity</b>: Contrast sensitivity is the ability to distinguish light and dark areas from images, for example, to discern text in the background, such as gray text on a light background.
+- <b>Field of vision</b>: The area from which a person's eye is able to collect visual information when looking straight ahead is called the field of view or visual field. People generally have a field of view of approximately 180 degrees and some people have a smaller field of view, called field loss. They may have reduced or absent in the middle of vision, only see in the central portion of the visual field (tunnel vision), or have scattered patches of obscured vision.
+- <b>Color vision</b>: Some people can't see certain colors well or can't see at all, but it's very rare for a person to be unable to see any color. This usually happens because of deficiencies in the cone receptors in their eyes, which are responsible for color perception. This is commonly called "color blindness".
 
 </section>
 
-<section style="position: relative;" class="u-margin-bottom-lg">
+<section style="position: relative;" class="u-margin-bottom-xlg">
 <span class="u-anchor" id="brightness"></span>
 
 ### 2. Brightness
@@ -84,7 +56,7 @@ A good solution that can help people with sensitivity to light is to enable them
 
 </section>
 
-<section style="position: relative;" class="u-margin-bottom-lg">
+<section style="position: relative;" class="u-margin-bottom-xlg">
 <span class="u-anchor" id="text-contrast"></span>
 
 ### 3. Text Contrast
@@ -113,7 +85,7 @@ You can easily identify bad combinations and test all possibilities of contrast 
 
 </section>
 
-<section style="position: relative;" class="u-margin-bottom-lg">
+<section style="position: relative;" class="u-margin-bottom-xlg">
 <span class="u-anchor" id="tracking"></span>
 
 ### 4. Tracking
@@ -124,17 +96,15 @@ For many people, with and without disabilities, it's difficult to read when they
 
 Tips for creating an accessible application for tracking:
 
-<ul class='u-unordered-list'>
-  <li>Blocks of text rewrap so that only one direction of scrolling is required (usually vertical scrolling).</li>
-  <li>Reflow to blocks of text in one continuous block, instead of in multiple columns.</li>
-  <li>Avoid using very long lines.</li>
-  <li>Support zoom screen: ensure that if the user is using the zoomed browser when accessing your application, the layout will grow fluidly.</li>
-  <li>Turn off hyphenation by default (the same doesn't apply to very long words).</li>
-</ul>
+- Blocks of text rewrap so that only one direction of scrolling is required (usually vertical scrolling).
+- Reflow to blocks of text in one continuous block, instead of in multiple columns.
+- Avoid using very long lines.
+- Support zoom screen: ensure that if the user is using the zoomed browser when accessing your application, the layout will grow fluidly.
+- Turn off hyphenation by default (the same doesn't apply to very long words).
 
 </section>
 
-<section style="position: relative;" class="u-margin-bottom-lg">
+<section style="position: relative;" class="u-margin-bottom-xlg">
 <span class="u-anchor" id="text-readability"></span>
 
 ### 5. Text Readability
@@ -145,16 +115,14 @@ Some people need a larger text in order to perceive letters. Although increasing
 
 Tips for creating an accessible application with readable texts:
 
-<ul class='u-unordered-list'>
-  <li>Support zoom screen: ensure that if the user is using the zoomed browser when accessing your application, the layout will grow fluidly.</li>
-  <li>Give preference to fonts optimized for reading for the main content. <a class='u-link' href='https://fonts.google.com/' target='_blank' rel='noreferrer noopener'>Google Fonts</a> has good (and free) fonts like "Open Sans", "Quicksand", "Roboto", "Lato" and "Ubuntu".</li>
-  <li>Avoid using bold, underline, or italics too often.</li>
-  <li>Text in all capital letters is more difficult to read for most people, avoid using too much.</li>
-</ul>
+- Support zoom screen: ensure that if the user is using the zoomed browser when accessing your application, the layout will grow fluidly.
+- Give preference to fonts optimized for reading for the main content. <a class='u-link' href='https://fonts.google.com/' target='_blank' rel='noreferrer noopener'>Google Fonts</a> has good (and free) fonts like "Open Sans", "Quicksand", "Roboto", "Lato" and "Ubuntu".
+- Avoid using bold, underline, or italics too often.
+- Text in all capital letters is more difficult to read for most people, avoid using too much.
 
 </section>
 
-<section style="position: relative;" class="u-margin-bottom-lg">
+<section style="position: relative;" class="u-margin-bottom-xlg">
 <span class="u-anchor" id="spacing-reading"></span>
 
 ### 6. Spacing for Reading
@@ -167,29 +135,17 @@ If text is close to the edges, it is hard for low vision users to distinguish le
 
 Tips on good usage of spacing for reading:
 
-<ul class='u-unordered-list'>
-  <li>Use enough space for leading (line spacing, line height), letter spacing, and word spacing in the text blocks.</li>
-  <li>Avoid using justify text as indentation, give preference to the left-aligned pattern.</li>
-  <li>Use margin around blocks of text that are large enough to separate the content, as wide margins make it more difficult for people with tunnel vision to experience.</li>
-  <li>Spacing groups related elements and separates less related elements. For example, having more space above a heading and less space below it helps associate the heading with the text below.</li>
-</ul>
+- Use enough space for leading (line spacing, line height), letter spacing, and word spacing in the text blocks.
+- Avoid using justify text as indentation, give preference to the left-aligned pattern.
+- Use margin around blocks of text that are large enough to separate the content, as wide margins make it more difficult for people with tunnel vision to experience.
+- Spacing groups related elements and separates less related elements. For example, having more space above a heading and less space below it helps associate the heading with the text below.
 
 </section>
 
 ### References:
 
-<ul class='u-unordered-list'>
-  <li>
-    <a class='u-link' href='https://www.who.int/en/news-room/fact-sheets/detail/blindness-and-visual-impairment' target='_blank' rel='noreferrer noopener'>
-      World Health Organization (WHO)
-    </a>
-  </li>
-  <li>
-    <a class='u-link' href='https://www.w3.org/WAI/' target='_blank' rel='noreferrer noopener'>
-      W3C Web Accessibility Initiative (WAI)
-    </a>
-  </li>
-</ul>
+- <a class='u-link' href='https://www.who.int/en/news-room/fact-sheets/detail/blindness-and-visual-impairment' target='_blank' rel='noreferrer noopener'>World Health Organization (WHO)</a>
+- <a class='u-link' href='https://www.w3.org/WAI/' target='_blank' rel='noreferrer noopener'>W3C Web Accessibility Initiative (WAI)</a>
 
 The next post of the "Web Accessibility Series" will talk about accessibility to users with dyslexia. See you there!
 

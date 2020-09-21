@@ -10,55 +10,17 @@ Last week I did a <a href="https://www.slideshare.net/TatianeAguirres1/tecnologi
 
 ### Table of Contents
 
-<ol class='u-ordered-list'>
-  <li>
-    <a class='u-link' href='#mdn'>
-      MDN Documentation
-    </a>
-  </li>
-  <li>
-    <a class='u-link' href='#games'>
-      Coding Games
-    </a>
-  </li>
-  <li>
-    <a class='u-link' href='#events'>
-      Events from Front-end Community
-    </a>
-  </li>
-  <li>
-    <a class='u-link' href='#youtube'>
-      YouTube
-    </a>
-  </li>
-  <li>
-    <a class='u-link' href='#podcasts'>
-      Podcasts
-    </a>
-  </li>
-  <li>
-    <a class='u-link' href='#stack-overflow'>
-      Stack Overflow
-    </a>
-  </li>
-  <li>
-    <a class='u-link' href='#open-source'>
-      Open Source Projects
-    </a>
-  </li>
-  <li>
-    <a class='u-link' href='#github-portfolio'>
-      GitHub Portfolio
-    </a>
-  </li>
-  <li>
-    <a class='u-link' href='#blog-posts'>
-      Blog Posts
-    </a>
-  </li>
-</ol>
+1. <a class='u-link' href='#mdn'>MDN Documentation</a>
+2. <a class='u-link' href='#games'>Coding Games</a>
+3. <a class='u-link' href='#events'>Events from Front-end Community</a>
+4. <a class='u-link' href='#youtube'>YouTube</a>
+5. <a class='u-link' href='#podcasts'>Podcasts</a>
+6. <a class='u-link' href='#stack-overflow'>Stack Overflow</a>
+7. <a class='u-link' href='#open-source'>Open Source Projects</a>
+8. <a class='u-link' href='#github-portfolio'>GitHub Portfolio</a>
+9. <a class='u-link' href='#blog-posts'>Blog Posts</a>
 
-<section style="position: relative;" class="u-margin-bottom-lg">
+<section style="position: relative;" class="u-margin-bottom-xlg u-margin-top-xlg">
 <span class="u-anchor" id="mdn"></span>
 
 ### 1. MDN Documentation
@@ -69,7 +31,7 @@ MDN is not just for beginners, they have great content that should be considered
 
 </section>
 
-<section style="position: relative;" class="u-margin-bottom-lg">
+<section style="position: relative;" class="u-margin-bottom-xlg">
 <span class="u-anchor" id="games"></span>
 
 ### 2. Coding Games
@@ -78,15 +40,13 @@ Coding games are the most fun way to practice programming, in my opinion, becaus
 
 I have three free and cool games to recommend to you:
 
-<ul class="u-unordered-list">
-  <li><a href="https://flukeout.github.io/" class="u-link" target="_blank" rel="noreferrer noopener">CSS Diner</a> is a simple but fun way to learn CSS. There are 32 levels that will teach you the basics of how CSS selectors work.</li> 
-  <li><a href="http://flexboxfroggy.com/" class="u-link" target="_blank" rel="noreferrer noopener">Flexbox Froggy</a> has a simple interface that teaches you the basics of how things align in flexbox while you help Froggy and his friends.</li>
-  <li><a href="http://flexboxfroggy.com/" class="u-link" target="_blank" rel="noreferrer noopener">CheckIO and Empire of Code</a> use a space setting and you learn TypeScript by defending your base and attacking others, while CheckIO lets you improve your skills by using others’ solutions.</li>
-</ul>
+- <a href="https://flukeout.github.io/" class="u-link" target="_blank" rel="noreferrer noopener">CSS Diner</a> is a simple but fun way to learn CSS. There are 32 levels that will teach you the basics of how CSS selectors work.
+- <a href="http://flexboxfroggy.com/" class="u-link" target="_blank" rel="noreferrer noopener">Flexbox Froggy</a> has a simple interface that teaches you the basics of how things align in flexbox while you help Froggy and his friends.
+- <a href="http://flexboxfroggy.com/" class="u-link" target="_blank" rel="noreferrer noopener">CheckIO and Empire of Code</a> use a space setting and you learn TypeScript by defending your base and attacking others, while CheckIO lets you improve your skills by using others’ solutions.
 
 </section>
 
-<section style="position: relative;" class="u-margin-bottom-lg">
+<section style="position: relative;" class="u-margin-bottom-xlg">
 <span class="u-anchor" id="events"></span>
 
 ### 3. Events from Front-end Community
@@ -97,7 +57,7 @@ The easiest way to find front-end community events near you is to search for you
 
 </section>
 
-<section style="position: relative;" class="u-margin-bottom-lg">
+<section style="position: relative;" class="u-margin-bottom-xlg">
 <span class="u-anchor" id="youtube"></span>
 
 ### 4. YouTube
@@ -106,16 +66,14 @@ Videos that teach you how to do something are great for people who are visual le
 
 I recommend four YouTube channels that I like the way they teach technical things:
 
-<ul class="u-unordered-list">
-  <li><a href="https://www.youtube.com/c/Academind" class="u-link" target="_blank" rel="noreferrer noopener">Academind</a> is the channel of <a href="https://twitter.com/maxedapps" class="u-link" target="_blank" rel="noreferrer noopener">Maximilian</a>, I love his Angular course at Udemy (which I also recommend), that I think it's the most complete Angular course in English. Whether you want to have look at Angular Tutorials or Guides, Vue.js, other Frontend Development Content or Data Science Topics, or anything else - you're probably right! Just watch Academind and take proof.</li> 
-  <li><a href="https://www.youtube.com/c/LayoutLand" class="u-link" target="_blank" rel="noreferrer noopener">Layout Land</a> was created by <a href="https://twitter.com/jensimmons" class="u-link" target="_blank" rel="noreferrer noopener">Jen Simmons</a>, and it’s been a while since she posted new videos, but I’m still sure the channel’s content is amazing, with videos about graphic design on the web — layout, CSS Grid, and more.</li>
-  <li><a href="https://www.youtube.com/user/realcsstricks" class="u-link" target="_blank" rel="noreferrer noopener">Real CSS-Tricks</a> is the official YouTube channel for <a href="https://css-tricks.com/" class="u-link" target="_blank" rel="noreferrer noopener">CSS-Tricks</a>, a web design community curated by <a href="https://twitter.com/chriscoyier" class="u-link" target="_blank" rel="noreferrer noopener">Chris Coyier</a>, with content about CSS, HTML, JavaScript, and all things related to web design and development.</li>
-  <li><a href="https://www.youtube.com/user/AccessibleMedia" class="u-link" target="_blank" rel="noreferrer noopener">AMI: Accessible Media Inc.</a> is a YouTube channel to help viewers better understand how technology can assist in everyday life and how to make fully accessible content for Canadians of all abilities.</li>
-</ul>
+- <a href="https://www.youtube.com/c/Academind" class="u-link" target="_blank" rel="noreferrer noopener">Academind</a> is the channel of <a href="https://twitter.com/maxedapps" class="u-link" target="_blank" rel="noreferrer noopener">Maximilian</a>, I love his Angular course at Udemy (which I also recommend), that I think it's the most complete Angular course in English. Whether you want to have look at Angular Tutorials or Guides, Vue.js, other Frontend Development Content or Data Science Topics, or anything else - you're probably right! Just watch Academind and take proof.
+- <a href="https://www.youtube.com/c/LayoutLand" class="u-link" target="_blank" rel="noreferrer noopener">Layout Land</a> was created by <a href="https://twitter.com/jensimmons" class="u-link" target="_blank" rel="noreferrer noopener">Jen Simmons</a>, and it’s been a while since she posted new videos, but I’m still sure the channel’s content is amazing, with videos about graphic design on the web — layout, CSS Grid, and more.
+- <a href="https://www.youtube.com/user/realcsstricks" class="u-link" target="_blank" rel="noreferrer noopener">Real CSS-Tricks</a> is the official YouTube channel for <a href="https://css-tricks.com/" class="u-link" target="_blank" rel="noreferrer noopener">CSS-Tricks</a>, a web design community curated by <a href="https://twitter.com/chriscoyier" class="u-link" target="_blank" rel="noreferrer noopener">Chris Coyier</a>, with content about CSS, HTML, JavaScript, and all things related to web design and development.
+- <a href="https://www.youtube.com/user/AccessibleMedia" class="u-link" target="_blank" rel="noreferrer noopener">AMI: Accessible Media Inc.</a> is a YouTube channel to help viewers better understand how technology can assist in everyday life and how to make fully accessible content for Canadians of all abilities.
 
 </section>
 
-<section style="position: relative;" class="u-margin-bottom-lg">
+<section style="position: relative;" class="u-margin-bottom-xlg">
 <span class="u-anchor" id="podcasts"></span>
 
 ### 5. Podcasts
@@ -124,16 +82,14 @@ Podcasts are a great solution for developers to strengthen their skills and keep
 
 Here, I have four amazing technical podcasts to indicate to you:
 
-<ul class="u-unordered-list">
-  <li><a href="https://spec.fm/podcasts/developer-tea" class="u-link" target="_blank" rel="noreferrer noopener">Developer Tea</a>: A podcast for developers designed to fit inside your tea break (around 12 minutes). Hosted by <a href="https://twitter.com/jcutrell" class="u-link" target="_blank" rel="noreferrer noopener">Jonathan Cutrell</a>.</li> 
-  <li><a href="http://5by5.tv/webahead" class="u-link" target="_blank" rel="noreferrer noopener">The Web Ahead</a>: Conversations with world experts on changing technologies and the future of the web. The Web Ahead is your shortcut to keeping up. Hosted by <a href="https://twitter.com/jensimmons" class="u-link" target="_blank" rel="noreferrer noopener">Jen Simmons</a>.</li>
-  <li><a href="https://spec.fm/podcasts/toolsday" class="u-link" target="_blank" rel="noreferrer noopener">Toolsday</a>: A biweekly 20-min podcast about the latest in tech tools, tips, and tricks! Hosted by <a href="https://twitter.com/Una" class="u-link" target="_blank" rel="noreferrer noopener">Una Kravets</a> and <a href="https://twitter.com/chrisdhanaraj" class="u-link" target="_blank" rel="noreferrer noopener">Chris Dhanaraj</a>.</li>
-  <li><a href="" class="u-link" target="_blank" rel="noreferrer noopener">Shop Talk Show</a>: A live podcast with <a href="https://twitter.com/chriscoyier" class="u-link" target="_blank" rel="noreferrer noopener">Chris Coyier</a> and <a href="https://twitter.com/davatron5000" class="u-link" target="_blank" rel="noreferrer noopener">Dave Rupert</a> about web design, front-end development, and UX.</li>
-</ul>
+- <a href="https://spec.fm/podcasts/developer-tea" class="u-link" target="_blank" rel="noreferrer noopener">Developer Tea</a>: A podcast for developers designed to fit inside your tea break (around 12 minutes). Hosted by <a href="https://twitter.com/jcutrell" class="u-link" target="_blank" rel="noreferrer noopener">Jonathan Cutrell</a>.
+- <a href="http://5by5.tv/webahead" class="u-link" target="_blank" rel="noreferrer noopener">The Web Ahead</a>: Conversations with world experts on changing technologies and the future of the web. The Web Ahead is your shortcut to keeping up. Hosted by <a href="https://twitter.com/jensimmons" class="u-link" target="_blank" rel="noreferrer noopener">Jen Simmons</a>.
+- <a href="https://spec.fm/podcasts/toolsday" class="u-link" target="_blank" rel="noreferrer noopener">Toolsday</a>: A biweekly 20-min podcast about the latest in tech tools, tips, and tricks! Hosted by <a href="https://twitter.com/Una" class="u-link" target="_blank" rel="noreferrer noopener">Una Kravets</a> and <a href="https://twitter.com/chrisdhanaraj" class="u-link" target="_blank" rel="noreferrer noopener">Chris Dhanaraj</a>.
+- <a href="" class="u-link" target="_blank" rel="noreferrer noopener">Shop Talk Show</a>: A live podcast with <a href="https://twitter.com/chriscoyier" class="u-link" target="_blank" rel="noreferrer noopener">Chris Coyier</a> and <a href="https://twitter.com/davatron5000" class="u-link" target="_blank" rel="noreferrer noopener">Dave Rupert</a> about web design, front-end development, and UX.
 
 </section>
 
-<section style="position: relative;" class="u-margin-bottom-lg">
+<section style="position: relative;" class="u-margin-bottom-xlg">
 <span class="u-anchor" id="stack-overflow"></span>
 
 ### 6. Stack Overflow
@@ -144,17 +100,15 @@ I strongly recommend you read the <a href="https://stackoverflow.com/tour" class
 
 My tips for you to use the maximum that this site have to offer to you is:
 
-<ul class="u-unordered-list">
-  <li>Don't forget to upvote the best answers, so you help other people find the best alternatives to problems.</li>
-  <li>If you downvoted on any answer, write a comment to the user explaining why their answer is not correct, you will help someone who tried to help but made a mistake. And it's okay, after all, we're just human.</li>
-  <li>Never be ashamed to ask, you will help others who will experience the same problem as you later.</li>
-  <li>Don't be afraid to answer questions, the more you contribute by helping others the more votes you will receive. You can even unlock badges for special achievements and share your great Stack Overflow profile on social networks.</li>
-  <li>Read top questions regularly and search for topics that interest you. That way you will keep up to date with the latest tools and technologies.</li>
-</ul>
+- Don't forget to upvote the best answers, so you help other people find the best alternatives to problems.
+- If you downvoted on any answer, write a comment to the user explaining why their answer is not correct, you will help someone who tried to help but made a mistake. And it's okay, after all, we're just human.
+- Never be ashamed to ask, you will help others who will experience the same problem as you later.
+- Don't be afraid to answer questions, the more you contribute by helping others the more votes you will receive. You can even unlock badges for special achievements and share your great Stack Overflow profile on social networks.
+- Read top questions regularly and search for topics that interest you. That way you will keep up to date with the latest tools and technologies.
 
 </section>
 
-<section style="position: relative;" class="u-margin-bottom-lg">
+<section style="position: relative;" class="u-margin-bottom-xlg">
 <span class="u-anchor" id="open-source"></span>
 
 ### 7. Open Source Projects
@@ -165,7 +119,7 @@ Want to contribute to open source? <a href="https://opensource.guide/how-to-cont
 
 </section>
 
-<section style="position: relative;" class="u-margin-bottom-lg">
+<section style="position: relative;" class="u-margin-bottom-xlg">
 <span class="u-anchor" id="github-portfolio"></span>
 
 ### 8. GitHub Portfolio
@@ -178,7 +132,7 @@ Once you know what the most requested skills are, start working on projects that
 
 </section>
 
-<section style="position: relative;" class="u-margin-bottom-lg">
+<section style="position: relative;" class="u-margin-bottom-xlg">
 <span class="u-anchor" id="blog-posts"></span>
 
 ### 9. Blog Posts

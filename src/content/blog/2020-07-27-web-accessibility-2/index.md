@@ -16,70 +16,24 @@ This shows us that the vast majority of screen reader users have some kind of vi
 
 A screen reader user normally uses his keyboard to navigate the website, so I recommend you <a class="u-link" href="https://www.tatianeaguirres.com/blog/2020-07-20-web-accessibility-1/" target="_blank" rel="noreferrer noopener">read my first post of the Web Accessibility Series</a>, which talks about accessibility for keyboard users and complements this post.
 
-<h3>Table of Contents</h3>
-<ol class='u-ordered-list'>
-  <li>
-    <a class='u-link' href='#language'>
-      Language
-    </a>
-  </li>
-  <li>
-    <a class='u-link' href='#keyboard-support'>
-      Links
-    </a>
-  </li>
-  <li>
-    <a class='u-link' href='#headings'>
-      Headings
-    </a>
-  </li>
-  <li>
-    <a class='u-link' href='#aria'>
-      ARIA - Accessible Rich Internet Applications
-    </a>
-  </li>
-  <ol class='u-ordered-list--sublist'>
-    <li>
-      <a class='u-link' href='#roles'>
-        Roles
-      </a>
-    </li>
-    <li>
-      <a class='u-link' href='#states-properties'>
-        States and Properties
-      </a>
-    </li>
-    <li>
-      <a class='u-link' href='#labels-descriptions'>
-        Labels and Descriptions
-      </a>
-    </li>
-  </ol>
-  <li>
-    <a class='u-link' href='#images'>
-      Images
-    </a>
-  </li>
-  <li>
-    <a class='u-link' href='#svg'>
-      SVG - Scalable Vector Graphics
-    </a>
-  </li>
-  <li>
-    <a class='u-link' href='#invisible-content'>
-      Invisible Content
-    </a>
-  </li>
-  <li>
-    <a class='u-link' href='#testing'>
-      Testing the Screen Reader
-    </a>
-  </li>
-</ol>
+### Table of Contents
 
-<section style="position: relative;" class="u-margin-bottom-lg">
+1. <a class='u-link' href='#language'>Language</a>
+2. <a class='u-link' href='#keyboard-support'>Links</a>
+3. <a class='u-link' href='#headings'>Headings</a>
+4. <a class='u-link' href='#aria'>ARIA - Accessible Rich Internet Applications</a>
+5. <a class='u-link' href='#roles'>Roles</a>
+6. <a class='u-link' href='#states-properties'>States and Properties</a>
+7. <a class='u-link' href='#labels-descriptions'>Labels and Descriptions</a>
+8. <a class='u-link' href='#images'>Images</a>
+9. <a class='u-link' href='#svg'>SVG - Scalable Vector Graphics</a>
+10. <a class='u-link' href='#invisible-content'>Invisible Content</a>
+11. <a class='u-link' href='#testing'>Testing the Screen Reader</a>
+
+<section style="position: relative;" class="u-margin-bottom-xlg u-margin-top-xlg">
 <span class="u-anchor" id="language"></span>
-<h3>1. Language</h3>
+
+### 1. Language
 
 As each language has its particularities, the screen reader needs to know which language it will speak, to guarantee a good experience of the content read to the user. If the screen reader doesn't know what is the language of the website, it will use the default operating system's language, which may cause mispronunciations.
 
@@ -110,9 +64,10 @@ span[lang] {
 ```
 
 </section>
-<section style="position: relative;" class="u-margin-bottom-lg">
+<section style="position: relative;" class="u-margin-bottom-xlg">
 <span class="u-anchor" id="links"></span>
-<h3>2. Links</h3>
+
+### 2. Links
 
 The screen reader user generally uses the keyboard to navigate the website, going from link to link using the <kbd>tab</kbd> key, and pressing the <kbd>enter</kbd> key to select this link. Links and form controls receive focus by default when the tab key is used, but if you want to assign focus to another element, you need to use the <code>tabindex</code> attribute into this (you can find <a class="u-link" href="https://www.tatianeaguirres.com/blog/2020-07-20-web-accessibility-1/" target="_blank" rel="noreferrer noopener">more info about tabindex on the previous post</a>).
 
@@ -140,29 +95,20 @@ The links must be used to go somewhere, so if your link executes a function, it 
 ```
 
 </section>
-<section style="position: relative;" class="u-margin-bottom-lg">
+<section style="position: relative;" class="u-margin-bottom-xlg">
 <span class="u-anchor" id="headings"></span>
-<h3>3.Headings </h3>
+
+### 3. Headings
 
 Screen reader users usually jump from heading to heading to get an idea of the content and then return to the most interesting topics. Therefore, the header needs to be self-explanatory, describing the content that follows.
 
 It's important to follow some indispensable patterns of Semantic HTML for this:
 
-<ul class="u-unordered-list">
-  <li>
-    The <code>h1</code> tag must describe the page and have content similar to the <code>title</code> tag.
-  </li>
-  <li>The page must have only one <code>h1</code>.</li>
-  <li>
-    Don't skip heading levels, such as from <code>h2</code> to <code>h4</code>.
-  </li>
-  <li>
-    To highlight or emphasize text that is not a heading, use CSS to style it, and not heading tags to achieve visual results.
-  </li>
-  <li>
-    Headings from <code>h2</code> through <code>h6</code> represent increasing degrees of indentation.
-  </li>
-</ul>
+- The <code>h1</code> tag must describe the page and have content similar to the <code>title</code> tag.
+- The page must have only one <code>h1</code>.
+- Don't skip heading levels, such as from <code>h2</code> to <code>h4</code>.
+- To highlight or emphasize text that is not a heading, use CSS to style it, and not heading tags to achieve visual results.
+- Headings from <code>h2</code> through <code>h6</code> represent increasing degrees of indentation.
 
 Example:
 
@@ -180,18 +126,20 @@ Example:
 ```
 
 </section>
-<section style="position: relative;" class="u-margin-bottom-lg">
+<section style="position: relative;" class="u-margin-bottom-xlg">
 <span class="u-anchor" id="aria"></span>
-<h3>4. ARIA - Accessible Rich Internet Applications</h3>
+
+### 4. ARIA - Accessible Rich Internet Applications
 
 ARIA is a set of attributes you can add to HTML elements that define ways to make web content and applications accessible to users with special needs. When accessibility issues cannot be managed with native HTML, ARIA can help bridge those gaps.
 
 There are three main components used in ARIA: <strong>Roles</strong>, <strong>States</strong>, and <strong>Properties</strong>.
 
 </section>
-<section style="position: relative;" class="u-margin-bottom-lg">
+<section style="position: relative;" class="u-margin-bottom-xlg">
 <span class="u-anchor" id="roles"></span>
-<h4>4.1. ARIA - Roles</h4>
+
+#### 4.1. ARIA - Roles
 
 HTML elements have a default role that is presented to assistive technology, like the `<button>` tag, that has a default role of <code>button</code>. Roles are used to defining a type of user interface (UI) element, and ARIA can define roles that are not available in HTML.
 
@@ -208,9 +156,10 @@ Examples:
 ```
 
 </section>
-<section style="position: relative;" class="u-margin-bottom-lg">
+<section style="position: relative;" class="u-margin-bottom-xlg">
 <span class="u-anchor" id="states-properties"></span>
-<h4>4.2. ARIA - States and Properties</h4>
+
+#### 4.2. ARIA - States and Properties
 
 ARIA States are attributes that define the current condition of an element. They generally change based on user interaction or some dynamic variable. An example is <code>aria-invalid="true"</code> in an input. This property will cause a screen reader to read this input as currently being invalid (meaning it needs to be corrected), but this state value could easily be changed to false dynamically based on user input. While ARIA Properties define additional semantics not supported in standard HTML. An example is <code>aria-haspopup="true"</code> in a button. This property extends the standard button to announce to the screen reader that the button, if activated, will trigger a pop-up.
 
@@ -225,9 +174,10 @@ Examples:
 ```
 
 </section>
-<section style="position: relative;" class="u-margin-bottom-lg">
+<section style="position: relative;" class="u-margin-bottom-xlg">
 <span class="u-anchor" id="labels-descriptions"></span>
-<h4>4.3. ARIA - Labels and Descriptions</h4>
+
+#### 4.3. ARIA - Labels and Descriptions
 
 HTML facilitates associations that support accessibility. When HTML cannot create the necessary associations, ARIA can be used. This helps to avoid confusion mainly during the input process. Examples:
 
@@ -243,9 +193,10 @@ HTML facilitates associations that support accessibility. When HTML cannot creat
 ```
 
 </section>
-<section style="position: relative;" class="u-margin-bottom-lg">
+<section style="position: relative;" class="u-margin-bottom-xlg">
 <span class="u-anchor" id="images"></span>
-<h3>5. Images</h3>
+
+### 5. Images
 
 The first thing you need to do about accessible images is to write
 an appropriate alternative text. Image tags should almost always
@@ -256,35 +207,15 @@ this is a good text alternative.
 
 What you should do to make your image accessible:
 
-<ul class="u-unordered-list">
-  <li>
-    As for any text, using punctuation in the text alternative makes the information easier to understand, especially for screen readers.
-  </li>
-  <li>
-    If you use a null (empty) text alternative (<code>alt=""</code>) to hide decorative images, make sure that there is no space character in between the quotes. If a space character is present, the image may not be effectively hidden from assistive technologies.
-  </li>
-  <li>
-    There's no need to include words such as 'image', 'icon', or 'picture' in the alt text, this is redundant.
-  </li>
-  <li>
-    Prioritize the most important information about this image and write a concise description. If it is not possible, consider adding a long description to it (see example below).
-  </li>
-  <li>
-    If your image is an information icon, it's okay to describe it with the icon's name only. Example: 'Telephone' or 'Address'.
-  </li>
-  <li>
-    When you are using a decorative image, that is, an image that is being used just to make the website more visually attractive, you do not need to describe it. Example: visual stylings such as borders or dividers, or image used for ambiance (eye-candy).
-  </li>
-  <li>
-    If the purpose of your image is to demonstrate an impression or emotion to the user, then you can use an alternative text that best represents the desired impression.
-  </li>
-  <li>
-    When you have format icons within text links used to indicate download, you need to use the alternative text to describe what the format is. Example: 'PDF' or 'Word document'.
-  </li>
-  <li>
-    It's a bad practice to have images of text, nowadays you can easily add text in front of your image using CSS. But if for some odd reason you need to keep an image of text, then add the same content as the image in the alternative text.
-  </li>
-</ul>
+- As for any text, using punctuation in the text alternative makes the information easier to understand, especially for screen readers.
+- If you use a null (empty) text alternative (<code>alt=""</code>) to hide decorative images, make sure that there is no space character in between the quotes. If a space character is present, the image may not be effectively hidden from assistive technologies.
+- There's no need to include words such as 'image', 'icon', or 'picture' in the alt text, this is redundant.
+- Prioritize the most important information about this image and write a concise description. If it is not possible, consider adding a long description to it (see example below).
+- If your image is an information icon, it's okay to describe it with the icon's name only. Example: 'Telephone' or 'Address'.
+- When you are using a decorative image, that is, an image that is being used just to make the website more visually attractive, you do not need to describe it. Example: visual stylings such as borders or dividers, or image used for ambiance (eye-candy).
+- If the purpose of your image is to demonstrate an impression or emotion to the user, then you can use an alternative text that best represents the desired impression.
+- When you have format icons within text links used to indicate download, you need to use the alternative text to describe what the format is. Example: 'PDF' or 'Word document'.
+- It's a bad practice to have images of text, nowadays you can easily add text in front of your image using CSS. But if for some odd reason you need to keep an image of text, then add the same content as the image in the alternative text.
 
 Some good examples:
 
@@ -319,9 +250,10 @@ Some good examples:
 ```
 
 </section>
-<section style="position: relative;" class="u-margin-bottom-lg">
+<section style="position: relative;" class="u-margin-bottom-xlg">
 <span class="u-anchor" id="svg"></span>
-<h3>6. SVG - Scalable Vector Graphics</h3>
+
+### 6. SVG - Scalable Vector Graphics
 
 ARIA can be used to ensure the content in SVG elements is accessible. The addition of the <code>role="img"</code> attribute defines the element as an image, and the accessible name (alternative text) can be defined using aria-labeledby, which references the `<title>` element in the SVG. Example:
 
@@ -334,9 +266,10 @@ ARIA can be used to ensure the content in SVG elements is accessible. The additi
 ```
 
 </section>
-<section style="position: relative;" class="u-margin-bottom-lg">
+<section style="position: relative;" class="u-margin-bottom-xlg">
 <span class="u-anchor" id="invisible-content"></span>
-<h3>7. Invisible Content</h3>
+
+### 7. Invisible Content
 
 The <code>aria-hidden="true"</code> attribute hides certain types of content from screen readers. I think there are very few use cases for aria-hidden because if something is visible on the page, it should almost always be presented to screen reader users. But a good example of aria-hidden usage is to avoid significant repetition of content or for elements that should not be presented to screen reader users.
 
@@ -358,27 +291,24 @@ But if your goal is to hide text visually and keep it accessible for screen read
 ```
 
 </section>
-<section style="position: relative;" class="u-margin-bottom-lg">
+<section style="position: relative;" class="u-margin-bottom-xlg">
 <span class="u-anchor" id="testing"></span>
-<h3>8. Testing the Screen Reader</h3>
+
+### 8. Testing the Screen Reader
 
 Testing your application with a screen reader will give you the chance to evaluate the content from an entirely different perspective: from the perspective of a blind person. Probably you will find mistakes that would have been hard to catch visually. For example, spelling mistakes become very obvious when you hear words mispronounced by the screen reader. Screen readers are also very good for checking the accuracy and quality of image alternative text. Screen readers can also help you identify problems with reading order, table markup, form elements, and many other aspects of accessibility.
 
 Different screen readers tend to be optimized to work with different browsers. Until the publication date of this post, the following combinations work best together:
 
-<ul class="u-unordered-list">
-  <li>Windows: Internet Explorer and JAWS for Windows (JFW)</li>
-  <li>Windows: Firefox and NVDA</li>
-  <li>Mac: Safari and VoiceOver</li>
-  <li>Mac and Windows: Chrome and ChromeVox</li>
-</ul>
+- Windows: Internet Explorer and JAWS for Windows (JFW)
+- Windows: Firefox and NVDA
+- Mac: Safari and VoiceOver
+- Mac and Windows: Chrome and ChromeVox
 
 The free combinations that are easiest to test with and are quite standards-compliant are NVDA and Firefox (on Windows) and VoiceOver and Safari (on Mac). If you want to learn how to use them, there are two articles from WebAIM that I recommend for you:
 
-<ul class="u-unordered-list">
-  <li><a class="u-link" href="https://webaim.org/articles/nvda/" target="_blank" rel="noreferrer noopener">Using NVDA to Evaluate Web Accessibility</a></li>
-  <li><a class="u-link" href="https://webaim.org/articles/voiceover/" target="_blank" rel="noreferrer noopener">Using VoiceOver to Evaluate Web Accessibility</a></li>
-</ul>
+- <a class="u-link" href="https://webaim.org/articles/nvda/" target="_blank" rel="noreferrer noopener">Using NVDA to Evaluate Web Accessibility</a>
+- <a class="u-link" href="https://webaim.org/articles/voiceover/" target="_blank" rel="noreferrer noopener">Using VoiceOver to Evaluate Web Accessibility</a>
 
 </section>
 

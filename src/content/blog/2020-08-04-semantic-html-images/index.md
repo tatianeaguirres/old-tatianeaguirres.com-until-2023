@@ -12,40 +12,14 @@ In most of the cases, images are used to make the website's content more pleasan
 
 ### Table of Contents
 
-<ol class='u-ordered-list'>
-  <li>
-    <a class='u-link' href='#html-img-element'>
-      HTML img Element
-    </a>
-  </li>
-  <li>
-    <a class='u-link' href='#accessibility'>
-      Accessibility
-    </a>
-  </li>
-  <li>
-    <a class='u-link' href='#attributes'>
-      Attributes Specific to the img Element
-    </a>
-  </li>
-  <li>
-    <a class='u-link' href='#background-images'>
-      Background Images
-    </a>
-  </li>
-  <li>
-    <a class='u-link' href='#linked-images'>
-      Linked Images
-    </a>
-  </li>
-  <li>
-    <a class='u-link' href='#responsive-images'>
-      Responsive Images
-    </a>
-  </li>
-</ol>
+1. <a class='u-link' href='#html-img-element'>HTML img Element</a>
+2. <a class='u-link' href='#accessibility'>Accessibility</a>
+3. <a class='u-link' href='#attributes'>Attributes Specific to the img Element</a>
+4. <a class='u-link' href='#background-images'>Background Images</a>
+5. <a class='u-link' href='#linked-images'>Linked Images</a>
+6. <a class='u-link' href='#responsive-images'>Responsive Images</a>
 
-<section style="position: relative;" class="u-margin-bottom-lg">
+<section style="position: relative;" class="u-margin-bottom-xlg u-margin-top-xlg">
 <span class="u-anchor" id="html-img-element"></span>
 
 ### 1. HTML img Element
@@ -62,39 +36,25 @@ The <code>alt</code> attribute holds an alternative text of the image, which isn
 
 </section>
 
-<section style="position: relative;" class="u-margin-bottom-lg">
+<section style="position: relative;" class="u-margin-bottom-xlg">
 <span class="u-anchor" id="attributes"></span>
 
 ### 2. Attributes Specific to the img Element
 
 There are 7 specific attributes for the img tag:
 
-<ul class="u-unordered-list">
-  <li>
-    <code>src</code> is required and specifies the URL of the image to be embedded into the image.
-  </li>
-  <li>
-    <code>alt</code> isn't required because there are few cases when you don't need to use it (as in the case of decorative images), but in most cases, it's very important in terms of accessibility and you must describe the image clearly.
-  </li>
-  <li>
-    <code>crossorigin</code> isn't required and is a CORS settings attribute. The purpose of the crossorigin attribute is to allow you to configure the CORS requests for the element's fetched data. If this attribute is not specified, CORS is not used at all. An invalid keyword and an empty string will be handled as the anonymous value.
-  </li>
-  <li>
-    <code>ismap</code> and <code>usemap</code> aren't required and are for image maps. See more about the map tag on <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/map" class="u-link" target="_blank" rel="noreferrer noopener">Mozilla Web Docs</a>.
-  </li>
-  <li>
-    <code>width</code> isn't required and specifies the width of the image.
-  </li>
-  <li>
-    <code>height</code> isn't required and specifies the height of the image.
-  </li>
-</ul>
+- <code>src</code> is required and specifies the URL of the image to be embedded into the image.
+- <code>alt</code> isn't required because there are few cases when you don't need to use it (as in the case of decorative images), but in most cases, it's very important in terms of accessibility and you must describe the image clearly.
+- <code>crossorigin</code> isn't required and is a CORS settings attribute. The purpose of the crossorigin attribute is to allow you to configure the CORS requests for the element's fetched data. If this attribute is not specified, CORS is not used at all. An invalid keyword and an empty string will be handled as the anonymous value.
+- <code>ismap</code> and <code>usemap</code> aren't required and are for image maps. See more about the map tag on <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/map" class="u-link" target="_blank" rel="noreferrer noopener">Mozilla Web Docs</a>.
+- <code>width</code> isn't required and specifies the width of the image.
+- <code>height</code> isn't required and specifies the height of the image.
 
 You can also see the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes" class="u-link" target="_blank" rel="noreferrer noopener">full list of the Global Attributes</a>, which contains attributes accepted in the img tag and all HTML 5 tags.
 
 </section>
 
-<section style="position: relative;" class="u-margin-bottom-lg">
+<section style="position: relative;" class="u-margin-bottom-xlg">
 <span class="u-anchor" id="accessibility"></span>
 
 ### 3. Accessibility
@@ -105,7 +65,7 @@ You can find tips and tricks to make your images really accessible on the previo
 
 </section>
 
-<section style="position: relative;" class="u-margin-bottom-lg">
+<section style="position: relative;" class="u-margin-bottom-xlg">
 <span class="u-anchor" id="background-images"></span>
 
 ### 4. Background Images
@@ -134,7 +94,7 @@ Warning: Browsers don't provide any special information on background images to 
 
 </section>
 
-<section style="position: relative;" class="u-margin-bottom-lg">
+<section style="position: relative;" class="u-margin-bottom-xlg">
 <span class="u-anchor" id="linked-images"></span>
 
 ### 5. Linked Images
@@ -163,7 +123,7 @@ Examples:
 
 </section>
 
-<section style="position: relative;" class="u-margin-bottom-lg">
+<section style="position: relative;" class="u-margin-bottom-xlg">
 <span class="u-anchor" id="responsive-images"></span>
 
 ### 6. Responsive Images

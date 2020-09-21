@@ -59,7 +59,7 @@ export default () => {
           <p>
             We use the information we collect in various ways, including to:
           </p>
-          <ul className='u-unordered-list'>
+          <ul>
             <li>Provide, operate, and maintain our website.</li>
             <li>Improve, personalize, and expand our website.</li>
             <li>Understand and analyze how you use our website.</li>

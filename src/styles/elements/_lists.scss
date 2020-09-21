@@ -1,6 +1,6 @@
 // LISTS
 
-.u-unordered-list {
+ul {
   margin: 0 0 $global-spacing-sm $global-spacing-sm;
 
   li {
@@ -12,10 +12,10 @@
   }
 }
 
-.u-ordered-list {
+ol {
   margin: 0 0 $global-spacing-sm $global-spacing-sm;
 
-  &--sublist {
+  ol {
     list-style-type: lower-alpha;
     margin-left: $global-spacing-md;
   }

@@ -12,70 +12,20 @@ Thinking about text and formatting, I selected 24 HTML tags that will help you t
 
 ### Table of Contents
 
-<ol class='u-ordered-list'>
-  <li>
-    <a class='u-link' href='#abbreviation'>
-      Abbreviation element
-    </a>
-  </li>
-  <li>
-    <a class='u-link' href='#address'>
-      Address element
-    </a>
-  </li>
-  <li>
-    <a class='u-link' href='#article'>
-      Article element
-    </a>
-  </li>
-  <li>
-    <a class='u-link' href='#block-quotation'>
-      Block Quotation element
-    </a>
-  </li>
-  <li>
-    <a class='u-link' href='#citation'>
-      Citation element
-    </a>
-  </li>
-  <li>
-    <a class='u-link' href='#code'>
-      Code element
-    </a>
-  </li>
-  <li>
-    <a class='u-link' href='#content-division'>
-      Content Division element
-    </a>
-  </li>
-  <li>
-    <a class='u-link' href='#data'>
-      Data element
-    </a>
-  </li>
-  <li>
-    <a class='u-link' href='#emphasis'>
-      Emphasis element
-    </a>
-  </li>
-  <li>
-    <a class='u-link' href='#heading'>
-      Heading elements
-    </a>
-  </li>
-  <li>
-    <a class='u-link' href='#keyboard-input'>
-      Keyboard Input element
-    </a>
-  </li>
-  <li>
-    <a class='u-link' href='#keyboard-input'>
-      Line Break element
-    </a>
-  </li>
-</ol>
+1. <a class='u-link' href='#abbreviation'>Abbreviation element</a>
+2. <a class='u-link' href='#address'>Address element</a>
+3. <a class='u-link' href='#article'>Article element</a>
+4. <a class='u-link' href='#block-quotation'>Block Quotation element</a>
+5. <a class='u-link' href='#citation'>Citation element</a>
+6. <a class='u-link' href='#code'>Code element</a>
+7. <a class='u-link' href='#content-division'>Content Division element</a>
+8. <a class='u-link' href='#data'>Data element</a>
+9. <a class='u-link' href='#emphasis'>Emphasis element</a>
+10. <a class='u-link' href='#heading'>Heading elements</a>
+11. <a class='u-link' href='#keyboard-input'>Keyboard Input element</a>
+12. <a class='u-link' href='#keyboard-input'>Line Break element</a>
 
-<section style="position: relative;" class="u-margin-bottom-lg">
+<section style="position: relative;" class="u-margin-bottom-xlg u-margin-top-xlg">
 <span class="u-anchor" id="abbreviation"></span>
 
 ### 1. Abbreviation element
@@ -98,7 +48,7 @@ abbr {
 
 </section>
 
-<section style="position: relative;" class="u-margin-bottom-lg">
+<section style="position: relative;" class="u-margin-bottom-xlg">
 <span class="u-anchor" id="address"></span>
 
 ### 2. Address element
@@ -116,7 +66,7 @@ The Address element `<address>` indicates that the enclosed HTML provides contac
 
 </section>
 
-<section style="position: relative;" class="u-margin-bottom-lg">
+<section style="position: relative;" class="u-margin-bottom-xlg">
 <span class="u-anchor" id="article"></span>
 
 ### 3. Article element
@@ -153,16 +103,14 @@ The Article element `<article>` represents a self-contained composition in an ap
 
 Tips and tricks about the article usage:
 
-<ul class="u-unordered-list">
-  <li>Each article should be identified, typically by including a heading (<code>h1</code>-<code>h6</code> element) as a child of the article element.</li>
-  <li>When an article element is nested, the inner element represents an article related to the outer element. For example, the comments of a blog post can be article elements nested in the article representing the blog post.</li>
-  <li>Author information of an article element can be provided through the <code>address</code> element, but it doesn't apply to nested article elements.</li>
-  <li>A given document can have multiple articles in it, for example, on a blog that shows the text of each article one after another as the reader scrolls, each post would be contained in an article element, possibly with one or more <code>section</code> elements within.</li>
-</ul>
+- Each article should be identified, typically by including a heading (<code>h1</code>-<code>h6</code> element) as a child of the article element.
+- When an article element is nested, the inner element represents an article related to the outer element. For example, the comments of a blog post can be article elements nested in the article representing the blog post.
+- Author information of an article element can be provided through the <code>address</code> element, but it doesn't apply to nested article elements.
+- A given document can have multiple articles in it, for example, on a blog that shows the text of each article one after another as the reader scrolls, each post would be contained in an article element, possibly with one or more <code>section</code> elements within.
 
 </section>
 
-<section style="position: relative;" class="u-margin-bottom-lg">
+<section style="position: relative;" class="u-margin-bottom-xlg">
 <span class="u-anchor" id="block-quotation"></span>
 
 ### 4. Block Quotation element
@@ -181,15 +129,13 @@ The Block Quotation element `<blockquote>` indicates that the enclosed text is a
 
 Some tips and tricks about the Block Quotation element:
 
-<ul class="u-unordered-list">
-  <li>To change the indentation applied to the quoted text, use the CSS margin-left and/or margin-right properties, or the margin shorthand property.</li>
-  <li>To include shorter quotes inline rather than in a separate block, use the <code>q</code> (Quotation) element.</li>
-  <li>The cite attribute must contain a URL that designates a source document or message for the information quoted. This attribute is intended to point to information explaining the context or the reference for the quote.</li>
-</ul>
+- To change the indentation applied to the quoted text, use the CSS margin-left and/or margin-right properties, or the margin shorthand property.
+- To include shorter quotes inline rather than in a separate block, use the <code>q</code> (Quotation) element.
+- The cite attribute must contain a URL that designates a source document or message for the information quoted. This attribute is intended to point to information explaining the context or the reference for the quote.
 
 </section>
 
-<section style="position: relative;" class="u-margin-bottom-lg">
+<section style="position: relative;" class="u-margin-bottom-xlg">
 <span class="u-anchor" id="citation"></span>
 
 ### 5. Citation element
@@ -222,7 +168,7 @@ cite {
 
 </section>
 
-<section style="position: relative;" class="u-margin-bottom-lg">
+<section style="position: relative;" class="u-margin-bottom-xlg">
 <span class="u-anchor" id="code"></span>
 
 ### 6. Code element
@@ -242,7 +188,7 @@ To represent multiple lines of code, wrap the `<code>` element within a `<pre>` 
 
 </section>
 
-<section style="position: relative;" class="u-margin-bottom-lg">
+<section style="position: relative;" class="u-margin-bottom-xlg">
 <span class="u-anchor" id="content-division"></span>
 
 ### 7. Content Division element
@@ -267,7 +213,7 @@ The above code will have no sign of using a div element, see below:
 
 </section>
 
-<section style="position: relative;" class="u-margin-bottom-lg">
+<section style="position: relative;" class="u-margin-bottom-xlg">
 <span class="u-anchor" id="data"></span>
 
 ### 8. Data element
@@ -289,7 +235,7 @@ In the example above, each data element receives a distinct product, and the att
 
 </section>
 
-<section style="position: relative;" class="u-margin-bottom-lg">
+<section style="position: relative;" class="u-margin-bottom-xlg">
 <span class="u-anchor" id="emphasis"></span>
 
 ### 9. Emphasis element
@@ -305,15 +251,13 @@ The Emphasis element `<em>` is used to define emphasized text. The content insid
 
 When should we <em>emphasize</em>?
 
-<ul class='u-unordered-list'>
-  <li>When you just want to emphasize a certain word or phrase in a sentence should use <code>em</code>. Example: You <em>can't</em> go to the beach without sunscreen!</li>
-  <li>Titles of works such as books, movies, magazines, newspapers, plays, works of art, TV/radio programs or CD/Album should use <code>cite</code>. Example: <cite>The Simpsons</cite>.</li>
-  <li>Foreign words, technical terms, and unfamiliar words should use <code>i</code>. Example: <i>pneumoultramicroscopicossilicovulcanoconiótico</i> is the largest word in the Brazilian Portuguese language, and it means "person suffering from a lung disease, pneumoconiosis, caused by the aspiration of volcanic ash".</li>
-</ul>
+- When you just want to emphasize a certain word or phrase in a sentence should use <code>em</code>. Example: You <em>can't</em> go to the beach without sunscreen!
+- Titles of works such as books, movies, magazines, newspapers, plays, works of art, TV/radio programs or CD/Album should use <code>cite</code>. Example: <cite>The Simpsons</cite>.
+- Foreign words, technical terms, and unfamiliar words should use <code>i</code>. Example: <i>pneumoultramicroscopicossilicovulcanoconiótico</i> is the largest word in the Brazilian Portuguese language, and it means "person suffering from a lung disease, pneumoconiosis, caused by the aspiration of volcanic ash".
 
 </section>
 
-<section style="position: relative;" class="u-margin-bottom-lg">
+<section style="position: relative;" class="u-margin-bottom-xlg">
 <span class="u-anchor" id="heading"></span>
 
 ### 10. Heading elements
@@ -329,24 +273,22 @@ The Section Heading `<h1>`-`<h6>` elements represent six levels of section headi
 <h6>Heading level 6</h6>
 ```
 
-<h1 style="font-family: 'Rubik', sans-serif; color: #343a40; margin-bottom: 10px; font-size: 3rem; font-weight: 600;">Heading level 1</h1>
-<h2 style="color: #343a40; margin-bottom: 10px; font-weight: 600;">Heading level 2</h2>
-<h3 style="font-weight: 600;">Heading level 3</h3>
-<h4 style="font-weight: 600;">Heading level 4</h4>
-<h5 style="text-transform: none; font-weight: 600;">Heading level 5</h5>
-<h6 style="text-transform: none; font-weight: 600; margin-bottom: 30px;">Heading level 6</h6>
+<h1 style="font-style: normal; font-family: 'Rubik', sans-serif; text-transform: none; margin-bottom: 10px; font-weight: 600;">Heading level 1</h1>
+<h2 style="font-style: normal; font-family: 'Rubik', sans-serif; text-transform: none; margin-bottom: 10px; font-weight: 600;">Heading level 2</h2>
+<h3 style="font-style: normal; font-family: 'Rubik', sans-serif; text-transform: none; margin-bottom: 10px; font-weight: 600;">Heading level 3</h3>
+<h4 style="font-style: normal; font-family: 'Rubik', sans-serif; text-transform: none; margin-bottom: 10px; font-weight: 600;">Heading level 4</h4>
+<h5 style="font-style: normal; font-family: 'Rubik', sans-serif; text-transform: none; margin-bottom: 10px; font-weight: 600;">Heading level 5</h5>
+<h6 style="font-style: normal; font-family: 'Rubik', sans-serif; text-transform: none; font-weight: 600; margin-bottom: 30px;">Heading level 6</h6>
 
 Tips and tricks about heading usage:
 
-<ul class="u-unordered-list">
-  <li>Don't skip heading levels, such as <code>h1</code> to <code>h3</code>, because screen reader software users often jump from heading to heading to quickly determine the content of the page. This will confuse them.</li>
-  <li>Your application should contain just one <code>h1</code>, and its content is usually the same as the <code>title</code> element.</li>
-  <li>Don't use a heading <code>h1</code> several times in the content just because of its style. Instead of it, create a CSS class to style this text. Don't use headlines just for visual purposes.</li>
-</ul>
+- Don't skip heading levels, such as <code>h1</code> to <code>h3</code>, because screen reader software users often jump from heading to heading to quickly determine the content of the page. This will confuse them.
+- Your application should contain just one <code>h1</code>, and its content is usually the same as the <code>title</code> element.
+- Don't use a heading <code>h1</code> several times in the content just because of its style. Instead of it, create a CSS class to style this text. Don't use headlines just for visual purposes.
 
 </section>
 
-<section style="position: relative;" class="u-margin-bottom-lg">
+<section style="position: relative;" class="u-margin-bottom-xlg">
 <span class="u-anchor" id="keyboard-input"></span>
 
 ### 11. Keyboard Input element
@@ -361,7 +303,7 @@ Result: Use the <kbd style="background-color: #eee; border-radius: 3px; border: 
 
 </section>
 
-<section style="position: relative;" class="u-margin-bottom-lg">
+<section style="position: relative;" class="u-margin-bottom-xlg">
 <span class="u-anchor" id="line-break"></span>
 
 ### 12. Line Break element
@@ -380,28 +322,16 @@ The Line Break element `<br>` produces a line break in the text. It's useful for
 
 ⚠️ **Warning**: there are some common bad practices that you should avoid when using the line break element:
 
-<ul class='u-unordered-list'>
-  <li>Don't use <code>br</code> to create margins between paragraphs. Wrap them in <code>p</code> elements and use the CSS <code>margin</code> property to control their size.</li>
-  <li>Don't use margin on <code>br</code> elements themselves to increase the spacing between the lines of text in the block. Use the <code>line-height</code> property that was designed for that purpose.</li>
-  <li>Separate paragraphs of text using <code>br</code> is problematic for screen reader users, because the screen reader may announce the presence of the element, but not any content contained. This can be a confusing and frustrating experience for the user. Use <code>p</code> elements, and use CSS properties like margin to control their spacing.</li>
-</ul>
+- Don't use <code>br</code> to create margins between paragraphs. Wrap them in <code>p</code> elements and use the CSS <code>margin</code> property to control their size.
+- Don't use margin on <code>br</code> elements themselves to increase the spacing between the lines of text in the block. Use the <code>line-height</code> property that was designed for that purpose.
+- Separate paragraphs of text using <code>br</code> is problematic for screen reader users, because the screen reader may announce the presence of the element, but not any content contained. This can be a confusing and frustrating experience for the user. Use <code>p</code> elements, and use CSS properties like margin to control their spacing.
 
 </section>
 
 ### References:
 
-<ul class='u-unordered-list'>
-  <li>
-    <a class='u-link' href='https://developer.mozilla.org/en-US/docs/Web/HTML' class='u-link' target='_blank' rel='noreferrer noopener'>
-      MDN Web Docs
-    </a>
-  </li>
-  <li>
-    <a class='u-link' href='https://www.w3.org/WAI/' class='u-link' target='_blank' rel='noreferrer noopener'>
-      W3C Web Accessibility Initiative (WAI)
-    </a>
-  </li>
-</ul>
+- <a class='u-link' href='https://developer.mozilla.org/en-US/docs/Web/HTML' class='u-link' target='_blank' rel='noreferrer noopener'>MDN Web Docs</a>
+- <a class='u-link' href='https://www.w3.org/WAI/' class='u-link' target='_blank' rel='noreferrer noopener'>W3C Web Accessibility Initiative (WAI)</a>
 
 The next post will talk about paragraphs, sections, and 10 other elements that will help you write amazing pages with Semantic HTML. I'll see you there.
 

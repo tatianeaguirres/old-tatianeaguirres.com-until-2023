@@ -19,7 +19,7 @@ const Ebook = () => {
             Discover which skills you need to become a{' '}
             <em>high-skilled Front-end Developer</em>.
           </p>
-          <ol className='u-ordered-list'>
+          <ol>
             <li>Put your e-mail here and check your inbox.</li>
             <li>You will get an e-mail from me with the eBook.</li>
             <li>
