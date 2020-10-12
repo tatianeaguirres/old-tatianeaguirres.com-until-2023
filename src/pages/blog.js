@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { graphql } from 'gatsby'
-import { PageLayout, BlogLink } from '../components'
+import { PageLayout, BlogLink, Newsletter } from '../components'
 import { SEO, Utils } from '../utils'
 
 export default ({ data }) => {
@@ -44,11 +44,16 @@ export default ({ data }) => {
   return (
     <PageLayout>
       <SEO title='Blog' image={imagePreviewSite} pathname='/blog' />
+      <h2 className='u-sr-only'>Blog Posts</h2>
       <form className='u-margin-bottom-lg' role='search'>
+        <label className='u-sr-only' htmlFor='search'>
+          Search blog posts
+        </label>
         <input
+          id='search'
+          name='search'
           className='u-input'
           type='search'
-          aria-label='search blog posts'
           placeholder='Search'
           onChange={handleChange}
         />
@@ -66,6 +71,7 @@ export default ({ data }) => {
           />
         ))}
       </article>
+      <Newsletter />
     </PageLayout>
   )
 }
