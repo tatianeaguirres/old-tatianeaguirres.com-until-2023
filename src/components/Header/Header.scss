@@ -6,16 +6,17 @@
 
 .c-header {
   height: 13rem;
-  width: 100%;
+  width: auto;
   position: fixed;
   top: 0;
   left: 0;
+  right: 0;
   z-index: 2;
   background-color: $color-alabaster-white;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: $global-spacing-md;
+  padding: $global-spacing-sm;
 
   @include screen-mobile-plus {
     padding: $global-spacing-xlg 0.8rem;

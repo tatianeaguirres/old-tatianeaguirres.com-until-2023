@@ -2,7 +2,7 @@
 
 .u-container {
   margin-top: 13rem;
-  padding: $global-spacing-md $global-spacing-md $global-spacing-xlg;
+  padding: $global-spacing-md $global-spacing-sm $global-spacing-xlg;
 
   @include screen-mobile-plus {
     padding: $global-spacing-lg 0.8rem;
@@ -34,7 +34,7 @@
   margin: 13rem auto $global-spacing-lg;
 
   @include screen-tablet-portrait {
-    padding: $global-spacing-lg 10rem;
+    padding: $global-spacing-lg 6rem;
   }
 
   @include screen-tablet-landscape-and-bigger {

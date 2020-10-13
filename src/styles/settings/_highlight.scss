@@ -4,6 +4,14 @@
   margin-bottom: $global-spacing-sm;
   padding: 0;
   overflow: auto;
+
+  pre {
+    max-width: 89vw;
+
+    @include screen-tablet-portrait {
+      max-width: 84vw;
+    }
+  }
 }
 
 .gatsby-highlight pre[class*='language-'].line-numbers {
