@@ -62,7 +62,7 @@ There are some bad practices regarding text readability that you, as a front-end
 </section>
 
 <section style="position: relative;" class="u-margin-bottom-xlg u-margin-top-xlg">
-<span class="u-anchor" id="text"></span>
+<span class="u-anchor" id="typography"></span>
 
 ### 3. Typography
 
