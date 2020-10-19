@@ -273,12 +273,12 @@ The Section Heading `<h1>`-`<h6>` elements represent six levels of section headi
 <h6>Heading level 6</h6>
 ```
 
-<h1 style="font-style: normal; font-family: 'Rubik', sans-serif; text-transform: none; margin-bottom: 10px; font-weight: 600;">Heading level 1</h1>
-<h2 style="font-style: normal; font-family: 'Rubik', sans-serif; text-transform: none; margin-bottom: 10px; font-weight: 600;">Heading level 2</h2>
-<h3 style="font-style: normal; font-family: 'Rubik', sans-serif; text-transform: none; margin-bottom: 10px; font-weight: 600;">Heading level 3</h3>
-<h4 style="font-style: normal; font-family: 'Rubik', sans-serif; text-transform: none; margin-bottom: 10px; font-weight: 600;">Heading level 4</h4>
-<h5 style="font-style: normal; font-family: 'Rubik', sans-serif; text-transform: none; margin-bottom: 10px; font-weight: 600;">Heading level 5</h5>
-<h6 style="font-style: normal; font-family: 'Rubik', sans-serif; text-transform: none; font-weight: 600; margin-bottom: 30px;">Heading level 6</h6>
+<h1 style="font-style: normal; font-family: 'Open Sans', sans-serif; text-transform: none; margin-bottom: 10px; font-weight: 600;">Heading level 1</h1>
+<h2 style="font-style: normal; font-family: 'Open Sans', sans-serif; text-transform: none; margin-bottom: 10px; font-weight: 600;">Heading level 2</h2>
+<h3 style="font-style: normal; font-family: 'Open Sans', sans-serif; text-transform: none; margin-bottom: 10px; font-weight: 600;">Heading level 3</h3>
+<h4 style="font-style: normal; font-family: 'Open Sans', sans-serif; text-transform: none; margin-bottom: 10px; font-weight: 600;">Heading level 4</h4>
+<h5 style="font-style: normal; font-family: 'Open Sans', sans-serif; text-transform: none; margin-bottom: 10px; font-weight: 600;">Heading level 5</h5>
+<h6 style="font-style: normal; font-family: 'Open Sans', sans-serif; text-transform: none; font-weight: 600; margin-bottom: 30px;">Heading level 6</h6>
 
 Tips and tricks about heading usage:
 
