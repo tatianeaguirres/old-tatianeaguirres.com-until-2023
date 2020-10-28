@@ -10,13 +10,17 @@ export default () => {
       <article>
         <SocialMedia dark={true} />
         <hr />
-        <section
-          role='contentinfo'
-          className='u-row-flex-wrap u-margin-top-xlg'
-        >
+        <section className='u-row-flex-wrap u-margin-top-xlg'>
           <p>
-            {author} &copy; {new Date().getFullYear()} • Made with
-            <span className='footer__heart'>&nbsp;❤&nbsp;</span> &&nbsp;
+            {author} &copy;
+            <time dateTime={new Date().getFullYear()}>
+              {new Date().getFullYear()}
+            </time>
+            • Made with{' '}
+            <span className='footer__heart' aria-label='love'>
+              ❤
+            </span>{' '}
+            &{' '}
             <a
               href='https://www.gatsbyjs.org/'
               target='_blank'
@@ -24,7 +28,7 @@ export default () => {
             >
               Gatsby
             </a>
-            .&nbsp;
+            .{' '}
           </p>
           <p>
             <a
@@ -33,22 +37,18 @@ export default () => {
               rel='noreferrer noopener'
             >
               Terms of Use
-            </a>
-            &nbsp;•&nbsp;
-            <Link to='/privacy'>Privacy Policy</Link>
-            &nbsp;• Icons made by&nbsp;
+            </a>{' '}
+            • <Link to='/privacy'>Privacy Policy</Link> • Icons made by{' '}
             <a
               href='https://www.flaticon.com/authors/freepik'
-              title='Freepik'
               target='_blank'
               rel='noreferrer noopener'
             >
               Freepik
-            </a>
-            &nbsp; from&nbsp;
+            </a>{' '}
+            from{' '}
             <a
               href='https://www.flaticon.com/'
-              title='Flaticon'
               target='_blank'
               rel='noreferrer noopener'
             >
