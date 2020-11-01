@@ -44,12 +44,12 @@ a.header__logo {
   @include h1;
 }
 
-a.header__logo:hover,
-a.header__logo:focus {
+a.header__logo:hover h1,
+a.header__logo:focus h1 {
   color: $color-pink;
 }
 
-.header__menu-icon {
+img.header__menu-icon {
   height: 4rem;
   width: 4rem;
 }

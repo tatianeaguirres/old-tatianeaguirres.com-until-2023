@@ -7,87 +7,59 @@ import CloseIcon from '../../../static/svg/close.svg'
 const Navbar = forwardRef((props, ref) => {
   const device = props.props.device
   const closeMenu = props.props.closeMenu
+  const locationPath =
+    typeof window !== 'undefined' ? window.location.pathname : ''
+
+  const menuItems = [
+    { path: '/', name: 'Home' },
+    { path: '/blog', name: 'Blog' },
+    { path: '/about', name: 'About' },
+    { path: '/ebook', name: 'eBook' },
+    { path: '/newsletter', name: 'Newsletter' }
+  ]
 
   if (device === 'mobile') useLockBodyScroll()
 
   return (
-    <div
+    <nav
       ref={ref}
       className={device === 'mobile' ? 'c-navbar--mobile' : 'c-navbar--desktop'}
       aria-modal={device === 'mobile' ? 'true' : 'false'}
-      aria-labelledby='menubutton'
+      aria-label='Main menu.'
     >
-      <nav aria-labelledby='mainmenulabel' className='navbar__nav'>
-        <h2 id='mainmenulabel' className='u-sr-only'>
-          Main Menu
-        </h2>
+      {device === 'mobile' && (
+        <div className='navbar__button-row'>
+          <button
+            onClick={closeMenu}
+            aria-label='Close menu'
+            className='navbar__close-button'
+          >
+            <img
+              src={CloseIcon}
+              className='navbar__close-icon'
+              alt=''
+              aria-hidden='true'
+            />
+          </button>
+        </div>
+      )}
 
-        {device === 'mobile' && (
-          <div className='navbar__button-row'>
-            <button
-              onClick={closeMenu}
-              aria-label='Close menu'
-              className='navbar__close-button'
-            >
-              <img src={CloseIcon} className='navbar__close-icon' alt='close' />
-            </button>
-          </div>
-        )}
-
-        <ul className='navbar__nav-list'>
-          <li className='navbar__nav-item'>
+      <ul className='navbar__nav-list'>
+        {menuItems.map(item => (
+          <li className='navbar__nav-item' key={item.name}>
             <Link
-              to='/'
-              activeClassName='active'
+              to={item.path}
+              activeClassName='navbar__nav-link--active'
               className='navbar__nav-link'
               onClick={closeMenu}
+              {...(locationPath === item.path && { 'aria-current': 'page' })}
             >
-              Home
+              {item.name}
             </Link>
           </li>
-          <li className='navbar__nav-item'>
-            <Link
-              to='/blog'
-              activeClassName='active'
-              className='navbar__nav-link'
-              onClick={closeMenu}
-            >
-              Blog
-            </Link>
-          </li>
-          <li className='navbar__nav-item'>
-            <Link
-              to='/about'
-              activeClassName='active'
-              className='navbar__nav-link'
-              onClick={closeMenu}
-            >
-              About
-            </Link>
-          </li>
-          <li className='navbar__nav-item'>
-            <Link
-              to='/ebook'
-              activeClassName='active'
-              className='navbar__nav-link'
-              onClick={closeMenu}
-            >
-              eBook
-            </Link>
-          </li>
-          <li className='navbar__nav-item'>
-            <Link
-              to='/newsletter'
-              activeClassName='active'
-              className='navbar__nav-link'
-              onClick={closeMenu}
-            >
-              Newsletter
-            </Link>
-          </li>
-        </ul>
-      </nav>
-    </div>
+        ))}
+      </ul>
+    </nav>
   )
 })
 

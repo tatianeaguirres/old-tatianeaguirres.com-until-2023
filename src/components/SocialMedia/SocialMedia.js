@@ -11,7 +11,7 @@ import './SocialMedia.scss'
 
 export default ({ dark }) => {
   return (
-    <div className='social-media'>
+    <article className='social-media'>
       <a
         href='mailto:aguirres.tati@gmail.com'
         target='_blank'
@@ -67,6 +67,6 @@ export default ({ dark }) => {
           alt='instagram'
         />
       </a>
-    </div>
+    </article>
   )
 }

@@ -132,3 +132,7 @@ blockquote {
     margin-bottom: $global-spacing-xs;
   }
 }
+
+*:focus {
+  outline: 0.1rem solid $color-pink;
+}

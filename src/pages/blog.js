@@ -42,7 +42,7 @@ export default ({ data }) => {
   const filteredPosts = query !== '' ? filteredData : allPosts
 
   return (
-    <PageLayout>
+    <PageLayout page='blog'>
       <SEO title='Blog' image={imagePreviewSite} pathname='/blog' />
       <h2 className='u-sr-only'>Blog Posts</h2>
       <form className='u-margin-bottom-lg' role='search'>

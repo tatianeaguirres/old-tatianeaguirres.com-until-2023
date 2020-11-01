@@ -36,42 +36,51 @@ const EmailListForm = ({ ebook }) => {
   }
 
   return (
-    <section className='email-list-form'>
-      <form onSubmit={handleSubmit}>
-        <div className='email-list-form__wrapper'>
-          <label className='u-sr-only' htmlFor='name'>
-            Name:
-          </label>
-          <input
-            className='u-input u-input--small'
-            id='name'
-            name='name'
-            type='text'
-            placeholder='First Name'
-            required
-            aria-required='true'
-            onChange={event => handleChange(event, setName)}
-          />
-          <label className='u-sr-only' htmlFor='email'>
-            Email:
-          </label>
-          <input
-            className='u-input u-input--small'
-            id='email'
-            name='email'
-            type='email'
-            placeholder='Email Address'
-            required
-            aria-required='true'
-            onChange={event => handleChange(event, setEmail)}
-          />
-          <button type='submit' name='submit' className='u-button'>
-            {ebook ? 'Get your free eBook' : 'Subscribe'}
-          </button>
-          {isSubscribed && <p className='u-text-center'>{isSubscribed}</p>}
-        </div>
-      </form>
-    </section>
+    <form
+      aria-labelledby='sign-up'
+      className='email-list-form'
+      onSubmit={handleSubmit}
+    >
+      <fieldset className='email-list-form__wrapper'>
+        <legend id='sign-up' className='u-sr-only'>
+          Sign up for the newsletter
+        </legend>
+
+        <label className='u-sr-only' htmlFor='name'>
+          Name:
+        </label>
+        <input
+          className='u-input u-input--small'
+          id='name'
+          name='name'
+          type='text'
+          placeholder='First Name'
+          required
+          aria-required='true'
+          onChange={event => handleChange(event, setName)}
+        />
+
+        <label className='u-sr-only' htmlFor='email'>
+          Email:
+        </label>
+        <input
+          className='u-input u-input--small'
+          id='email'
+          name='email'
+          type='email'
+          placeholder='Email Address'
+          required
+          aria-required='true'
+          onChange={event => handleChange(event, setEmail)}
+        />
+
+        <button type='submit' name='submit' className='u-button'>
+          {ebook ? 'Get your free eBook' : 'Subscribe'}
+        </button>
+
+        {isSubscribed && <p className='u-text-center'>{isSubscribed}</p>}
+      </fieldset>
+    </form>
   )
 }
 

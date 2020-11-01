@@ -15,7 +15,7 @@ export default ({ data }) => {
   return (
     <PageLayout page='parallax'>
       <SEO title='About' image={image} pathname='/about' />
-      <Banner page='about'>
+      <Banner page='about' label='Blockquote'>
         <blockquote>
           <span>I help Front-end Developers</span>
           <span>to create beautiful user-focused apps,</span>
@@ -26,7 +26,7 @@ export default ({ data }) => {
       </Banner>
       <AboutMe />
       <hr />
-      <section className='u-section u-text-center contact'>
+      <section className='u-section u-text-center contact' aria-label='Contact'>
         <h2 className='u-margin-bottom-md'>Contact</h2>
         <p className='u-margin-bottom-xlg'>
           You can easily find me on any of the networks below:

@@ -4,7 +4,7 @@ import { SEO } from '../utils'
 
 export default () => {
   return (
-    <PageLayout page='blog-content'>
+    <PageLayout page='content'>
       <SEO title='Privacy Police' pathname='/privacy' />
       <PageTitle title='Privacy Police' />
       <article>

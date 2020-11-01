@@ -13,7 +13,7 @@ export default ({ data }) => {
         image={image}
         pathname='/newsletter'
       />
-      <Banner page='newsletter'>
+      <Banner page='newsletter' label='Blockquote'>
         <blockquote>
           <span>Subscribe to our newsletter</span>
           <span>and receive the latest news</span>

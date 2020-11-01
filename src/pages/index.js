@@ -13,15 +13,13 @@ export default ({ data }) => {
   return (
     <PageLayout page='parallax'>
       <SEO title='Home' image={imagePreviewSite} />
-      <Banner page='index'>
-        <section className='u-text-center'>
-          <h1 className='u-text-shadow'>Tatiane Aguirres</h1>
-          <p className='u-text-shadow'>Front-end Developer</p>
-        </section>
+      <Banner page='index' label='Main Information'>
         <Cards />
       </Banner>
-      <article className='u-section'>
-        <h2 className='u-margin-bottom-md u-text-center'>Latest Posts</h2>
+      <section className='u-section' aria-labelledby='posts'>
+        <h2 id='posts' className='u-margin-bottom-md u-text-center'>
+          Latest Posts
+        </h2>
         <article className='u-row-flex-wrap'>
           {lastPosts
             .slice(Math.max(lastPosts.length - 3, 0))
@@ -38,7 +36,7 @@ export default ({ data }) => {
               />
             ))}
         </article>
-      </article>
+      </section>
       <hr />
       <Newsletter />
     </PageLayout>

@@ -4,9 +4,7 @@
 
 .c-navbar {
   &--desktop {
-    .navbar__nav {
-      height: 7rem;
-    }
+    height: 7rem;
 
     .navbar__nav-list {
       display: flex;
@@ -18,7 +16,7 @@
 
     .navbar__nav-item a {
       padding: $global-spacing-sm;
-      height: 7rem;
+      height: 6.3rem;
       width: 100%;
       display: flex;
       text-decoration: none;
@@ -33,25 +31,28 @@
       color: $color-pink;
       cursor: pointer;
     }
+
+    a.navbar__nav-link--active {
+      font-weight: $font-weight-bold;
+      border-bottom: 0.1rem solid black;
+    }
   }
 
   &--mobile {
-    .navbar__nav {
-      position: absolute;
-      visibility: visible;
-      top: 0;
-      right: 0;
-      max-width: 35rem;
-      width: 70%;
-      height: 108vh;
-      z-index: 3;
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
-      align-items: center;
-      background-color: $color-alabaster-white;
-      box-shadow: 0 0 1.3rem 0 rgba($color-gray-800, 0.4);
-    }
+    position: absolute;
+    visibility: visible;
+    top: 0;
+    right: 0;
+    max-width: 35rem;
+    width: 70%;
+    height: 108vh;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: $color-alabaster-white;
+    box-shadow: 0 0 1.3rem 0 rgba($color-gray-800, 0.4);
 
     .navbar__button-row {
       height: 13rem;
@@ -94,6 +95,11 @@
     .navbar__nav-item a:focus {
       color: $color-pink;
       cursor: pointer;
+    }
+
+    a.navbar__nav-link--active {
+      color: $color-pink;
+      font-weight: $font-weight-bold;
     }
   }
 }

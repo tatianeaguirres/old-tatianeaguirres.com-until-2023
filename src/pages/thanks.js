@@ -6,7 +6,7 @@ export default () => {
   return (
     <PageLayout page='parallax'>
       <SEO title='Thanks!' />
-      <Banner page='thanks'>
+      <Banner page='thanks' label='Blockquote'>
         <blockquote>
           <span>Thank you for signing up!</span>
           <span>I want to make sure you won’t miss</span>

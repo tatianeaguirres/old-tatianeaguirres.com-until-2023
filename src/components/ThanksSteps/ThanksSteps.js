@@ -8,7 +8,10 @@ import './ThanksSteps.scss'
 const ThanksSteps = () => {
   return (
     <article className='thanks-steps'>
-      <section className='u-section thanks-steps__align-left'>
+      <section
+        className='u-section thanks-steps__align-left'
+        aria-label='step-1'
+      >
         <div className='thanks-steps__align-left-wrap'>
           <img
             src={avatarTDC}
@@ -17,7 +20,7 @@ const ThanksSteps = () => {
           />
         </div>
         <div className='thanks-steps__align-left-wrap'>
-          <h2>Step 1: Add Tatiane To Your Contacts</h2>
+          <h2 id='step-1'>Step 1: Add Tatiane To Your Contacts</h2>
           <p>
             <b>Add me to your contacts list</b>: Be sure to place
             aguirres.tati@gmail on your approved senders list to make sure our
@@ -32,9 +35,12 @@ const ThanksSteps = () => {
         </div>
       </section>
       <hr />
-      <section className='u-section thanks-steps__align-right'>
+      <section
+        className='u-section thanks-steps__align-right'
+        aria-label='step-2'
+      >
         <div className='thanks-steps__align-left-wrap'>
-          <h2>Step 2: Let’s Get Social</h2>
+          <h2 id='step-2'>Step 2: Let’s Get Social</h2>
           <p>
             Take a few moments and like and follow Tatiane on social media. Join
             me on Twitter, Linkedin, and GitHub. I share content daily about
@@ -55,7 +61,10 @@ const ThanksSteps = () => {
         </div>
       </section>
       <hr />
-      <section className='u-section thanks-steps__align-left'>
+      <section
+        className='u-section thanks-steps__align-left'
+        aria-label='step-3'
+      >
         <div className='thanks-steps__align-left-wrap'>
           <img
             src={newsletterIcon}
@@ -64,7 +73,7 @@ const ThanksSteps = () => {
           />
         </div>
         <div className='thanks-steps__align-left-wrap'>
-          <h2>Step 3: Check Your Email</h2>
+          <h2 id='step-3'>Step 3: Check Your Email</h2>
           <p>
             It’s time to check your email! Look in your inbox for an email from
             me with your eBook.

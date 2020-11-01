@@ -29,19 +29,16 @@
 
   ol li {
     font-family: $font-tertiary;
-    text-transform: uppercase;
-    line-height: 2.8rem;
-    letter-spacing: 0.2rem;
     margin-bottom: $global-spacing-sm;
-    font-weight: 600;
-    font-size: 1.4rem;
+    font-size: 1.7rem;
   }
 
-  div {
+  section {
     width: 100%;
   }
 
-  div:first-child {
+  .ebook__image-wrapper {
+    width: 100%;
     margin-bottom: $global-spacing-lg;
   }
 
@@ -49,12 +46,12 @@
     flex-direction: row;
     margin-bottom: $global-spacing-xlg;
 
-    div:first-child {
+    .ebook__image-wrapper {
       width: 35%;
       margin: 0 $global-spacing-lg 0 0;
     }
 
-    div:last-child {
+    section {
       width: 65%;
     }
   }

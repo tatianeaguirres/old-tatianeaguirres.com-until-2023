@@ -3,74 +3,84 @@
 @import '../../styles/settings/media';
 @import '../../styles/settings/typography';
 
-.footer {
+.c-footer {
   width: 100%;
+  height: 100%;
+  min-height: 28rem;
+  max-height: 28rem;
   background-color: $color-black;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: $global-spacing-md $global-spacing-md $global-spacing-xs;
 
-  article {
+  .footer__contact-info {
     width: 100%;
-    display: flex;
-    flex-direction: column;
+    max-width: 35rem;
+  }
+
+  .footer__content-info {
     justify-content: center;
-    align-items: center;
-    padding: $global-spacing-md $global-spacing-md $global-spacing-xs;
+    width: 100%;
+  }
 
-    section {
-      justify-content: center;
-      width: 100%;
-    }
+  @include screen-mobile-plus {
+    padding: $global-spacing-lg 0.8rem $global-spacing-xs;
+  }
 
-    @include screen-mobile-plus {
-      padding: $global-spacing-lg 0.8rem $global-spacing-xs;
-    }
+  @include screen-tablet-portrait {
+    padding: $global-spacing-lg 3rem $global-spacing-xs;
+  }
 
-    @include screen-tablet-portrait {
-      padding: $global-spacing-lg 3rem $global-spacing-xs;
-    }
+  @include screen-tablet-landscape {
+    padding: $global-spacing-xlg 5rem $global-spacing-xs;
+  }
 
-    @include screen-tablet-landscape {
-      padding: $global-spacing-xlg 5rem $global-spacing-xs;
-    }
+  @include screen-laptop {
+    min-height: 22rem;
+    max-height: 22rem;
+    padding: $global-spacing-xlg 12rem $global-spacing-xs;
 
-    @include screen-laptop {
-      padding: $global-spacing-xlg 12rem $global-spacing-xs;
-
-      section {
-        justify-content: space-between;
-      }
-    }
-
-    @include screen-desktop {
-      padding: $global-spacing-md 12rem $global-spacing-xs;
-
-      section {
-        justify-content: space-between;
-      }
-    }
-
-    hr {
-      width: 100%;
-      background-color: $color-alabaster-white;
-      margin-top: $global-spacing-xlg;
-    }
-
-    p {
-      color: $color-alabaster-white;
-      font-family: $font-tertiary;
-      margin-bottom: 0;
-    }
-
-    a {
-      color: $color-alabaster-white;
-
-      &:hover,
-      &:focus {
-        color: $color-hot-pink;
-      }
+    .footer__content-info {
+      justify-content: space-between;
     }
   }
-}
 
-.footer__heart {
-  color: $color-pink;
+  @include screen-desktop {
+    min-height: 22rem;
+    max-height: 22rem;
+    padding: $global-spacing-md 12rem $global-spacing-xs;
+
+    .footer__content-info {
+      justify-content: space-between;
+    }
+  }
+
+  hr {
+    width: 100%;
+    background-color: $color-alabaster-white;
+    margin-top: $global-spacing-xlg;
+  }
+
+  p,
+  time {
+    color: $color-alabaster-white;
+    font-family: $font-tertiary;
+    margin-bottom: 0;
+  }
+
+  a {
+    color: $color-alabaster-white;
+
+    &:hover,
+    &:focus {
+      color: $color-hot-pink;
+    }
+  }
+
+  .footer__heart {
+    color: $color-pink;
+  }
 }

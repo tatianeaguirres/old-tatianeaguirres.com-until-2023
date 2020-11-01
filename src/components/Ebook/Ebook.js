@@ -7,14 +7,14 @@ const Ebook = () => {
   return (
     <>
       <article className='c-ebook'>
-        <div>
+        <div className='ebook__image-wrapper'>
           <img
             src={eBookCover}
             alt='Cover of the eBook The Ultimate Checklist for Front-end Developers.'
           />
         </div>
-        <div>
-          <h2>Get this eBook for free!</h2>
+        <section aria-labelledby='get-this-ebook'>
+          <h2 id='get-this-ebook'>Get this eBook for free!</h2>
           <p>
             Discover which skills you need to become a{' '}
             <em>high-skilled Front-end Developer</em>.
@@ -26,7 +26,7 @@ const Ebook = () => {
               You will know how to contact me with your questions over email.
             </li>
           </ol>
-        </div>
+        </section>
       </article>
       <EmailListForm ebook={true} />
     </>

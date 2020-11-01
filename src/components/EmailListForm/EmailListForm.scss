@@ -5,11 +5,8 @@
 .email-list-form {
   margin: $global-spacing-md 0;
   width: 100%;
-
-  form {
-    display: flex;
-    justify-content: center;
-  }
+  display: flex;
+  justify-content: center;
 }
 
 .email-list-form__wrapper {

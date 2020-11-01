@@ -30,28 +30,30 @@ const Header = () => {
       <Link
         to='/'
         className='header__logo'
-        title='Tatiane Aguirres Logo'
-        role='banner'
-        aria-label='Tatiane Aguirres Logo'
+        aria-label='Tatiane Aguirres Homepage'
       >
-        TA
+        <h1>Tatiane Aguirres</h1>
       </Link>
 
       {isDesktopOrLaptop && <Navbar props={desktopProps} />}
 
       {isTabletOrMobile && (
-        <div>
+        <>
           <button
             className='header__menu-button u-mobile-only'
             onClick={() => setOpenMobileNav(true)}
             aria-label='Open menu'
             aria-haspopup='true'
-            id='menubutton'
           >
-            <img src={MenuIcon} className='header__menu-icon' alt='menu' />
+            <img
+              src={MenuIcon}
+              className='header__menu-icon'
+              alt=''
+              aria-hidden='true'
+            />
           </button>
           {openMobileNav && <Navbar props={mobileProps} ref={ref} />}
-        </div>
+        </>
       )}
     </header>
   )

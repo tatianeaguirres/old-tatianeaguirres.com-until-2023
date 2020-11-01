@@ -19,7 +19,7 @@ const PostTemplate = ({
     title: title
   }
   return (
-    <PageLayout page='blog-content'>
+    <PageLayout page='content'>
       <SEO
         title={title}
         description={description}
