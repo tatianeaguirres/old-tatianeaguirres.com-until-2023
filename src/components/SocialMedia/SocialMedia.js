@@ -5,7 +5,6 @@ import linkedinIcon from '../../../static/svg/linkedin.svg'
 import githubLightIcon from '../../../static/svg/github-light.svg'
 import githubDarkIcon from '../../../static/svg/github-dark.svg'
 import gmailIcon from '../../../static/svg/gmail.svg'
-import instagramIcon from '../../../static/svg/instagram.svg'
 
 import './SocialMedia.scss'
 
@@ -54,17 +53,6 @@ export default ({ dark }) => {
           src={dark ? githubDarkIcon : githubLightIcon}
           className='u-github social-media__icon'
           alt='github'
-        />
-      </a>
-      <a
-        href='https://instagram.com/tatianeaguirres'
-        target='_blank'
-        rel='noreferrer noopener'
-      >
-        <img
-          src={instagramIcon}
-          className='u-instagram social-media__icon'
-          alt='instagram'
         />
       </a>
     </article>

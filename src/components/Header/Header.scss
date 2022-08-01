@@ -5,13 +5,47 @@
 @import '../../styles/settings/heading';
 
 .c-header {
-  height: 13rem;
+  height: 16rem;
   width: auto;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   z-index: 2;
+  display: flex;
+  flex-direction: column;
+}
+
+.header__banner {
+  height: auto;
+  width: auto;
+  background-color: $color-black;
+  color: $color-alabaster-white;
+  font-family: $font-tertiary;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: $global-spacing-sm;
+
+  @include screen-tablet-portrait-and-bigger {
+    flex-direction: row;
+  }
+}
+
+.header__banner a {
+  color: $color-alabaster-white;
+  padding-left: 0.5rem;
+
+  &:hover,
+  &:focus {
+    color: $color-hot-pink;
+  }
+}
+
+.header__content {
+  height: 13rem;
+  width: auto;
   background-color: $color-alabaster-white;
   display: flex;
   justify-content: space-between;

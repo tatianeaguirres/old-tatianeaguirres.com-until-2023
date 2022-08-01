@@ -24,7 +24,6 @@ const Navbar = forwardRef((props, ref) => {
     <nav
       ref={ref}
       className={device === 'mobile' ? 'c-navbar--mobile' : 'c-navbar--desktop'}
-      aria-modal={device === 'mobile' ? 'true' : 'false'}
       aria-label='Main menu.'
     >
       {device === 'mobile' && (

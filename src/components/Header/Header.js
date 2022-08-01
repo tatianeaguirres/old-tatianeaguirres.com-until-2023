@@ -27,34 +27,46 @@ const Header = () => {
 
   return (
     <header className='c-header'>
-      <Link
-        to='/'
-        className='header__logo'
-        aria-label='Tatiane Aguirres Homepage'
-      >
-        <h1>Tatiane Aguirres</h1>
-      </Link>
+      <div className='header__banner'>
+        <span>Support Ukraine Now! 🇺🇦 </span>
+        <a
+          href='https://supportukrainenow.org/'
+          target='_blank'
+          rel='noreferrer noopener'
+        >
+          Real ways you can help Ukraine
+        </a>
+      </div>
+      <div className='header__content'>
+        <Link
+          to='/'
+          className='header__logo'
+          aria-label='Tatiane Aguirres Homepage'
+        >
+          <h1>Tatiane Aguirres</h1>
+        </Link>
 
-      {isDesktopOrLaptop && <Navbar props={desktopProps} />}
+        {isDesktopOrLaptop && <Navbar props={desktopProps} />}
 
-      {isTabletOrMobile && (
-        <>
-          <button
-            className='header__menu-button u-mobile-only'
-            onClick={() => setOpenMobileNav(true)}
-            aria-label='Open menu'
-            aria-haspopup='true'
-          >
-            <img
-              src={MenuIcon}
-              className='header__menu-icon'
-              alt=''
-              aria-hidden='true'
-            />
-          </button>
-          {openMobileNav && <Navbar props={mobileProps} ref={ref} />}
-        </>
-      )}
+        {isTabletOrMobile && (
+          <>
+            <button
+              className='header__menu-button u-mobile-only'
+              onClick={() => setOpenMobileNav(true)}
+              aria-label='Open menu'
+              aria-haspopup='true'
+            >
+              <img
+                src={MenuIcon}
+                className='header__menu-icon'
+                alt=''
+                aria-hidden='true'
+              />
+            </button>
+            {openMobileNav && <Navbar props={mobileProps} ref={ref} />}
+          </>
+        )}
+      </div>
     </header>
   )
 }
