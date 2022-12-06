@@ -2,6 +2,7 @@
 @import '../../styles/settings/colors';
 @import '../../styles/settings/media';
 @import '../../styles/settings/typography';
+@import '../../styles/settings/heading';
 
 .cards {
   display: flex;
@@ -45,8 +46,12 @@
 .cards a {
   text-decoration: none;
 
-  &:hover h3,
-  &:focus h3 {
+  h2 {
+    @include h3;
+  }
+
+  &:hover h2,
+  &:focus h2 {
     color: $color-pink;
   }
 }

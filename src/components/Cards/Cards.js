@@ -11,10 +11,10 @@ export default () => (
         <img
           src={womanIcon}
           className='cards__card-icon'
-          alt='woman'
-          title='woman'
+          alt=''
+          aria-hidden='true'
         />
-        <h3 id='who-is-tatiane'>Who is Tatiane?</h3>
+        <h2 id='who-is-tatiane'>Who is Tatiane?</h2>
         <p>Find out more about me and my journey as a front-end developer.</p>
       </section>
     </a>
@@ -29,10 +29,10 @@ export default () => (
         <img
           src={trophyIcon}
           className='cards__card-icon'
-          alt='trophy'
-          title='trophy'
+          alt=''
+          aria-hidden='true'
         />
-        <h3 id='public-speaking'>Public Speaking</h3>
+        <h2 id='public-speaking'>Public Speaking</h2>
         <p>
           Tatiane event calendar and list of presentation, volunteer and
           initiatives.
@@ -45,10 +45,10 @@ export default () => (
         <img
           src={eBookIcon}
           className='cards__card-icon'
-          alt='ebook'
-          title='ebook'
+          alt=''
+          aria-hidden='true'
         />
-        <h3 id='ebook'>Free eBook</h3>
+        <h2 id='ebook'>Free eBook</h2>
         <p>
           Discover which skills you need to become a high-skilled Front-ender.
         </p>
